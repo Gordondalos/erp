@@ -1,0 +1,58 @@
+{% extends '@Erp/layout.html.twig' %}
+{% block body %}
+    {{ parent() }}
+    <section class="section_1">
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="{{ path('users') }}"><i class="fa fa-users"></i>Пользователи</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="{{ path('project') }}"><i class="fa fa-rocket"></i>Проекты</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="{{ path('issue') }}"><i class="fa fa-tasks"></i> Задачи</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="{{ path('client') }}"><i class="fa fa-user-secret"></i>Клиенты</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="{{ path('client') }}"><i class="fa fa-user-secret"></i>Клиенты</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="{{ path('client') }}"><i class="fa fa-user-secret"></i>Клиенты</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="#"><i class="fa fa-cogs"></i>Настройки</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+{% endblock %}

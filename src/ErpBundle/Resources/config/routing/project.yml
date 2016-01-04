@@ -1,0 +1,30 @@
+project:
+    path:     /
+    defaults: { _controller: "ErpBundle:Project:index" }
+
+project_show:
+    path:     /{id}/show
+    defaults: { _controller: "ErpBundle:Project:show" }
+
+project_new:
+    path:     /new
+    defaults: { _controller: "ErpBundle:Project:new" }
+
+project_create:
+    path:     /create
+    defaults: { _controller: "ErpBundle:Project:create" }
+    requirements: { _method: post }
+
+project_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ErpBundle:Project:edit" }
+
+project_update:
+    path:     /{id}/update
+    defaults: { _controller: "ErpBundle:Project:update" }
+    requirements: { _method: post|put }
+
+project_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ErpBundle:Project:delete" }
+    requirements: { _method: post|delete }

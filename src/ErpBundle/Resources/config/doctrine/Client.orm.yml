@@ -1,0 +1,38 @@
+ErpBundle\Entity\Client:
+    type: entity
+    table: client
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+        phone:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+        adress:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        email:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+        description:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+    lifecycleCallbacks: {  }

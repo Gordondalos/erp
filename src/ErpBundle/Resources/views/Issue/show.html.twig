@@ -1,0 +1,65 @@
+{% extends '@Erp/layout.html.twig' %}
+
+{% block body -%}
+    {{ parent() }}
+    <h1>Issue</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Issuename</th>
+                <td>{{ entity.issueName }}</td>
+            </tr>
+            <tr>
+                <th>Issuedescription</th>
+                <td>{{ entity.issueDescription }}</td>
+            </tr>
+            <tr>
+                <th>Issueautor</th>
+                <td>{{ entity.issueAutor }}</td>
+            </tr>
+            <tr>
+                <th>Issueexecutor</th>
+                <td>{{ entity.issueExecutor }}</td>
+            </tr>
+            <tr>
+                <th>Datecreate</th>
+                <td>{{ entity.dateCreate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Datefinish</th>
+                <td>{{ entity.dateFinish|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ entity.status }}</td>
+            </tr>
+            <tr>
+                <th>Summa</th>
+                <td>{{ entity.summa }}</td>
+            </tr>
+            <tr>
+                <th>Datestart</th>
+                <td>{{ entity.dateStart|date('Y-m-d H:i:s') }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('issue') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('issue_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

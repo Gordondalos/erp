@@ -1,0 +1,30 @@
+users:
+    path:     /
+    defaults: { _controller: "ErpBundle:Users:index" }
+
+users_show:
+    path:     /{id}/show
+    defaults: { _controller: "ErpBundle:Users:show" }
+
+users_new:
+    path:     /new
+    defaults: { _controller: "ErpBundle:Users:new" }
+
+users_create:
+    path:     /create
+    defaults: { _controller: "ErpBundle:Users:create" }
+    requirements: { _method: post }
+
+users_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ErpBundle:Users:edit" }
+
+users_update:
+    path:     /{id}/update
+    defaults: { _controller: "ErpBundle:Users:update" }
+    requirements: { _method: post|put }
+
+users_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ErpBundle:Users:delete" }
+    requirements: { _method: post|delete }

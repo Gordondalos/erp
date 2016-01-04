@@ -1,0 +1,23 @@
+ErpBundle\Entity\Comment:
+    type: entity
+    table: comment
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        text:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+        issueId:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: issue_id
+    lifecycleCallbacks: {  }

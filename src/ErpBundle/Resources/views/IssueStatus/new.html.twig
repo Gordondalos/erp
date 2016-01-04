@@ -1,0 +1,16 @@
+{% extends '@Erp/layout.html.twig' %}
+
+{% block body -%}
+    {{ parent() }}
+    <h1>IssueStatus creation</h1>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('issuestatus') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

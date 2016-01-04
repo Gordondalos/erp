@@ -1,0 +1,61 @@
+{% extends '@Erp/layout.html.twig' %}
+
+{% block body -%}
+    {{ parent() }}
+    <h1>Project</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Projectname</th>
+                <td>{{ entity.projectName }}</td>
+            </tr>
+            <tr>
+                <th>Projectdescription</th>
+                <td>{{ entity.projectDescription }}</td>
+            </tr>
+            <tr>
+                <th>Progectmanager</th>
+                <td>{{ entity.progectManager }}</td>
+            </tr>
+            <tr>
+                <th>Projectcreator</th>
+                <td>{{ entity.projectCreator }}</td>
+            </tr>
+            <tr>
+                <th>Datecreate</th>
+                <td>{{ entity.dateCreate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Datefinish</th>
+                <td>{{ entity.dateFinish|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Client</th>
+                <td>{{ entity.client }}</td>
+            </tr>
+            <tr>
+                <th>Summ</th>
+                <td>{{ entity.summ }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('project') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('project_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

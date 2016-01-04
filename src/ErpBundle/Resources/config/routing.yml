@@ -1,0 +1,31 @@
+erp_users:
+    resource: "@ErpBundle/Resources/config/routing/users.yml"
+    prefix:   /users
+
+erp_role:
+    resource: "@ErpBundle/Resources/config/routing/role.yml"
+    prefix:   /role
+
+erp_project:
+    resource: "@ErpBundle/Resources/config/routing/project.yml"
+    prefix:   /project
+
+erp_issuestatus:
+    resource: "@ErpBundle/Resources/config/routing/issuestatus.yml"
+    prefix:   /issuestatus
+
+erp_issue:
+    resource: "@ErpBundle/Resources/config/routing/issue.yml"
+    prefix:   /issue
+
+erp_comment:
+    resource: "@ErpBundle/Resources/config/routing/comment.yml"
+    prefix:   /comment
+
+erp_client:
+    resource: "@ErpBundle/Resources/config/routing/client.yml"
+    prefix:   /client
+
+erp_homepage:
+    path:     /
+    defaults: { _controller: ErpBundle:Default:index }

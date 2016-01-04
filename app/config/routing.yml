@@ -1,0 +1,5 @@
+erp:
+    resource: "@ErpBundle/Resources/config/routing.yml"
+    prefix:   /
+
+

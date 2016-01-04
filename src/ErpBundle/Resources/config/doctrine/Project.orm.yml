@@ -1,0 +1,51 @@
+ErpBundle\Entity\Project:
+    type: entity
+    table: project
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        projectName:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            column: project_name
+        projectDescription:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+            column: project_description
+        progectManager:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: progect_manager
+        projectCreator:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: project_creator
+        dateCreate:
+            type: datetime
+            nullable: false
+            column: date_create
+        dateFinish:
+            type: datetime
+            nullable: true
+            column: date_finish
+        client:
+            type: integer
+            nullable: true
+            unsigned: false
+        summ:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

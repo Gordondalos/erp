@@ -1,0 +1,4 @@
+services:
+#    erp.example:
+#        class: ErpBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
