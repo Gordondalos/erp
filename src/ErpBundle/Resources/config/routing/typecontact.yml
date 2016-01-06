@@ -1,0 +1,30 @@
+typecontact:
+    path:     /
+    defaults: { _controller: "ErpBundle:TypeContact:index" }
+
+typecontact_show:
+    path:     /{id}/show
+    defaults: { _controller: "ErpBundle:TypeContact:show" }
+
+typecontact_new:
+    path:     /new
+    defaults: { _controller: "ErpBundle:TypeContact:new" }
+
+typecontact_create:
+    path:     /create
+    defaults: { _controller: "ErpBundle:TypeContact:create" }
+    requirements: { _method: post }
+
+typecontact_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ErpBundle:TypeContact:edit" }
+
+typecontact_update:
+    path:     /{id}/update
+    defaults: { _controller: "ErpBundle:TypeContact:update" }
+    requirements: { _method: post|put }
+
+typecontact_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ErpBundle:TypeContact:delete" }
+    requirements: { _method: post|delete }

@@ -1,3 +1,11 @@
+erp_contact:
+    resource: "@ErpBundle/Resources/config/routing/contact.yml"
+    prefix:   /contact
+
+erp_typecontact:
+    resource: "@ErpBundle/Resources/config/routing/typecontact.yml"
+    prefix:   /typecontact
+
 erp_users:
     resource: "@ErpBundle/Resources/config/routing/users.yml"
     prefix:   /users
@@ -29,3 +37,7 @@ erp_client:
 erp_homepage:
     path:     /
     defaults: { _controller: ErpBundle:Default:index }
+
+erp_settings:
+    path:     /settings
+    defaults: { _controller: ErpBundle:Settings:index }

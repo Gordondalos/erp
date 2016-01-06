@@ -1,0 +1,42 @@
+ErpBundle\Entity\Contact:
+    type: entity
+    table: contact
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        date:
+            type: datetime
+            nullable: false
+        client:
+            type: integer
+            nullable: true
+            unsigned: false
+        user:
+            type: integer
+            nullable: false
+            unsigned: false
+        type:
+            type: integer
+            nullable: false
+            unsigned: false
+        desctiption:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+        nextDateContact:
+            type: datetime
+            nullable: false
+            column: next_date_contact
+        userDoer:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: user_doer
+    lifecycleCallbacks: {  }

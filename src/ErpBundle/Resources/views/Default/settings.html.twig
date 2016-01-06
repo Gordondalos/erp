@@ -1,0 +1,59 @@
+{% extends '@Erp/layout.html.twig' %}
+{% block body %}
+    {{ parent() }}
+    <section class="section_1">
+        <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+
+                        <div class="item">
+                            <a href="{{ path('typecontact') }}"><i class="fa fa-envelope"></i>Типы контактов</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="{{ path('role') }}"><i class="fa fa-lock"></i>Роли пользователей</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="item">
+                            <a href="{{ path('issuestatus') }}"><i class="fa fa-star"></i>Статусы Задач</a>
+                        </div>
+                    </div>
+                    {#<div class="col-sm-2">#}
+                        {#<div class="item">#}
+                            {#<a href="{{ path('client') }}"><i class="fa fa-user-secret"></i>Клиенты</a>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-sm-2">#}
+                        {#<div class="item">#}
+                            {#<a href="{{ path('client') }}"><i class="fa fa-user-secret"></i>Клиенты</a>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="col-sm-2">#}
+                        {#<div class="item">#}
+                            {#<a href="{{ path('client') }}"><i class="fa fa-user-secret"></i>Клиенты</a>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+
+                {#<div class="row">#}
+                    {#<div class="col-sm-2">#}
+                        {#<div class="item">#}
+                            {#<a href="#"><i class="fa fa-cogs"></i>Настройки</a>#}
+                        {#</div>#}
+                    {#</div>#}
+
+                {#</div>#}
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+{% endblock %}

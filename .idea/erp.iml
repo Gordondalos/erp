@@ -44,5 +44,6 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="erp node_modules" level="project" />
   </component>
 </module>

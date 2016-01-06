@@ -1,0 +1,19 @@
+ErpBundle\Entity\TypeContact:
+    type: entity
+    table: type_contact
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        typeName:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            column: type_name
+    lifecycleCallbacks: {  }
