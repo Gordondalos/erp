@@ -80,4 +80,88 @@ class Comment
     {
         return $this->issueId;
     }
+    /**
+     * @var integer
+     */
+    private $projectId;
+
+    /**
+     * @var \DateTime
+     */
+    private $date;
+
+    /**
+     * @var integer
+     */
+    private $user;
+
+
+    /**
+     * Set projectId
+     *
+     * @param integer $projectId
+     * @return Comment
+     */
+    public function setProjectId($projectId)
+    {
+        $this->projectId = $projectId;
+
+        return $this;
+    }
+
+    /**
+     * Get projectId
+     *
+     * @return integer 
+     */
+    public function getProjectId()
+    {
+        return $this->projectId;
+    }
+
+    /**
+     * Set date
+     *
+     * @param \DateTime $date
+     * @return Comment
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+
+        return $this;
+    }
+
+    /**
+     * Get date
+     *
+     * @return \DateTime 
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * Set user
+     *
+     * @param integer $user
+     * @return Comment
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return integer 
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
 }

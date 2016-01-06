@@ -20,4 +20,16 @@ ErpBundle\Entity\Comment:
             nullable: true
             unsigned: false
             column: issue_id
+        projectId:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: project_id
+        date:
+            type: datetime
+            nullable: false
+        user:
+            type: integer
+            nullable: true
+            unsigned: false
     lifecycleCallbacks: {  }

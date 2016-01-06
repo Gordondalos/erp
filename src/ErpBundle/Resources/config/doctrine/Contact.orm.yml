@@ -39,4 +39,8 @@ ErpBundle\Entity\Contact:
             nullable: true
             unsigned: false
             column: user_doer
+        project:
+            type: integer
+            nullable: false
+            unsigned: false
     lifecycleCallbacks: {  }

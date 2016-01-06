@@ -1,0 +1,15 @@
+{% extends '@Erp/layout.html.twig' %}
+{% block body %}
+    {{ parent() }}
+    <h1>ClientProject creation</h1>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('clientproject') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

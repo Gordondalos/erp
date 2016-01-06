@@ -25,8 +25,21 @@ class UsersController extends Controller
 
         $entities = $em->getRepository('ErpBundle:Users')->findAll();
 
+        $ut = new RoleController();
+        $role = $ut->allRoleAction($em);
+        $roles = array();
+        foreach ($role as $value ) {
+            $arr = (array)($value);
+            $roleId = array_shift($arr);
+            $roleName = array_shift($arr);
+            $roles += [$roleId => $roleName];
+
+        }
+       // var_dump($roles);
+
         return $this->render('ErpBundle:Users:index.html.twig', array(
             'entities' => $entities,
+            'roles' => $roles,
         ));
     }
     /**
@@ -37,6 +50,8 @@ class UsersController extends Controller
     {
         $entity = new Users();
         $form = $this->createCreateForm($entity);
+
+
         $form->handleRequest($request);
 
         if ($form->isValid()) {
@@ -62,9 +77,30 @@ class UsersController extends Controller
      */
     private function createCreateForm(Users $entity)
     {
+
+        $ut = new RoleController();
+        $em = $this->getDoctrine()->getManager();
+        $role = $ut->allRoleAction($em);
+        $roles = array();
+        foreach ($role as $value ) {
+            $arr = (array)($value);
+            $roleId = array_shift($arr);
+            $roleName = array_shift($arr);
+            $roles += [$roleId => $roleName];
+
+        }
+
+     //   var_dump($roles);
         $form = $this->createForm(new UsersType(), $entity, array(
+
             'action' => $this->generateUrl('users_create'),
             'method' => 'POST',
+        ));
+
+
+        $form->add('role', 'choice', array('label' => 'Выберете роль',
+            'multiple' => false,
+            'choices' => $roles,
         ));
 
         $form->add('submit', 'submit', array('label' => 'Create'));
@@ -93,7 +129,17 @@ class UsersController extends Controller
      */
     public function showAction($id)
     {
+        $ut = new RoleController();
         $em = $this->getDoctrine()->getManager();
+        $role = $ut->allRoleAction($em);
+        $roles = array();
+        foreach ($role as $value ) {
+            $arr = (array)($value);
+            $roleId = array_shift($arr);
+            $roleName = array_shift($arr);
+            $roles += [$roleId => $roleName];
+
+        }
 
         $entity = $em->getRepository('ErpBundle:Users')->find($id);
 
@@ -106,6 +152,7 @@ class UsersController extends Controller
         return $this->render('ErpBundle:Users:show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
+            'roles' => $roles,
         ));
     }
 
@@ -116,6 +163,7 @@ class UsersController extends Controller
     public function editAction($id)
     {
         $em = $this->getDoctrine()->getManager();
+
 
         $entity = $em->getRepository('ErpBundle:Users')->find($id);
 
@@ -142,10 +190,33 @@ class UsersController extends Controller
     */
     private function createEditForm(Users $entity)
     {
+
+        $ut = new RoleController();
+        $em = $this->getDoctrine()->getManager();
+        $role = $ut->allRoleAction($em);
+        $roles = array();
+        foreach ($role as $value ) {
+            $arr = (array)($value);
+            $roleId = array_shift($arr);
+            $roleName = array_shift($arr);
+            $roles += [$roleId => $roleName];
+
+        }
+
+
+
+
+
         $form = $this->createForm(new UsersType(), $entity, array(
             'action' => $this->generateUrl('users_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
+
+        $form->add('role', 'choice', array('label' => 'Выберете роль',
+            'multiple' => false,
+            'choices' => $roles,
+        ));
+
 
         $form->add('submit', 'submit', array('label' => 'Update'));
 

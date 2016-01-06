@@ -1,0 +1,21 @@
+ErpBundle\Entity\ClientProject:
+    type: entity
+    table: client_project
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        client:
+            type: integer
+            nullable: false
+            unsigned: false
+        project:
+            type: integer
+            nullable: false
+            unsigned: false
+    lifecycleCallbacks: {  }

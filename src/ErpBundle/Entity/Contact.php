@@ -220,4 +220,32 @@ class Contact
     {
         return $this->userDoer;
     }
+    /**
+     * @var integer
+     */
+    private $project;
+
+
+    /**
+     * Set project
+     *
+     * @param integer $project
+     * @return Contact
+     */
+    public function setProject($project)
+    {
+        $this->project = $project;
+
+        return $this;
+    }
+
+    /**
+     * Get project
+     *
+     * @return integer 
+     */
+    public function getProject()
+    {
+        return $this->project;
+    }
 }

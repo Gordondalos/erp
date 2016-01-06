@@ -1,0 +1,30 @@
+clientproject:
+    path:     /
+    defaults: { _controller: "ErpBundle:ClientProject:index" }
+
+clientproject_show:
+    path:     /{id}/show
+    defaults: { _controller: "ErpBundle:ClientProject:show" }
+
+clientproject_new:
+    path:     /new
+    defaults: { _controller: "ErpBundle:ClientProject:new" }
+
+clientproject_create:
+    path:     /create
+    defaults: { _controller: "ErpBundle:ClientProject:create" }
+    requirements: { _method: post }
+
+clientproject_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ErpBundle:ClientProject:edit" }
+
+clientproject_update:
+    path:     /{id}/update
+    defaults: { _controller: "ErpBundle:ClientProject:update" }
+    requirements: { _method: post|put }
+
+clientproject_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ErpBundle:ClientProject:delete" }
+    requirements: { _method: post|delete }

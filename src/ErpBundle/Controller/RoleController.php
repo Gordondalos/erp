@@ -15,6 +15,15 @@ use ErpBundle\Form\RoleType;
 class RoleController extends Controller
 {
 
+
+    public function allRoleAction($em){
+        $allRole = $em->getRepository('ErpBundle:Role')->findAll();
+        return $allRole;
+    }
+
+
+
+
     /**
      * Lists all Role entities.
      *

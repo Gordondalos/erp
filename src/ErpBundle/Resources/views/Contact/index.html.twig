@@ -1,6 +1,6 @@
-{% extends '::base.html.twig' %}
-
-{% block body -%}
+{% extends '@Erp/layout.html.twig' %}
+{% block body %}
+    {{ parent() }}
     <h1>Contact list</h1>
 
     <table class="records_list">
@@ -14,6 +14,7 @@
                 <th>Desctiption</th>
                 <th>Nextdatecontact</th>
                 <th>Userdoer</th>
+                <th>Project</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -28,6 +29,7 @@
                 <td>{{ entity.desctiption }}</td>
                 <td>{% if entity.nextDateContact %}{{ entity.nextDateContact|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{{ entity.userDoer }}</td>
+                <td>{{ entity.project }}</td>
                 <td>
                 <ul>
                     <li>

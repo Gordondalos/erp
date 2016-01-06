@@ -276,4 +276,32 @@ class Issue
     {
         return $this->dateStart;
     }
+    /**
+     * @var integer
+     */
+    private $project;
+
+
+    /**
+     * Set project
+     *
+     * @param integer $project
+     * @return Issue
+     */
+    public function setProject($project)
+    {
+        $this->project = $project;
+
+        return $this;
+    }
+
+    /**
+     * Get project
+     *
+     * @return integer 
+     */
+    public function getProject()
+    {
+        return $this->project;
+    }
 }

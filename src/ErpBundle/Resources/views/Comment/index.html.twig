@@ -1,6 +1,5 @@
 {% extends '@Erp/layout.html.twig' %}
-
-{% block body -%}
+{% block body %}
     {{ parent() }}
     <h1>Comment list</h1>
 
@@ -10,6 +9,9 @@
                 <th>Id</th>
                 <th>Text</th>
                 <th>Issueid</th>
+                <th>Projectid</th>
+                <th>Date</th>
+                <th>User</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -19,6 +21,9 @@
                 <td><a href="{{ path('comment_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.text }}</td>
                 <td>{{ entity.issueId }}</td>
+                <td>{{ entity.projectId }}</td>
+                <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.user }}</td>
                 <td>
                 <ul>
                     <li>

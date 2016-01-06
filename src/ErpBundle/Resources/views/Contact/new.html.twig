@@ -1,6 +1,6 @@
-{% extends '::base.html.twig' %}
-
-{% block body -%}
+{% extends '@Erp/layout.html.twig' %}
+{% block body %}
+    {{ parent() }}
     <h1>Contact creation</h1>
 
     {{ form(form) }}

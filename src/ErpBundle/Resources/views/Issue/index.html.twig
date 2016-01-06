@@ -1,6 +1,5 @@
 {% extends '@Erp/layout.html.twig' %}
-
-{% block body -%}
+{% block body %}
     {{ parent() }}
     <h1>Issue list</h1>
 
@@ -17,6 +16,7 @@
                 <th>Status</th>
                 <th>Summa</th>
                 <th>Datestart</th>
+                <th>Project</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -33,6 +33,7 @@
                 <td>{{ entity.status }}</td>
                 <td>{{ entity.summa }}</td>
                 <td>{% if entity.dateStart %}{{ entity.dateStart|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.project }}</td>
                 <td>
                 <ul>
                     <li>

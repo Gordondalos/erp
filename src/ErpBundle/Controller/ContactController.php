@@ -4,16 +4,13 @@ namespace ErpBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+
 use ErpBundle\Entity\Contact;
 use ErpBundle\Form\ContactType;
 
 /**
  * Contact controller.
  *
- * @Route("/contact")
  */
 class ContactController extends Controller
 {
@@ -21,9 +18,6 @@ class ContactController extends Controller
     /**
      * Lists all Contact entities.
      *
-     * @Route("/", name="contact")
-     * @Method("GET")
-     * @Template()
      */
     public function indexAction()
     {
@@ -31,16 +25,13 @@ class ContactController extends Controller
 
         $entities = $em->getRepository('ErpBundle:Contact')->findAll();
 
-        return array(
+        return $this->render('ErpBundle:Contact:index.html.twig', array(
             'entities' => $entities,
-        );
+        ));
     }
     /**
      * Creates a new Contact entity.
      *
-     * @Route("/", name="contact_create")
-     * @Method("POST")
-     * @Template("ErpBundle:Contact:new.html.twig")
      */
     public function createAction(Request $request)
     {
@@ -56,10 +47,10 @@ class ContactController extends Controller
             return $this->redirect($this->generateUrl('contact_show', array('id' => $entity->getId())));
         }
 
-        return array(
+        return $this->render('ErpBundle:Contact:new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
-        );
+        ));
     }
 
     /**
@@ -84,27 +75,21 @@ class ContactController extends Controller
     /**
      * Displays a form to create a new Contact entity.
      *
-     * @Route("/new", name="contact_new")
-     * @Method("GET")
-     * @Template()
      */
     public function newAction()
     {
         $entity = new Contact();
         $form   = $this->createCreateForm($entity);
 
-        return array(
+        return $this->render('ErpBundle:Contact:new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
-        );
+        ));
     }
 
     /**
      * Finds and displays a Contact entity.
      *
-     * @Route("/{id}", name="contact_show")
-     * @Method("GET")
-     * @Template()
      */
     public function showAction($id)
     {
@@ -118,18 +103,15 @@ class ContactController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        return array(
+        return $this->render('ErpBundle:Contact:show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
-        );
+        ));
     }
 
     /**
      * Displays a form to edit an existing Contact entity.
      *
-     * @Route("/{id}/edit", name="contact_edit")
-     * @Method("GET")
-     * @Template()
      */
     public function editAction($id)
     {
@@ -144,11 +126,11 @@ class ContactController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        return array(
+        return $this->render('ErpBundle:Contact:edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-        );
+        ));
     }
 
     /**
@@ -172,9 +154,6 @@ class ContactController extends Controller
     /**
      * Edits an existing Contact entity.
      *
-     * @Route("/{id}", name="contact_update")
-     * @Method("PUT")
-     * @Template("ErpBundle:Contact:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
@@ -196,17 +175,15 @@ class ContactController extends Controller
             return $this->redirect($this->generateUrl('contact_edit', array('id' => $id)));
         }
 
-        return array(
+        return $this->render('ErpBundle:Contact:edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-        );
+        ));
     }
     /**
      * Deletes a Contact entity.
      *
-     * @Route("/{id}", name="contact_delete")
-     * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
     {

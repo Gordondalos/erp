@@ -12133,7 +12133,7 @@ button.close {
   content: "";
 }
 
-/* line 36, ../../src/sass/__base/part/common.sass */
+/* line 38, ../../src/sass/__base/part/common.sass */
 h1, h2, h3, h4, h5 {
   font-family: RobotoRegular, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 63px;
@@ -12142,38 +12142,38 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 
-/* line 43, ../../src/sass/__base/part/common.sass */
+/* line 45, ../../src/sass/__base/part/common.sass */
 h2 {
   font-size: 50px;
   line-height: 57px;
 }
 
-/* line 48, ../../src/sass/__base/part/common.sass */
+/* line 50, ../../src/sass/__base/part/common.sass */
 h3 {
   font-size: 43px;
   line-height: 50px;
 }
 
-/* line 52, ../../src/sass/__base/part/common.sass */
+/* line 54, ../../src/sass/__base/part/common.sass */
 h4 {
   font-size: 33px;
   line-height: 38px;
 }
 
-/* line 57, ../../src/sass/__base/part/common.sass */
+/* line 59, ../../src/sass/__base/part/common.sass */
 h5 {
   font-size: 23px;
   line-height: 27px;
 }
 
-/* line 62, ../../src/sass/__base/part/common.sass */
+/* line 64, ../../src/sass/__base/part/common.sass */
 body {
   font-family: RobotoRegular, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 14px;
   color: #232323;
 }
 
-/* line 71, ../../src/sass/__base/part/common.sass */
+/* line 73, ../../src/sass/__base/part/common.sass */
 .navigation a {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 14px;
@@ -12182,38 +12182,38 @@ body {
   text-transform: uppercase;
 }
 
-/* line 82, ../../src/sass/__base/part/common.sass */
+/* line 84, ../../src/sass/__base/part/common.sass */
 .colors {
   background-color: #fff;
 }
 
-/* line 85, ../../src/sass/__base/part/common.sass */
+/* line 87, ../../src/sass/__base/part/common.sass */
 ul {
   padding: 0;
   margin: 0;
 }
-/* line 88, ../../src/sass/__base/part/common.sass */
+/* line 90, ../../src/sass/__base/part/common.sass */
 ul li {
   list-style-type: none;
 }
 
-/* line 91, ../../src/sass/__base/part/common.sass */
-a:hover, a:active, a:visited {
+/* line 93, ../../src/sass/__base/part/common.sass */
+a:hover, a:active, a:visited, a:focus {
   text-decoration: none;
 }
 
-/* line 94, ../../src/sass/__base/part/common.sass */
+/* line 96, ../../src/sass/__base/part/common.sass */
 table {
   width: 100%;
 }
-/* line 96, ../../src/sass/__base/part/common.sass */
+/* line 98, ../../src/sass/__base/part/common.sass */
 table th, table td {
   border: 1px solid #d8d8d8;
   background: #efefef;
   padding: 5px;
   text-align: center;
 }
-/* line 101, ../../src/sass/__base/part/common.sass */
+/* line 103, ../../src/sass/__base/part/common.sass */
 table td {
   text-align: left;
   background-color: #fff;

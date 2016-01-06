@@ -192,4 +192,60 @@ class Users
     {
         return $this->description;
     }
+    /**
+     * @var string
+     */
+    private $avatar;
+
+
+    /**
+     * Set avatar
+     *
+     * @param string $avatar
+     * @return Users
+     */
+    public function setAvatar($avatar)
+    {
+        $this->avatar = $avatar;
+
+        return $this;
+    }
+
+    /**
+     * Get avatar
+     *
+     * @return string 
+     */
+    public function getAvatar()
+    {
+        return $this->avatar;
+    }
+    /**
+     * @var string
+     */
+    private $phone;
+
+
+    /**
+     * Set phone
+     *
+     * @param string $phone
+     * @return Users
+     */
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+    /**
+     * Get phone
+     *
+     * @return string 
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
 }

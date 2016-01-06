@@ -44,6 +44,7 @@ ErpBundle\Entity\Issue:
             type: integer
             nullable: true
             unsigned: false
+            default: '1'
         summa:
             type: integer
             nullable: true
@@ -52,4 +53,8 @@ ErpBundle\Entity\Issue:
             type: datetime
             nullable: true
             column: date_start
+        project:
+            type: integer
+            nullable: true
+            unsigned: false
     lifecycleCallbacks: {  }

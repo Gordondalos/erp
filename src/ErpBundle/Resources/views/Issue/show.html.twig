@@ -1,6 +1,5 @@
 {% extends '@Erp/layout.html.twig' %}
-
-{% block body -%}
+{% block body %}
     {{ parent() }}
     <h1>Issue</h1>
 
@@ -45,6 +44,10 @@
             <tr>
                 <th>Datestart</th>
                 <td>{{ entity.dateStart|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Project</th>
+                <td>{{ entity.project }}</td>
             </tr>
         </tbody>
     </table>

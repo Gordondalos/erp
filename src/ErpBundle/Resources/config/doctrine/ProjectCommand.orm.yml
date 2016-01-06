@@ -1,0 +1,21 @@
+ErpBundle\Entity\ProjectCommand:
+    type: entity
+    table: project_command
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        user:
+            type: integer
+            nullable: true
+            unsigned: false
+        project:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

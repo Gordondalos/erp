@@ -1,6 +1,6 @@
-{% extends '::base.html.twig' %}
-
-{% block body -%}
+{% extends '@Erp/layout.html.twig' %}
+{% block body %}
+    {{ parent() }}
     <h1>Contact</h1>
 
     <table class="record_properties">
@@ -36,6 +36,10 @@
             <tr>
                 <th>Userdoer</th>
                 <td>{{ entity.userDoer }}</td>
+            </tr>
+            <tr>
+                <th>Project</th>
+                <td>{{ entity.project }}</td>
             </tr>
         </tbody>
     </table>

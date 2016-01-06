@@ -1,6 +1,5 @@
 {% extends '@Erp/layout.html.twig' %}
-
-{% block body -%}
+{% block body %}
     {{ parent() }}
     <h1>Comment</h1>
 
@@ -17,6 +16,18 @@
             <tr>
                 <th>Issueid</th>
                 <td>{{ entity.issueId }}</td>
+            </tr>
+            <tr>
+                <th>Projectid</th>
+                <td>{{ entity.projectId }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{{ entity.date|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>User</th>
+                <td>{{ entity.user }}</td>
             </tr>
         </tbody>
     </table>
