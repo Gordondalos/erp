@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f165498-413a-4d1e-a758-f4098d7f3c68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.en.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/common.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/common.sassc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Controller/ClientController.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Controller/ClientController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Controller/ContactController.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Controller/ContactController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/__base/base.css" afterPath="$PROJECT_DIR$/web/css/__base/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/__base/part/common.css" afterPath="$PROJECT_DIR$/web/css/__base/part/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/__base/part/common.sass" afterPath="$PROJECT_DIR$/src/sass/__base/part/common.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/index.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/index.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/settings.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/settings.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/show.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/show.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -42,62 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/show.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71455574">
-              <caret line="32" column="101" selection-start-line="32" selection-start-column="101" selection-end-line="32" selection-end-column="101" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-                <element signature="e#592#602#0#Twig" expanded="true" />
-                <element signature="e#976#986#0#Twig" expanded="true" />
-                <element signature="e#1688#1699#0#Twig" expanded="true" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="e#2990#2999#0#Twig" expanded="true" />
-                <element signature="e#4368#4378#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.25">
-              <caret line="20" column="96" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="96" />
-              <folding>
-                <element signature="e#508#519#0#Twig" expanded="false" />
-                <element signature="e#907#918#0#Twig" expanded="false" />
-                <element signature="e#1048#1059#0#Twig" expanded="false" />
-                <element signature="e#1292#1302#0#Twig" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="95" />
-              <folding>
-                <element signature="e#611#621#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/__base/part/common.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25">
-              <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -106,13 +49,81 @@
       <file leaf-file-name="ProjectController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8028169">
-              <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
+            <state vertical-scroll-proportion="-3.4444444">
+              <caret line="224" column="44" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
               <folding>
                 <element signature="e#40#82#0#PHP" expanded="true" />
-                <element signature="e#1729#1764#0#PHP" expanded="true" />
-                <element signature="e#2338#2352#0#PHP" expanded="true" />
-                <element signature="e#4945#4979#0#PHP" expanded="true" />
+                <element signature="e#1951#1970#1#PHP" expanded="true" />
+                <element signature="e#2043#2078#0#PHP" expanded="true" />
+                <element signature="e#2652#2666#0#PHP" expanded="true" />
+                <element signature="e#5440#5459#1#PHP" expanded="true" />
+                <element signature="e#6318#6337#1#PHP" expanded="true" />
+                <element signature="e#6605#6639#0#PHP" expanded="true" />
+                <element signature="e#7227#7243#0#PHP" expanded="true" />
+                <element signature="e#8122#8141#1#PHP" expanded="true" />
+                <element signature="e#8541#8555#0#PHP" expanded="true" />
+                <element signature="e#8619#8653#0#PHP" expanded="true" />
+                <element signature="e#9154#9173#1#PHP" expanded="true" />
+                <element signature="e#9440#9449#1#PHP" expanded="true" />
+                <element signature="e#9771#9787#0#PHP" expanded="true" />
+                <marker date="1452188637651" expanded="true" signature="447:523" placeholder="SELECT u FRO..ErpBundle..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.444445">
+              <caret line="280" column="43" selection-start-line="280" selection-start-column="43" selection-end-line="280" selection-end-column="43" />
+              <folding>
+                <element signature="e#592#602#0#Twig" expanded="true" />
+                <element signature="n#table#1;n#!!top" expanded="false" />
+                <element signature="e#6810#6822#0#Twig" expanded="true" />
+                <element signature="e#7715#7726#0#Twig" expanded="true" />
+                <element signature="e#8915#8927#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersType.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.6654205">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ContactController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1944447">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="44" />
+              <folding>
+                <element signature="e#3470#3489#1#PHP" expanded="true" />
+                <element signature="e#3533#3568#0#PHP" expanded="true" />
+                <element signature="e#4209#4223#0#PHP" expanded="true" />
+                <element signature="e#4300#4333#0#PHP" expanded="true" />
+                <element signature="e#4937#4953#1#PHP" expanded="true" />
+                <element signature="e#6104#6137#0#PHP" expanded="true" />
+                <element signature="e#6592#6611#1#PHP" expanded="true" />
+                <element signature="e#6827#6861#0#PHP" expanded="true" />
+                <element signature="e#7329#7348#1#PHP" expanded="true" />
+                <element signature="e#7616#7650#0#PHP" expanded="true" />
+                <element signature="e#8316#8332#0#PHP" expanded="true" />
+                <element signature="e#9497#9516#1#PHP" expanded="true" />
+                <element signature="e#9916#9930#0#PHP" expanded="true" />
+                <element signature="e#9994#10028#0#PHP" expanded="true" />
+                <element signature="e#10535#10554#1#PHP" expanded="true" />
+                <element signature="e#10821#10830#1#PHP" expanded="true" />
+                <element signature="e#11152#11168#0#PHP" expanded="true" />
+                <marker date="1452188538063" expanded="true" signature="392:498" placeholder="SELECT u FRO..ErpBundle..." />
+                <marker date="1452188538063" expanded="true" signature="723:809" placeholder="SELECT u FRO..ErpBundle..." />
+                <marker date="1452188538063" expanded="true" signature="723:831" placeholder="SELECT u FRO..ErpBundle..." />
               </folding>
             </state>
           </provider>
@@ -121,55 +132,43 @@
       <file leaf-file-name="IssueController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="81.30556">
-              <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="31" />
+            <state vertical-scroll-proportion="-5.2222223">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding>
+                <element signature="e#2642#2659#1#PHP" expanded="true" />
                 <element signature="e#2703#2736#0#PHP" expanded="true" />
                 <element signature="e#3344#3356#0#PHP" expanded="true" />
                 <element signature="e#3433#3464#0#PHP" expanded="true" />
                 <element signature="e#4027#4041#1#PHP" expanded="true" />
                 <element signature="e#5037#5068#0#PHP" expanded="true" />
+                <element signature="e#5486#5503#1#PHP" expanded="true" />
                 <element signature="e#5717#5749#0#PHP" expanded="true" />
+                <element signature="e#6201#6218#1#PHP" expanded="true" />
                 <element signature="e#6484#6516#0#PHP" expanded="true" />
                 <element signature="e#7139#7153#0#PHP" expanded="true" />
+                <element signature="e#8165#8182#1#PHP" expanded="true" />
                 <element signature="e#8580#8592#0#PHP" expanded="true" />
                 <element signature="e#8656#8688#0#PHP" expanded="true" />
+                <element signature="e#9193#9210#1#PHP" expanded="true" />
                 <element signature="e#9475#9482#1#PHP" expanded="true" />
                 <element signature="e#9802#9816#0#PHP" expanded="true" />
-                <marker date="1452177629688" expanded="true" signature="371:420" placeholder="SELECT u FRO..ErpBundle..." />
-                <marker date="1452177629688" expanded="true" signature="371:421" placeholder="SELECT u FRO..ErpBundle..." />
-                <marker date="1452177629688" expanded="true" signature="371:446" placeholder="SELECT u FRO..ErpBundle..." />
+                <marker date="1452185851226" expanded="true" signature="372:446" placeholder="SELECT u FRO..ErpBundle..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.194445">
-              <caret line="76" column="86" selection-start-line="76" selection-start-column="86" selection-end-line="76" selection-end-column="104" />
+            <state vertical-scroll-proportion="-2.25">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="97" selection-end-column="9" />
               <folding>
-                <element signature="e#12#28#0#Twig" expanded="false" />
-                <element signature="e#986#998#0#Twig" expanded="false" />
-                <element signature="e#1089#1101#0#Twig" expanded="false" />
-                <element signature="e#2437#2449#0#Twig" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.25">
-              <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="false" />
                 <element signature="n#table#0;n#!!top" expanded="false" />
-                <element signature="e#702#712#0#Twig" expanded="false" />
-                <element signature="e#2331#2341#0#Twig" expanded="false" />
-                <element signature="e#2471#2481#0#Twig" expanded="false" />
+                <element signature="e#615#627#0#Twig" expanded="false" />
+                <element signature="e#2131#2143#0#Twig" expanded="false" />
+                <element signature="e#2273#2285#0#Twig" expanded="false" />
+                <element signature="e#2518#2529#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -215,16 +214,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/ClientProject/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/ClientProject/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Comment/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Comment/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Comment/new.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Comment/show.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/settings.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/IssueStatus/edit.html.twig" />
@@ -254,17 +248,22 @@
         <option value="$PROJECT_DIR$/src/ErpBundle/Controller/TypeContactController.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Controller/ContactController.php" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.en.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php" />
         <option value="$PROJECT_DIR$/src/sass/__base/part/common.sass" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/settings.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Controller/ClientController.php" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Controller/ContactController.php" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/show.html.twig" />
       </list>
     </option>
@@ -508,12 +507,26 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="erp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ErpBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -535,7 +548,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -690,7 +703,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452170634182</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Сделал хороший вывод проекта">
+      <created>1452180744366</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1452180744366</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -705,7 +724,7 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.312026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35102925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3445287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2561629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -747,73 +766,14 @@
     <MESSAGE value="Поправил задачи" />
     <MESSAGE value="Сделал контакты" />
     <MESSAGE value="Сделал верхнюю навигацию" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал верхнюю навигацию" />
+    <MESSAGE value="Сделал хороший вывод проекта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал хороший вывод проекта" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/settings.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/IssueStatus/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/IssueStatus/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1062,19 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37876105">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="75" selection-end-column="28" />
-          <folding>
-            <element signature="e#615#627#0#Twig" expanded="false" />
-            <element signature="e#2131#2143#0#Twig" expanded="false" />
-            <element signature="e#2273#2285#0#Twig" expanded="false" />
-            <element signature="e#2518#2529#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9044248">
@@ -1091,38 +1038,6 @@
         <state vertical-scroll-proportion="0.860177">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ContactController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8088496">
-          <caret line="158" column="11" selection-start-line="158" selection-start-column="11" selection-end-line="158" selection-end-column="11" />
-          <folding>
-            <element signature="e#2481#2516#0#PHP" expanded="false" />
-            <element signature="e#5775#5809#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.0">
-          <caret line="36" column="104" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="104" />
-          <folding>
-            <element signature="e#318#323#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56143665">
-          <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
-          <folding>
-            <element signature="e#141#153#0#Twig" expanded="false" />
-            <element signature="e#237#242#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1158,19 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.194445">
-          <caret line="76" column="86" selection-start-line="76" selection-start-column="86" selection-end-line="76" selection-end-column="104" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-            <element signature="e#986#998#0#Twig" expanded="false" />
-            <element signature="e#1089#1101#0#Twig" expanded="false" />
-            <element signature="e#2437#2449#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.25">
@@ -1185,43 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="81.30556">
-          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="31" />
-          <folding>
-            <element signature="e#2703#2736#0#PHP" expanded="true" />
-            <element signature="e#3344#3356#0#PHP" expanded="true" />
-            <element signature="e#3433#3464#0#PHP" expanded="true" />
-            <element signature="e#4027#4041#1#PHP" expanded="true" />
-            <element signature="e#5037#5068#0#PHP" expanded="true" />
-            <element signature="e#5717#5749#0#PHP" expanded="true" />
-            <element signature="e#6484#6516#0#PHP" expanded="true" />
-            <element signature="e#7139#7153#0#PHP" expanded="true" />
-            <element signature="e#8580#8592#0#PHP" expanded="true" />
-            <element signature="e#8656#8688#0#PHP" expanded="true" />
-            <element signature="e#9475#9482#1#PHP" expanded="true" />
-            <element signature="e#9802#9816#0#PHP" expanded="true" />
-            <marker date="1452177629688" expanded="true" signature="371:420" placeholder="SELECT u FRO..ErpBundle..." />
-            <marker date="1452177629688" expanded="true" signature="371:421" placeholder="SELECT u FRO..ErpBundle..." />
-            <marker date="1452177629688" expanded="true" signature="371:446" placeholder="SELECT u FRO..ErpBundle..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8028169">
-          <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
-          <folding>
-            <element signature="e#40#82#0#PHP" expanded="true" />
-            <element signature="e#1729#1764#0#PHP" expanded="true" />
-            <element signature="e#2338#2352#0#PHP" expanded="true" />
-            <element signature="e#4945#4979#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/__base/part/common.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25">
@@ -1230,50 +1095,240 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml">
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.25519848">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding>
+            <element signature="e#141#153#0#Twig" expanded="false" />
+            <element signature="e#237#242#0#Twig" expanded="false" />
+            <element signature="e#328#335#0#Twig" expanded="false" />
+            <element signature="e#517#523#0#Twig" expanded="false" />
+            <element signature="e#615#622#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/settings.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8979206">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66351604">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4593573">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.25">
-          <caret line="20" column="96" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="96" />
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="83" selection-end-column="12" />
           <folding>
-            <element signature="e#508#519#0#Twig" expanded="false" />
-            <element signature="e#907#918#0#Twig" expanded="false" />
-            <element signature="e#1048#1059#0#Twig" expanded="false" />
-            <element signature="e#1292#1302#0#Twig" expanded="false" />
+            <element signature="e#12#28#0#Twig" expanded="false" />
+            <element signature="e#194#205#0#Twig" expanded="false" />
+            <element signature="n#table#0;n#!!top" expanded="false" />
+            <element signature="e#986#998#0#Twig" expanded="false" />
+            <element signature="e#1089#1101#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.5463138">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="100" />
           <folding>
-            <element signature="e#611#621#0#Twig" expanded="true" />
+            <element signature="e#611#621#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+            <element signature="e#317#323#0#Twig" expanded="false" />
+            <element signature="e#2574#2586#0#Twig" expanded="false" />
+            <element signature="e#2685#2697#0#Twig" expanded="false" />
+            <element signature="e#3068#3078#0#Twig" expanded="false" />
+            <element signature="e#4444#4456#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ClientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="e#623#641#1#PHP" expanded="true" />
+            <element signature="e#1314#1346#0#PHP" expanded="true" />
+            <element signature="e#2519#2537#1#PHP" expanded="true" />
+            <element signature="e#2990#3023#0#PHP" expanded="true" />
+            <element signature="e#3434#3452#1#PHP" expanded="true" />
+            <element signature="e#4666#4684#1#PHP" expanded="true" />
+            <element signature="e#5699#5717#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.25">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="23" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51039696">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.25">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="97" selection-end-column="9" />
+          <folding>
+            <element signature="n#table#0;n#!!top" expanded="false" />
+            <element signature="e#615#627#0#Twig" expanded="false" />
+            <element signature="e#2131#2143#0#Twig" expanded="false" />
+            <element signature="e#2273#2285#0#Twig" expanded="false" />
+            <element signature="e#2518#2529#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2222223">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#2642#2659#1#PHP" expanded="true" />
+            <element signature="e#2703#2736#0#PHP" expanded="true" />
+            <element signature="e#3344#3356#0#PHP" expanded="true" />
+            <element signature="e#3433#3464#0#PHP" expanded="true" />
+            <element signature="e#4027#4041#1#PHP" expanded="true" />
+            <element signature="e#5037#5068#0#PHP" expanded="true" />
+            <element signature="e#5486#5503#1#PHP" expanded="true" />
+            <element signature="e#5717#5749#0#PHP" expanded="true" />
+            <element signature="e#6201#6218#1#PHP" expanded="true" />
+            <element signature="e#6484#6516#0#PHP" expanded="true" />
+            <element signature="e#7139#7153#0#PHP" expanded="true" />
+            <element signature="e#8165#8182#1#PHP" expanded="true" />
+            <element signature="e#8580#8592#0#PHP" expanded="true" />
+            <element signature="e#8656#8688#0#PHP" expanded="true" />
+            <element signature="e#9193#9210#1#PHP" expanded="true" />
+            <element signature="e#9475#9482#1#PHP" expanded="true" />
+            <element signature="e#9802#9816#0#PHP" expanded="true" />
+            <marker date="1452185851226" expanded="true" signature="372:446" placeholder="SELECT u FRO..ErpBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1944447">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="e#3470#3489#1#PHP" expanded="true" />
+            <element signature="e#3533#3568#0#PHP" expanded="true" />
+            <element signature="e#4209#4223#0#PHP" expanded="true" />
+            <element signature="e#4300#4333#0#PHP" expanded="true" />
+            <element signature="e#4937#4953#1#PHP" expanded="true" />
+            <element signature="e#6104#6137#0#PHP" expanded="true" />
+            <element signature="e#6592#6611#1#PHP" expanded="true" />
+            <element signature="e#6827#6861#0#PHP" expanded="true" />
+            <element signature="e#7329#7348#1#PHP" expanded="true" />
+            <element signature="e#7616#7650#0#PHP" expanded="true" />
+            <element signature="e#8316#8332#0#PHP" expanded="true" />
+            <element signature="e#9497#9516#1#PHP" expanded="true" />
+            <element signature="e#9916#9930#0#PHP" expanded="true" />
+            <element signature="e#9994#10028#0#PHP" expanded="true" />
+            <element signature="e#10535#10554#1#PHP" expanded="true" />
+            <element signature="e#10821#10830#1#PHP" expanded="true" />
+            <element signature="e#11152#11168#0#PHP" expanded="true" />
+            <marker date="1452188538063" expanded="true" signature="392:498" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1452188538063" expanded="true" signature="723:809" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1452188538063" expanded="true" signature="723:831" placeholder="SELECT u FRO..ErpBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4444444">
+          <caret line="224" column="44" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
+          <folding>
+            <element signature="e#40#82#0#PHP" expanded="true" />
+            <element signature="e#1951#1970#1#PHP" expanded="true" />
+            <element signature="e#2043#2078#0#PHP" expanded="true" />
+            <element signature="e#2652#2666#0#PHP" expanded="true" />
+            <element signature="e#5440#5459#1#PHP" expanded="true" />
+            <element signature="e#6318#6337#1#PHP" expanded="true" />
+            <element signature="e#6605#6639#0#PHP" expanded="true" />
+            <element signature="e#7227#7243#0#PHP" expanded="true" />
+            <element signature="e#8122#8141#1#PHP" expanded="true" />
+            <element signature="e#8541#8555#0#PHP" expanded="true" />
+            <element signature="e#8619#8653#0#PHP" expanded="true" />
+            <element signature="e#9154#9173#1#PHP" expanded="true" />
+            <element signature="e#9440#9449#1#PHP" expanded="true" />
+            <element signature="e#9771#9787#0#PHP" expanded="true" />
+            <marker date="1452188637651" expanded="true" signature="447:523" placeholder="SELECT u FRO..ErpBundle..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71455574">
-          <caret line="32" column="101" selection-start-line="32" selection-start-column="101" selection-end-line="32" selection-end-column="101" />
+        <state vertical-scroll-proportion="-9.444445">
+          <caret line="280" column="43" selection-start-line="280" selection-start-column="43" selection-end-line="280" selection-end-column="43" />
           <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
             <element signature="e#592#602#0#Twig" expanded="true" />
-            <element signature="e#976#986#0#Twig" expanded="true" />
-            <element signature="e#1688#1699#0#Twig" expanded="true" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="e#2990#2999#0#Twig" expanded="true" />
-            <element signature="e#4368#4378#0#Twig" expanded="true" />
+            <element signature="n#table#1;n#!!top" expanded="false" />
+            <element signature="e#6810#6822#0#Twig" expanded="true" />
+            <element signature="e#7715#7726#0#Twig" expanded="true" />
+            <element signature="e#8915#8927#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6654205">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -14,6 +14,25 @@ use ErpBundle\Form\ContactType;
  */
 class ContactController extends Controller
 {
+
+    public function getAllContactProject($em,$id_project){
+        //  var_dump($id);
+        $dql   = "SELECT u FROM ErpBundle:Contact u WHERE u.project = ".$id_project." And u.client != 0 ORDER BY u.date desc ";
+        $query = $em->createQuery($dql);
+        // var_dump($query);
+        return $query->getResult();
+
+    }
+    public function getAllContactProjectDoer($em,$id_project){
+        //  var_dump($id);
+        $dql   = "SELECT u FROM ErpBundle:Contact u WHERE u.project = ".$id_project." And u.userDoer != 0 ORDER BY u.date desc ";
+        $query = $em->createQuery($dql);
+        // var_dump($query);
+        return $query->getResult();
+
+    }
+
+
     public function Alluser(){
         $us = new UsersController();
         $em = $this->getDoctrine()->getManager();
@@ -41,6 +60,20 @@ class ContactController extends Controller
             $projects += [$projectId => $projectName];
         }
         return  $projects;
+    }
+
+
+    public function AllTypeExt($em){
+        $us = new TypeContactController();
+        $type = $us->getAllType($em);
+        $types= array();
+        foreach ($type  as $value ) {
+            $arr = (array)($value);
+            $typeId = array_shift($arr);
+            $typeName = array_shift($arr);
+            $types += [$typeId => $typeName];
+        }
+        return  $types;
     }
 
 

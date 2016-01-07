@@ -1,49 +1,50 @@
 {% extends '::base.html.twig' %}
 {% block body %}
 
-    <h1>Client list</h1>
+    <h1>{{ 'Client list'|trans }}</h1>
 
+    <div class="right">
+        <ul>
+            <li>
+                <a href="{{ path('client_new') }}">
+                    {{ 'Create a new entry'|trans }}
+                </a>
+            </li>
+        </ul>
+    </div>
     <table class="records_list">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Adress</th>
-                <th>Email</th>
-                <th>Description</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>{{ 'id'|trans }}</th>
+            <th>{{ 'Client'|trans }}</th>
+            <th>{{ 'Phone'|trans }}</th>
+            <th>{{ 'Adress'|trans }}</th>
+            <th>{{ 'Email'|trans }}</th>
+            <th>{{ 'description'|trans }}</th>
+            <th>{{ 'Actions'|trans }}</th>
+        </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
                 <td><a href="{{ path('client_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>{{ entity.name }}</td>
+                <td><a href="{{ path('client_show', { 'id': entity.id }) }}">{{ entity.name }}</a></td>
                 <td>{{ entity.phone }}</td>
                 <td>{{ entity.adress }}</td>
                 <td>{{ entity.email }}</td>
                 <td>{{ entity.description }}</td>
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('client_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('client_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+                    <ul>
+
+                        <li>
+                            <a href="{{ path('client_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
+                        </li>
+                    </ul>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('client_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+
+{% endblock %}

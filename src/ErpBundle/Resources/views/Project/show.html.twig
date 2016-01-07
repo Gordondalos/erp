@@ -174,6 +174,159 @@
 
 
 
+    <h2>{{ 'Contact list'|trans }} {{ 'with client'|trans }}</h2>
+    <div class="right">
+        <ul>
+            <li>
+                <a href="{{ path('contact_new') }}">
+                    {{ "Create a new entry"|trans }}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <table class="records_list">
+        <thead>
+        <tr>
+
+            <th>{{ 'Date'|trans }}</th>
+            <th>{{ 'User contact'|trans }}</th>
+            <th>{{ 'Type contact'|trans }}</th>
+            <th>{{ 'description'|trans }}</th>
+            <th>{{ 'Nextdatecontact'|trans }}</th>
+
+
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in contactProject %}
+            <tr>
+
+                <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+
+                {% for key,user in users %}
+
+                    {% if key ==  entity.user %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+
+                {#<td>{{ entity.type }}</td>#}
+                {% for key,type in types %}
+
+                    {% if key ==  entity.type %}
+                        <td>{{ type }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+                <td><a href="{{ path('contact_show', { 'id': entity.id }) }}">{{ entity.desctiption }}</a></td>
+                <td>{% if entity.nextDateContact %}{{ entity.nextDateContact|date('Y-m-d H:i:s') }}{% endif %}</td>
+
+
+
+                {#{% for key,user in users %}#}
+
+                    {#{% if key ==  entity.userDoer %}#}
+                        {#<td>{{ user }}</td>#}
+                    {#{% endif %}#}
+
+                {#{% endfor %}#}
+
+                <td>
+                    <ul>
+
+                        <li>
+                            <a href="{{ path('contact_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+    <h2>{{ 'Contact list'|trans }} {{ 'with doer'|trans }}</h2>
+    <div class="right">
+        <ul>
+            <li>
+                <a href="{{ path('contact_new') }}">
+                    {{ "Create a new entry"|trans }}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <table class="records_list">
+        <thead>
+        <tr>
+
+            <th>{{ 'Date'|trans }}</th>
+            <th>{{ 'User contact'|trans }}</th>
+            <th>{{ 'Type contact'|trans }}</th>
+            <th>{{ 'description'|trans }}</th>
+            <th>{{ 'Nextdatecontact'|trans }}</th>
+            <th>{{ 'Doer'|trans }}</th>
+
+
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in contactProjectDoer %}
+            <tr>
+
+                <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+
+                {% for key,user in users %}
+
+                    {% if key ==  entity.user %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+
+                {#<td>{{ entity.type }}</td>#}
+                {% for key,type in types %}
+
+                    {% if key ==  entity.type %}
+                        <td>{{ type }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+                <td><a href="{{ path('contact_show', { 'id': entity.id }) }}">{{ entity.desctiption }}</a></td>
+                <td>{% if entity.nextDateContact %}{{ entity.nextDateContact|date('Y-m-d H:i:s') }}{% endif %}</td>
+
+
+
+                {% for key,user in users %}
+
+                {% if key ==  entity.userDoer %}
+                <td>{{ user }}</td>
+                {% endif %}
+
+                {% endfor %}
+
+                <td>
+                    <ul>
+
+                        <li>
+                            <a href="{{ path('contact_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
 
 
 

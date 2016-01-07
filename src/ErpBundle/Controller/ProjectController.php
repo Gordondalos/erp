@@ -16,6 +16,18 @@ use ErpBundle\Form\ProjectType;
 class ProjectController extends Controller
 {
 
+    // Проекты Клиента
+    public function getClientProject($em,$id){
+
+        //  var_dump($id);
+        $dql   = "SELECT u FROM ErpBundle:Project u WHERE u.client = ".$id."ORDER BY u.id Desc ";
+        $query = $em->createQuery($dql);
+        // var_dump($query);
+        return $query->getResult();
+
+    }
+
+
     public function AllClient()
     {
         $em = $this->getDoctrine()->getManager();
@@ -50,6 +62,9 @@ class ProjectController extends Controller
         }
         return $users;
     }
+
+
+
 
 
     public function getAllProject($em){
@@ -166,6 +181,10 @@ class ProjectController extends Controller
         ));
     }
 
+
+
+
+
     /**
      * Finds and displays a Project entity.
      *
@@ -173,12 +192,24 @@ class ProjectController extends Controller
     public function showAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $issueObject = new IssueController();
-        $users = $this->Alluser();
-        $clients = $this->AllClient();
-        $statuses = $issueObject->AllStatuses($em);
 
-        $issuearr = $issueObject->getIssueProject($id,$em);
+
+        $issueObject = new IssueController();
+        // список исполнителей
+        $users = $this->Alluser();
+        //список клиентов
+        $clients = $this->AllClient();
+        // статусы задач
+        $statuses = $issueObject->AllStatuses($em);
+        // список задач
+        $issuearr = $issueObject->getIssueProject($em,$id);
+        //Список контактов
+        $contactObject = new ContactController();
+        $contactProject = $contactObject->getAllContactProject($em,$id);
+        $contactProjectDoer = $contactObject->getAllContactProjectDoer($em,$id);
+
+        // типы контактов
+        $types = $contactObject->AllTypeExt($em);
 
         $entity = $em->getRepository('ErpBundle:Project')->find($id);
 
@@ -197,6 +228,9 @@ class ProjectController extends Controller
             'clients' => $clients,
             'issuearr' => $issuearr,
             'statuses' => $statuses,
+            'types' => $types,
+            'contactProject' => $contactProject,
+            'contactProjectDoer' => $contactProjectDoer,
             'delete_form' => $deleteForm->createView(),
         ));
     }

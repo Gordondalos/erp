@@ -22,3 +22,15 @@ status: Статус
 Datestart: Начало выполнения
 id: №
 description: Описание
+Phone: Телефон
+Adress: Адресс
+Email: Электронная почта
+Client list: Список Клиентов
+Contact list: Список контактов
+User contact: Контактировал
+Type contact: Тип Контакта
+Nextdatecontact: Дата следующего контакта
+Date: Дата
+with client: c клиентом
+with doer: c командой
+Doer: Сотрудник

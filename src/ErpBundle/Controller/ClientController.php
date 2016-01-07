@@ -108,9 +108,18 @@ class ClientController extends Controller
         }
 
         $deleteForm = $this->createDeleteForm($id);
+        $ProjectObject = new ProjectController();
+        $clientProject = $ProjectObject->getClientProject($em,$id);
+
+        $userObject = new UsersController();
+        $users = $userObject->getAllUserAction($em);
+//var_dump($users);
+
 
         return $this->render('ErpBundle:Client:show.html.twig', array(
             'entity'      => $entity,
+            'clientProject' => $clientProject,
+            'users' => $users,
             'delete_form' => $deleteForm->createView(),
         ));
     }
