@@ -208,7 +208,7 @@
                 {% for key,user in users %}
 
                     {% if key ==  entity.user %}
-                        <td>{{ user }}</td>
+                        <td><a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a></td>
                     {% endif %}
 
                 {% endfor %}
@@ -286,7 +286,7 @@
                 {% for key,user in users %}
 
                     {% if key ==  entity.user %}
-                        <td>{{ user }}</td>
+                        <td><a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a></td>
                     {% endif %}
 
                 {% endfor %}
@@ -309,7 +309,7 @@
                 {% for key,user in users %}
 
                 {% if key ==  entity.userDoer %}
-                <td>{{ user }}</td>
+                    <td><a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a></td>
                 {% endif %}
 
                 {% endfor %}
