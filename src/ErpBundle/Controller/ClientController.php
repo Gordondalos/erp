@@ -15,6 +15,12 @@ use ErpBundle\Form\ClientType;
 class ClientController extends Controller
 {
 
+    public function getAllClientAction($em){
+        $AllClient = $em->getRepository('ErpBundle:Client')->findAll();
+        return $AllClient;
+    }
+
+
     /**
      * Lists all Client entities.
      *

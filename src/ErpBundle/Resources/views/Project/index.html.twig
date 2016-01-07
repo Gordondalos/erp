@@ -1,6 +1,6 @@
-{% extends '@Erp/layout.html.twig' %}
+{% extends '::base.html.twig' %}
 {% block body %}
-    {{ parent() }}
+
     <h1>Project list</h1>
 
     <table class="records_list">
@@ -9,7 +9,7 @@
                 <th>Id</th>
                 <th>Projectname</th>
                 <th>Projectdescription</th>
-                <th>Progectmanager</th>
+                <th>Projectmanager</th>
                 <th>Projectcreator</th>
                 <th>Datecreate</th>
                 <th>Datefinish</th>
@@ -24,11 +24,39 @@
                 <td><a href="{{ path('project_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.projectName }}</td>
                 <td>{{ entity.projectDescription }}</td>
-                <td>{{ entity.progectManager }}</td>
-                <td>{{ entity.projectCreator }}</td>
+                {% for key,user in users %}
+
+                    {% if key == entity.projectManager %}
+                        <td>{{ user }}</td>
+                      {% endif %}
+
+                {% endfor %}
+                {#<td>{{ entity.projectManager }}</td>#}
+                {#<td>{{ entity.projectCreator }}</td>#}
+
+
+                {% for key,user in users %}
+
+                    {% if key == entity.projectCreator %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+
                 <td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{{ entity.client }}</td>
+
+
+
+                {% for key,client in clients %}
+
+                    {% if key == entity.client %}
+                        <td>{{ client }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
                 <td>{{ entity.summ }}</td>
                 <td>
                 <ul>

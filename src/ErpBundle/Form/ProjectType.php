@@ -17,7 +17,7 @@ class ProjectType extends AbstractType
         $builder
             ->add('projectName')
             ->add('projectDescription')
-            ->add('progectManager')
+            ->add('projectManager')
             ->add('projectCreator')
             ->add('dateCreate')
             ->add('dateFinish')

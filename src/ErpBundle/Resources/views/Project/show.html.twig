@@ -1,6 +1,6 @@
-{% extends '@Erp/layout.html.twig' %}
-{% block body %}
-    {{ parent() }}
+{% extends '::base.html.twig' %}
+
+{% block body -%}
     <h1>Project</h1>
 
     <table class="record_properties">
@@ -18,12 +18,24 @@
                 <td>{{ entity.projectDescription }}</td>
             </tr>
             <tr>
-                <th>Progectmanager</th>
-                <td>{{ entity.progectManager }}</td>
+                <th>Projectmanager</th>
+                {% for key,user in users %}
+
+                    {% if key == entity.projectManager %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>Projectcreator</th>
-                <td>{{ entity.projectCreator }}</td>
+                {% for key,user in users %}
+
+                    {% if key == entity.projectCreator %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>Datecreate</th>
@@ -35,7 +47,14 @@
             </tr>
             <tr>
                 <th>Client</th>
-                <td>{{ entity.client }}</td>
+                {% for key,client in clients %}
+
+                    {% if key == entity.client %}
+                        <td>{{ client }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
             </tr>
             <tr>
                 <th>Summ</th>

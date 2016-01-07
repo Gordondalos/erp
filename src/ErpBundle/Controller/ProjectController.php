@@ -15,6 +15,40 @@ use ErpBundle\Form\ProjectType;
 class ProjectController extends Controller
 {
 
+    public function AllClient(){
+        $em = $this->getDoctrine()->getManager();
+        $us = new ClientController();
+        $client = $us->getAllClientAction($em);
+        $clients = array();
+        foreach ($client as $value ) {
+            $arr = (array)($value);
+
+            $clientId = array_shift($arr);
+            $clientName = array_shift($arr);
+            $clients += [$clientId => $clientName];
+
+        }
+        return $clients;
+
+    }
+
+
+    public function Alluser(){
+
+        $us = new UsersController();
+        $em = $this->getDoctrine()->getManager();
+        $user = $us->getAllUserAction($em);
+        $users = array();
+        foreach ($user as $value ) {
+            $arr = (array)($value);
+
+            $UserId = array_shift($arr);
+            $UserName = array_shift($arr);
+            $users += [$UserId => $UserName];
+        }
+        return  $users;
+    }
+
     /**
      * Lists all Project entities.
      *
@@ -22,11 +56,17 @@ class ProjectController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
+        $users = $this->Alluser();
+        $clients = $this->AllClient();
 
         $entities = $em->getRepository('ErpBundle:Project')->findAll();
 
+
+//        var_dump($users);
         return $this->render('ErpBundle:Project:index.html.twig', array(
             'entities' => $entities,
+            'users' => $users,
+            'clients' => $clients,
         ));
     }
     /**
@@ -62,9 +102,39 @@ class ProjectController extends Controller
      */
     private function createCreateForm(Project $entity)
     {
+       // $em = $this->getDoctrine()->getManager();
+        $users = $this->Alluser();
+        $clients = $this->AllClient();
+
+
+        //var_dump($clients);
+
+        $DateCreate = new \DateTime('today');
+        $DateCreate =  $DateCreate->format('Y-m-d H:i');
+
+       // var_dump($DateCreate);
+
         $form = $this->createForm(new ProjectType(), $entity, array(
             'action' => $this->generateUrl('project_create'),
             'method' => 'POST',
+        ));
+
+        //$form->add('dateCreate', $DateCreate );
+
+        $form->add('projectManager', 'choice', array('label' => 'Выберете Менеджера',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('projectCreator', 'choice', array('label' => 'Создатель проекта',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+
+        $form->add('client', 'choice', array('label' => 'Выберете Клиента',
+            'multiple' => false,
+            'choices' => $clients,
         ));
 
         $form->add('submit', 'submit', array('label' => 'Create'));
@@ -101,10 +171,16 @@ class ProjectController extends Controller
             throw $this->createNotFoundException('Unable to find Project entity.');
         }
 
+
         $deleteForm = $this->createDeleteForm($id);
+
+        $users = $this->Alluser();
+        $clients = $this->AllClient();
 
         return $this->render('ErpBundle:Project:show.html.twig', array(
             'entity'      => $entity,
+            'users'      => $users,
+            'clients'      => $clients,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -128,6 +204,7 @@ class ProjectController extends Controller
 
         return $this->render('ErpBundle:Project:edit.html.twig', array(
             'entity'      => $entity,
+
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
@@ -142,10 +219,31 @@ class ProjectController extends Controller
     */
     private function createEditForm(Project $entity)
     {
+
+        $users = $this->Alluser();
+        $clients = $this->AllClient();
         $form = $this->createForm(new ProjectType(), $entity, array(
             'action' => $this->generateUrl('project_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
+
+
+        $form->add('projectManager', 'choice', array('label' => 'Выберите Менеджера',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('projectCreator', 'choice', array('label' => 'Измените Автора',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+
+        $form->add('client', 'choice', array('label' => 'Измените Клиента',
+            'multiple' => false,
+            'choices' => $clients,
+        ));
+
 
         $form->add('submit', 'submit', array('label' => 'Update'));
 

@@ -15,13 +15,11 @@ use ErpBundle\Form\RoleType;
 class RoleController extends Controller
 {
 
-
+// возвращает все роли доступные в проекте
     public function allRoleAction($em){
         $allRole = $em->getRepository('ErpBundle:Role')->findAll();
         return $allRole;
     }
-
-
 
 
     /**

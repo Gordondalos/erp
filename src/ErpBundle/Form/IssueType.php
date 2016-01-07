@@ -24,6 +24,7 @@ class IssueType extends AbstractType
             ->add('status')
             ->add('summa')
             ->add('dateStart')
+            ->add('project')
         ;
     }
     

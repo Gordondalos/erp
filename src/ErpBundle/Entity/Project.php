@@ -25,9 +25,9 @@ class Project
     private $projectDescription;
 
     /**
-     * @var string
+     * @var integer
      */
-    private $progectManager;
+    private $projectManager;
 
     /**
      * @var integer
@@ -112,26 +112,26 @@ class Project
     }
 
     /**
-     * Set progectManager
+     * Set projectManager
      *
-     * @param string $progectManager
+     * @param integer $projectManager
      * @return Project
      */
-    public function setProgectManager($progectManager)
+    public function setProjectManager($projectManager)
     {
-        $this->progectManager = $progectManager;
+        $this->projectManager = $projectManager;
 
         return $this;
     }
 
     /**
-     * Get progectManager
+     * Get projectManager
      *
-     * @return string 
+     * @return integer 
      */
-    public function getProgectManager()
+    public function getProjectManager()
     {
-        return $this->progectManager;
+        return $this->projectManager;
     }
 
     /**

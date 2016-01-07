@@ -2,10 +2,15 @@
 <html>
 {% include './parts/head.html.twig' %}
     <body>
-    {% block menu %}{% endblock %}
+    {% block menu %}
+        {% include '@Erp/_layout_parts/menu.html.twig' %}
+    {% endblock %}
     <div class="container">
         <div class="row">
+
             {% block body %}{% endblock %}
+
+
         </div>
     </div>
 

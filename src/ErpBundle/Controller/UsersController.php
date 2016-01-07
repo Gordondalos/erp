@@ -15,6 +15,11 @@ use ErpBundle\Form\UsersType;
 class UsersController extends Controller
 {
 
+    public function getAllUserAction($em){
+        $AllUser = $em->getRepository('ErpBundle:Users')->findAll();
+        return $AllUser;
+    }
+
     /**
      * Lists all Users entities.
      *
@@ -98,7 +103,7 @@ class UsersController extends Controller
         ));
 
 
-        $form->add('role', 'choice', array('label' => 'Выберете роль',
+        $form->add('role', 'choice', array('label' => 'Выберите роль',
             'multiple' => false,
             'choices' => $roles,
         ));
@@ -212,7 +217,7 @@ class UsersController extends Controller
             'method' => 'PUT',
         ));
 
-        $form->add('role', 'choice', array('label' => 'Выберете роль',
+        $form->add('role', 'choice', array('label' => 'Выберите роль',
             'multiple' => false,
             'choices' => $roles,
         ));

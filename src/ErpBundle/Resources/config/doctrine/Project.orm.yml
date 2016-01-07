@@ -22,11 +22,11 @@ ErpBundle\Entity\Project:
             length: 65535
             fixed: false
             column: project_description
-        progectManager:
+        projectManager:
             type: integer
             nullable: false
             unsigned: false
-            column: progect_manager
+            column: project_manager
         projectCreator:
             type: integer
             nullable: false
