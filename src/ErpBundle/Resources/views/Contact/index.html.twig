@@ -1,48 +1,59 @@
 {% extends '::base.html.twig' %}
 {% block body %}
 
-    <h1>Contact list</h1>
+    <h1>{{ 'Contact list'|trans }}</h1>
+
+    <div class="right">
+        <ul>
+            <li>
+                <a href="{{ path('contact_new') }}">
+                   {{ 'Create a new entry'|trans }}
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <table class="records_list">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Date</th>
-                <th>Client</th>
-                <th>User</th>
-                <th>Type</th>
-                <th>Desctiption</th>
-                <th>Nextdatecontact</th>
-                <th>Userdoer</th>
-                <th>Project</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+
+            <th>{{ 'Date'|trans }}</th>
+            <th>{{ 'Client'|trans }}</th>
+            <th>{{ 'User contact'|trans }}</th>
+            <th>{{ "Type contact"|trans }}</th>
+            <th>{{ "description"|trans }}</th>
+            <th>{{ 'Nextdatecontact'|trans }}</th>
+            <th>{{ 'Doer'|trans }}</th>
+            <th>{{ "Projectname"|trans }}</th>
+            <th>{{ 'Actions'|trans }}</th>
+        </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('contact_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+
                 <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
 
-                {% for key,client in clients %}
+                <td>
+                    {% for key,client in clients %}
 
-                    {% if key == entity.client %}
-                        <td>{{ client }}</td>
-                    {% endif %}
+                        {% if key == entity.client %}
+                            {{ client }}
+                        {% endif %}
 
-                {% endfor %}
+                    {% endfor %}
+                </td>
 
 
+                <td>
+                    {% for key,user in users %}
 
+                        {% if key ==  entity.user %}
+                            {{ user }}
+                        {% endif %}
 
-                {% for key,user in users %}
-
-                    {% if key ==  entity.user %}
-                        <td>{{ user }}</td>
-                    {% endif %}
-
-                {% endfor %}
-
+                    {% endfor %}
+                </td>
 
                 {#<td>{{ entity.type }}</td>#}
                 {% for key,type in types %}
@@ -53,19 +64,20 @@
 
                 {% endfor %}
 
-                <td>{{ entity.desctiption }}</td>
+
+                <td><a href="{{ path('contact_show', { 'id': entity.id }) }}">{{ entity.desctiption }}</a></td>
                 <td>{% if entity.nextDateContact %}{{ entity.nextDateContact|date('Y-m-d H:i:s') }}{% endif %}</td>
 
 
+                <td>
+                    {% for key,user in users %}
 
-                {% for key,user in users %}
+                        {% if key ==  entity.userDoer %}
+                            {{ user }}
+                        {% endif %}
 
-                    {% if key ==  entity.userDoer %}
-                        <td>{{ user }}</td>
-                    {% endif %}
-
-                {% endfor %}
-
+                    {% endfor %}
+                </td>
 
                 {% for key,project in projects %}
 
@@ -75,25 +87,17 @@
 
                 {% endfor %}
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('contact_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('contact_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+                    <ul>
+
+                        <li>
+                            <a href="{{ path('contact_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
+                        </li>
+                    </ul>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('contact_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+
+{% endblock %}

@@ -172,7 +172,13 @@ class ContactController extends Controller
         $projects = $this->AllProject();
         $users = $this->Alluser();
         $types = $this->AllType();
+
         $clients = $this->AllClient();
+
+        $epmtyarr = array("");
+        $clients =  array_merge($epmtyarr, $clients);
+        $users =  array_merge($epmtyarr, $users);
+
 
         $form = $this->createForm(new ContactType(), $entity, array(
             'action' => $this->generateUrl('contact_create'),
@@ -298,6 +304,11 @@ class ContactController extends Controller
         $users = $this->Alluser();
         $types = $this->AllType();
         $clients = $this->AllClient();
+
+
+        $epmtyarr = array("");
+        $clients =  array_merge($epmtyarr, $clients);
+        $users =  array_merge($epmtyarr, $users);
 
 
         $form = $this->createForm(new ContactType(), $entity, array(
