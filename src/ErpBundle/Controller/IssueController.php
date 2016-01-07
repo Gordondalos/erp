@@ -15,6 +15,19 @@ use ErpBundle\Form\IssueType;
 class IssueController extends Controller
 {
 
+    public function getIssueProject($id, $em){
+
+      //  var_dump($id);
+        $dql   = "SELECT u FROM ErpBundle:Issue u WHERE u.project = ".$id."ORDER BY u.id Desc ";
+        $query = $em->createQuery($dql);
+       // var_dump($query);
+        return $query->getResult();
+
+    }
+
+
+
+
 
     public function Alluser(){
         $us = new UsersController();
@@ -49,6 +62,19 @@ class IssueController extends Controller
     public function AllStatus(){
         $us = new IssueStatusController();
         $em = $this->getDoctrine()->getManager();
+        $status = $us->getAllStatus($em);
+        $statuses = array();
+        foreach ($status as $value ) {
+            $arr = (array)($value);
+            $UserId = array_shift($arr);
+            $UserName = array_shift($arr);
+            $statuses += [$UserId => $UserName];
+        }
+        return  $statuses;
+    }
+
+    public function AllStatuses($em){
+        $us = new IssueStatusController();
         $status = $us->getAllStatus($em);
         $statuses = array();
         foreach ($status as $value ) {

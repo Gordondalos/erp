@@ -1,52 +1,62 @@
 {% extends '::base.html.twig' %}
 {% block body %}
 
-    <h1>Project list</h1>
+    <h1>
+        {{ 'Project list'|trans }}
+    </h1>
+
+    <div class="right">
+        <ul>
+            <li>
+                <a href="{{ path('project_new') }}">
+                    {{ 'Create a new entry'|trans }}
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <table class="records_list">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Projectname</th>
-                <th>Projectdescription</th>
-                <th>Projectmanager</th>
-                <th>Projectcreator</th>
-                <th>Datecreate</th>
-                <th>Datefinish</th>
-                <th>Client</th>
-                <th>Summ</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>{{ 'Projectname'|trans }}</th>
+            {#<th>{{ 'Projectdescription'|trans }}</th>#}
+            <th>{{ 'Projectmanager'|trans }}</th>
+            {#<th>{{ 'Projectcreator'|trans }}</th>#}
+            <th>{{ 'Datecreate'|trans }}</th>
+            {#<th>{{ 'Datefinish'|trans }}</th>#}
+            <th>{{ 'Client'|trans }}</th>
+            <th>{{ 'Summ'|trans }}</th>
+            <th>{{ 'Actions'|trans }}</th>
+        </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
                 <td><a href="{{ path('project_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>{{ entity.projectName }}</td>
-                <td>{{ entity.projectDescription }}</td>
+                <td><a href="{{ path('project_show', { 'id': entity.id }) }}">{{ entity.projectName }}</a></td>
+
+                {#<td>{{ entity.projectDescription }}</td>#}
+
                 {% for key,user in users %}
 
                     {% if key == entity.projectManager %}
-                        <td>{{ user }}</td>
-                      {% endif %}
-
-                {% endfor %}
-                {#<td>{{ entity.projectManager }}</td>#}
-                {#<td>{{ entity.projectCreator }}</td>#}
-
-
-                {% for key,user in users %}
-
-                    {% if key == entity.projectCreator %}
                         <td>{{ user }}</td>
                     {% endif %}
 
                 {% endfor %}
 
+                {#{% for key,user in users %}#}
+
+                    {#{% if key == entity.projectCreator %}#}
+                        {#<td>{{ user }}</td>#}
+                    {#{% endif %}#}
+
+                {#{% endfor %}#}
+
 
                 <td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>
-
+                {#<td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>#}
 
 
                 {% for key,client in clients %}
@@ -59,25 +69,19 @@
 
                 <td>{{ entity.summ }}</td>
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('project_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('project_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+                    <ul>
+                        {#<li>#}
+                            {#<a href="{{ path('project_show', { 'id': entity.id }) }}">{{ 'show'|trans }}</a>#}
+                        {#</li>#}
+                        <li>
+                            <a href="{{ path('project_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
+                        </li>
+                    </ul>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('project_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+
+{% endblock %}

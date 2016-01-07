@@ -2,6 +2,7 @@
 
 namespace ErpBundle\Controller;
 
+use Proxies\__CG__\ErpBundle\Entity\Issue;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -30,7 +31,6 @@ class ProjectController extends Controller
 
         }
         return $clients;
-
     }
 
 
@@ -173,6 +173,12 @@ class ProjectController extends Controller
     public function showAction($id)
     {
         $em = $this->getDoctrine()->getManager();
+        $issueObject = new IssueController();
+        $users = $this->Alluser();
+        $clients = $this->AllClient();
+        $statuses = $issueObject->AllStatuses($em);
+
+        $issuearr = $issueObject->getIssueProject($id,$em);
 
         $entity = $em->getRepository('ErpBundle:Project')->find($id);
 
@@ -183,13 +189,14 @@ class ProjectController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        $users = $this->Alluser();
-        $clients = $this->AllClient();
+
 
         return $this->render('ErpBundle:Project:show.html.twig', array(
             'entity' => $entity,
             'users' => $users,
             'clients' => $clients,
+            'issuearr' => $issuearr,
+            'statuses' => $statuses,
             'delete_form' => $deleteForm->createView(),
         ));
     }
