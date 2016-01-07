@@ -19,11 +19,23 @@
             </tr>
             <tr>
                 <th>Issueautor</th>
-                <td>{{ entity.issueAutor }}</td>
+                {% for key,user in users %}
+
+                    {% if key == entity.issueAutor %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>Issueexecutor</th>
-                <td>{{ entity.issueExecutor }}</td>
+                {% for key,user in users %}
+
+                    {% if key == entity.issueExecutor %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>Datecreate</th>
@@ -35,7 +47,13 @@
             </tr>
             <tr>
                 <th>Status</th>
-                <td>{{ entity.status }}</td>
+                {% for key,status in statuses %}
+
+                    {% if key == entity.status %}
+                        <td>{{ status }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>Summa</th>
@@ -47,7 +65,13 @@
             </tr>
             <tr>
                 <th>Project</th>
-                <td>{{ entity.project }}</td>
+                {% for key,project in projects %}
+
+                    {% if key == entity.project %}
+                        <td>{{ project }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
         </tbody>
     </table>

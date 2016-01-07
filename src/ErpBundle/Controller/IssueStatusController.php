@@ -15,6 +15,11 @@ use ErpBundle\Form\IssueStatusType;
 class IssueStatusController extends Controller
 {
 
+    public function getAllStatus($em){
+        $entities = $em->getRepository('ErpBundle:IssueStatus')->findAll();
+        return $entities;
+    }
+
     /**
      * Lists all IssueStatus entities.
      *

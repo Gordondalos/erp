@@ -15,12 +15,13 @@ use ErpBundle\Form\ProjectType;
 class ProjectController extends Controller
 {
 
-    public function AllClient(){
+    public function AllClient()
+    {
         $em = $this->getDoctrine()->getManager();
         $us = new ClientController();
         $client = $us->getAllClientAction($em);
         $clients = array();
-        foreach ($client as $value ) {
+        foreach ($client as $value) {
             $arr = (array)($value);
 
             $clientId = array_shift($arr);
@@ -33,20 +34,27 @@ class ProjectController extends Controller
     }
 
 
-    public function Alluser(){
+    public function Alluser()
+    {
 
         $us = new UsersController();
         $em = $this->getDoctrine()->getManager();
         $user = $us->getAllUserAction($em);
         $users = array();
-        foreach ($user as $value ) {
+        foreach ($user as $value) {
             $arr = (array)($value);
 
             $UserId = array_shift($arr);
             $UserName = array_shift($arr);
             $users += [$UserId => $UserName];
         }
-        return  $users;
+        return $users;
+    }
+
+
+    public function getAllProject($em){
+        $entities = $em->getRepository('ErpBundle:Project')->findAll();
+        return $entities;
     }
 
     /**
@@ -69,6 +77,7 @@ class ProjectController extends Controller
             'clients' => $clients,
         ));
     }
+
     /**
      * Creates a new Project entity.
      *
@@ -89,7 +98,7 @@ class ProjectController extends Controller
 
         return $this->render('ErpBundle:Project:new.html.twig', array(
             'entity' => $entity,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         ));
     }
 
@@ -102,7 +111,7 @@ class ProjectController extends Controller
      */
     private function createCreateForm(Project $entity)
     {
-       // $em = $this->getDoctrine()->getManager();
+        // $em = $this->getDoctrine()->getManager();
         $users = $this->Alluser();
         $clients = $this->AllClient();
 
@@ -110,9 +119,9 @@ class ProjectController extends Controller
         //var_dump($clients);
 
         $DateCreate = new \DateTime('today');
-        $DateCreate =  $DateCreate->format('Y-m-d H:i');
+        $DateCreate = $DateCreate->format('Y-m-d H:i');
 
-       // var_dump($DateCreate);
+        // var_dump($DateCreate);
 
         $form = $this->createForm(new ProjectType(), $entity, array(
             'action' => $this->generateUrl('project_create'),
@@ -149,11 +158,11 @@ class ProjectController extends Controller
     public function newAction()
     {
         $entity = new Project();
-        $form   = $this->createCreateForm($entity);
+        $form = $this->createCreateForm($entity);
 
         return $this->render('ErpBundle:Project:new.html.twig', array(
             'entity' => $entity,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         ));
     }
 
@@ -178,9 +187,9 @@ class ProjectController extends Controller
         $clients = $this->AllClient();
 
         return $this->render('ErpBundle:Project:show.html.twig', array(
-            'entity'      => $entity,
-            'users'      => $users,
-            'clients'      => $clients,
+            'entity' => $entity,
+            'users' => $users,
+            'clients' => $clients,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -203,20 +212,20 @@ class ProjectController extends Controller
         $deleteForm = $this->createDeleteForm($id);
 
         return $this->render('ErpBundle:Project:edit.html.twig', array(
-            'entity'      => $entity,
+            'entity' => $entity,
 
-            'edit_form'   => $editForm->createView(),
+            'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
 
     /**
-    * Creates a form to edit a Project entity.
-    *
-    * @param Project $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
+     * Creates a form to edit a Project entity.
+     *
+     * @param Project $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
     private function createEditForm(Project $entity)
     {
 
@@ -249,6 +258,7 @@ class ProjectController extends Controller
 
         return $form;
     }
+
     /**
      * Edits an existing Project entity.
      *
@@ -274,11 +284,12 @@ class ProjectController extends Controller
         }
 
         return $this->render('ErpBundle:Project:edit.html.twig', array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
+            'entity' => $entity,
+            'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
+
     /**
      * Deletes a Project entity.
      *
@@ -316,7 +327,6 @@ class ProjectController extends Controller
             ->setAction($this->generateUrl('project_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
-            ->getForm()
-        ;
+            ->getForm();
     }
 }

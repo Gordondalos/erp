@@ -15,18 +15,76 @@ use ErpBundle\Form\IssueType;
 class IssueController extends Controller
 {
 
+
+    public function Alluser(){
+        $us = new UsersController();
+        $em = $this->getDoctrine()->getManager();
+        $user = $us->getAllUserAction($em);
+        $users = array();
+        foreach ($user as $value ) {
+            $arr = (array)($value);
+            $UserId = array_shift($arr);
+            $UserName = array_shift($arr);
+            $users += [$UserId => $UserName];
+        }
+        return  $users;
+    }
+
+
+    public function AllProject(){
+        $us = new ProjectController();
+        $em = $this->getDoctrine()->getManager();
+        $project = $us->getAllProject($em);
+        $projects = array();
+        foreach ($project as $value ) {
+            $arr = (array)($value);
+            $UserId = array_shift($arr);
+            $UserName = array_shift($arr);
+            $projects += [$UserId => $UserName];
+        }
+        return  $projects;
+    }
+
+
+    public function AllStatus(){
+        $us = new IssueStatusController();
+        $em = $this->getDoctrine()->getManager();
+        $status = $us->getAllStatus($em);
+        $statuses = array();
+        foreach ($status as $value ) {
+            $arr = (array)($value);
+            $UserId = array_shift($arr);
+            $UserName = array_shift($arr);
+            $statuses += [$UserId => $UserName];
+        }
+        return  $statuses;
+    }
+
+
+
+
     /**
      * Lists all Issue entities.
      *
      */
     public function indexAction()
     {
+
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $statuses = $this->AllStatus();
+
+
+//        var_dump($projects);
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('ErpBundle:Issue')->findAll();
 
         return $this->render('ErpBundle:Issue:index.html.twig', array(
             'entities' => $entities,
+            'users' => $users,
+            'statuses' => $statuses,
+            'projects' => $projects,
         ));
     }
     /**
@@ -62,9 +120,36 @@ class IssueController extends Controller
      */
     private function createCreateForm(Issue $entity)
     {
+
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $statuses = $this->AllStatus();
+
         $form = $this->createForm(new IssueType(), $entity, array(
             'action' => $this->generateUrl('issue_create'),
             'method' => 'POST',
+        ));
+
+
+        $form->add('issueAutor', 'choice', array('label' => 'Создатель Задачи',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('issueExecutor', 'choice', array('label' => 'Исполнитель',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+
+        $form->add('status', 'choice', array('label' => 'Статус задачи',
+            'multiple' => false,
+            'choices' => $statuses,
+        ));
+
+        $form->add('project', 'choice', array('label' => 'Проект',
+            'multiple' => false,
+            'choices' =>  $projects,
         ));
 
         $form->add('submit', 'submit', array('label' => 'Create'));
@@ -93,6 +178,10 @@ class IssueController extends Controller
      */
     public function showAction($id)
     {
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $statuses = $this->AllStatus();
+
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('ErpBundle:Issue')->find($id);
@@ -105,6 +194,9 @@ class IssueController extends Controller
 
         return $this->render('ErpBundle:Issue:show.html.twig', array(
             'entity'      => $entity,
+            'projects'      => $projects,
+            'users'      => $users,
+            'statuses'      => $statuses,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -142,9 +234,36 @@ class IssueController extends Controller
     */
     private function createEditForm(Issue $entity)
     {
+
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $statuses = $this->AllStatus();
+
         $form = $this->createForm(new IssueType(), $entity, array(
             'action' => $this->generateUrl('issue_update', array('id' => $entity->getId())),
             'method' => 'PUT',
+        ));
+
+
+        $form->add('issueAutor', 'choice', array('label' => 'Создатель Задачи',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('issueExecutor', 'choice', array('label' => 'Исполнитель',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+
+        $form->add('status', 'choice', array('label' => 'Статус задачи',
+            'multiple' => false,
+            'choices' => $statuses,
+        ));
+
+        $form->add('project', 'choice', array('label' => 'Проект',
+            'multiple' => false,
+            'choices' =>  $projects,
         ));
 
         $form->add('submit', 'submit', array('label' => 'Update'));
