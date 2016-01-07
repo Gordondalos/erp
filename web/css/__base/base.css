@@ -60,25 +60,27 @@ ul {
 /* line 90, ../../../src/sass/__base/part/common.sass */
 ul li {
   list-style-type: none;
+  display: inline-block;
+  padding: 0 10px;
 }
 
-/* line 93, ../../../src/sass/__base/part/common.sass */
+/* line 95, ../../../src/sass/__base/part/common.sass */
 a:hover, a:active, a:visited, a:focus {
   text-decoration: none;
 }
 
-/* line 96, ../../../src/sass/__base/part/common.sass */
+/* line 98, ../../../src/sass/__base/part/common.sass */
 table {
   width: 100%;
 }
-/* line 98, ../../../src/sass/__base/part/common.sass */
+/* line 100, ../../../src/sass/__base/part/common.sass */
 table th, table td {
   border: 1px solid #d8d8d8;
   background: #efefef;
   padding: 5px;
   text-align: center;
 }
-/* line 103, ../../../src/sass/__base/part/common.sass */
+/* line 105, ../../../src/sass/__base/part/common.sass */
 table td {
   text-align: left;
   background-color: #fff;
