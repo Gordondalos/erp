@@ -22,6 +22,7 @@ class ContactType extends AbstractType
             ->add('desctiption')
             ->add('nextDateContact')
             ->add('userDoer')
+            ->add('project')
         ;
     }
     

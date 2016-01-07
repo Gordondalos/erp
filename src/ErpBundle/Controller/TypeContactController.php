@@ -15,6 +15,11 @@ use ErpBundle\Form\TypeContactType;
 class TypeContactController extends Controller
 {
 
+    public function getAllType($em){
+        $entities = $em->getRepository('ErpBundle:TypeContact')->findAll();
+        return $entities;
+    }
+
     /**
      * Lists all TypeContact entities.
      *

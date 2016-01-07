@@ -23,13 +23,57 @@
             <tr>
                 <td><a href="{{ path('contact_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{{ entity.client }}</td>
-                <td>{{ entity.user }}</td>
-                <td>{{ entity.type }}</td>
+
+                {% for key,client in clients %}
+
+                    {% if key == entity.client %}
+                        <td>{{ client }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+
+
+
+                {% for key,user in users %}
+
+                    {% if key ==  entity.user %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+
+                {#<td>{{ entity.type }}</td>#}
+                {% for key,type in types %}
+
+                    {% if key ==  entity.type %}
+                        <td>{{ type }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
                 <td>{{ entity.desctiption }}</td>
                 <td>{% if entity.nextDateContact %}{{ entity.nextDateContact|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{{ entity.userDoer }}</td>
-                <td>{{ entity.project }}</td>
+
+
+
+                {% for key,user in users %}
+
+                    {% if key ==  entity.userDoer %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+
+                {% for key,project in projects %}
+
+                    {% if key == entity.project %}
+                        <td>{{ project }}</td>
+                    {% endif %}
+
+                {% endfor %}
                 <td>
                 <ul>
                     <li>

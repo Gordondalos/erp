@@ -14,6 +14,70 @@ use ErpBundle\Form\ContactType;
  */
 class ContactController extends Controller
 {
+    public function Alluser(){
+        $us = new UsersController();
+        $em = $this->getDoctrine()->getManager();
+        $user = $us->getAllUserAction($em);
+        $users = array();
+        foreach ($user as $value ) {
+            $arr = (array)($value);
+            $UserId = array_shift($arr);
+            $UserName = array_shift($arr);
+            $users += [$UserId => $UserName];
+        }
+        return  $users;
+    }
+
+
+    public function AllProject(){
+        $us = new ProjectController();
+        $em = $this->getDoctrine()->getManager();
+        $project = $us->getAllProject($em);
+        $projects = array();
+        foreach ($project as $value ) {
+            $arr = (array)($value);
+            $projectId = array_shift($arr);
+            $projectName = array_shift($arr);
+            $projects += [$projectId => $projectName];
+        }
+        return  $projects;
+    }
+
+
+    public function AllType(){
+        $us = new TypeContactController();
+        $em = $this->getDoctrine()->getManager();
+        $type = $us->getAllType($em);
+        $types= array();
+        foreach ($type  as $value ) {
+            $arr = (array)($value);
+            $typeId = array_shift($arr);
+            $typeName = array_shift($arr);
+            $types += [$typeId => $typeName];
+        }
+        return  $types;
+    }
+
+
+    public function AllClient()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $us = new ClientController();
+        $client = $us->getAllClientAction($em);
+        $clients = array();
+        foreach ($client as $value) {
+            $arr = (array)($value);
+
+            $clientId = array_shift($arr);
+            $clientName = array_shift($arr);
+            $clients += [$clientId => $clientName];
+
+        }
+        return $clients;
+
+    }
+
+
 
     /**
      * Lists all Contact entities.
@@ -21,12 +85,22 @@ class ContactController extends Controller
      */
     public function indexAction()
     {
+
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $types = $this->AllType();
+        $clients = $this->AllClient();
+
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('ErpBundle:Contact')->findAll();
 
         return $this->render('ErpBundle:Contact:index.html.twig', array(
             'entities' => $entities,
+            'projects' => $projects,
+            'users' => $users,
+            'clients' => $clients,
+            'types' => $types,
         ));
     }
     /**
@@ -62,10 +136,44 @@ class ContactController extends Controller
      */
     private function createCreateForm(Contact $entity)
     {
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $types = $this->AllType();
+        $clients = $this->AllClient();
+
         $form = $this->createForm(new ContactType(), $entity, array(
             'action' => $this->generateUrl('contact_create'),
             'method' => 'POST',
         ));
+
+
+        $form->add('client', 'choice', array('label' => 'Выберите клиента',
+            'multiple' => false,
+            'choices' => $clients,
+        ));
+
+
+        $form->add('user', 'choice', array('label' => 'Автор сообщения',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('type', 'choice', array('label' => 'Тип Сообщения',
+            'multiple' => false,
+            'choices' => $types,
+        ));
+
+
+        $form->add('userDoer', 'choice', array('label' => 'Исполнитель Сообщения',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('project', 'choice', array('label' => 'Проект',
+            'multiple' => false,
+            'choices' => $projects,
+        ));
+
 
         $form->add('submit', 'submit', array('label' => 'Create'));
 
@@ -93,6 +201,12 @@ class ContactController extends Controller
      */
     public function showAction($id)
     {
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $types = $this->AllType();
+        $clients = $this->AllClient();
+
+
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('ErpBundle:Contact')->find($id);
@@ -105,6 +219,10 @@ class ContactController extends Controller
 
         return $this->render('ErpBundle:Contact:show.html.twig', array(
             'entity'      => $entity,
+            'projects' => $projects,
+            'users' => $users,
+            'clients' => $clients,
+            'types' => $types,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -142,10 +260,46 @@ class ContactController extends Controller
     */
     private function createEditForm(Contact $entity)
     {
+
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $types = $this->AllType();
+        $clients = $this->AllClient();
+
+
         $form = $this->createForm(new ContactType(), $entity, array(
             'action' => $this->generateUrl('contact_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
+
+
+        $form->add('client', 'choice', array('label' => 'Выберите клиента',
+            'multiple' => false,
+            'choices' => $clients,
+        ));
+
+
+        $form->add('user', 'choice', array('label' => 'Автор сообщения',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('type', 'choice', array('label' => 'Тип Сообщения',
+            'multiple' => false,
+            'choices' => $types,
+        ));
+
+
+        $form->add('userDoer', 'choice', array('label' => 'Исполнитель Сообщения',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('project', 'choice', array('label' => 'Проект',
+            'multiple' => false,
+            'choices' => $projects,
+        ));
+
 
         $form->add('submit', 'submit', array('label' => 'Update'));
 

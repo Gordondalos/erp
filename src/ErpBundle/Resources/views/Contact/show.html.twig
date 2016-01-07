@@ -15,15 +15,33 @@
             </tr>
             <tr>
                 <th>Client</th>
-                <td>{{ entity.client }}</td>
+                {% for key,client in clients %}
+
+                    {% if key == entity.client %}
+                        <td>{{ client }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>User</th>
-                <td>{{ entity.user }}</td>
+                {% for key,user in users %}
+
+                    {% if key ==  entity.user %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>Type</th>
-                <td>{{ entity.type }}</td>
+                {% for key,type in types %}
+
+                    {% if key ==  entity.type %}
+                        <td>{{ type }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>Desctiption</th>
@@ -35,11 +53,23 @@
             </tr>
             <tr>
                 <th>Userdoer</th>
-                <td>{{ entity.userDoer }}</td>
+                {% for key,user in users %}
+
+                    {% if key ==  entity.userDoer %}
+                        <td>{{ user }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
             <tr>
                 <th>Project</th>
-                <td>{{ entity.project }}</td>
+                {% for key,project in projects %}
+
+                    {% if key == entity.project %}
+                        <td>{{ project }}</td>
+                    {% endif %}
+
+                {% endfor %}
             </tr>
         </tbody>
     </table>
