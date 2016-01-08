@@ -1,14 +1,14 @@
 {% extends '::base.html.twig' %}
 {% block body %}
 
-    <h1>Role list</h1>
+    <h1>{{ 'Role list'|trans }}</h1>
 
     <table class="records_list">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Rolename</th>
-                <th>Actions</th>
+                <th>{{ 'RolenameId'|trans }}</th>
+                <th>{{ 'Rolename'|trans }}</th>
+                <th>{{ 'Actions'|trans }}</th>
             </tr>
         </thead>
         <tbody>
@@ -18,11 +18,9 @@
                 <td>{{ entity.roleName }}</td>
                 <td>
                 <ul>
+
                     <li>
-                        <a href="{{ path('role_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('role_edit', { 'id': entity.id }) }}">edit</a>
+                        <a href="{{ path('role_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
                     </li>
                 </ul>
                 </td>

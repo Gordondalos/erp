@@ -15,7 +15,7 @@ use ErpBundle\Form\RoleType;
 class RoleController extends Controller
 {
 
-// возвращает все роли доступные в проекте
+// РІРѕР·РІСЂР°С‰Р°РµС‚ РІСЃРµ СЂРѕР»Рё РґРѕСЃС‚СѓРїРЅС‹Рµ РІ РїСЂРѕРµРєС‚Рµ
     public function allRoleAction($em){
         $allRole = $em->getRepository('ErpBundle:Role')->findAll();
         return $allRole;
@@ -43,12 +43,17 @@ class RoleController extends Controller
     public function createAction(Request $request)
     {
         $entity = new Role();
+
         $form = $this->createCreateForm($entity);
+
         $form->handleRequest($request);
 
+
         if ($form->isValid()) {
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
+
             $em->flush();
 
             return $this->redirect($this->generateUrl('role_show', array('id' => $entity->getId())));
