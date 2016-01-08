@@ -2,6 +2,7 @@
 
 namespace ErpBundle\Controller;
 
+use ErpBundle\Entity\ProjectCommand;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -133,11 +134,21 @@ class IssueController extends Controller
             $issueExecutor = $entity->getissueExecutor();
             $issueAutor = $entity->getissueAutor();
 
+            $entity1 = new ProjectCommand();
 
 
 
-            var_dump($entity); die;
+            $entity1->setIssue($issue);
 
+            $entity1->setIssueExecutor($issueExecutor);
+           // var_dump( $entity1); die;
+            $entity1->setIssueAutor($issueAutor);
+            $entity1->setproject($project);
+
+
+
+            $em->persist($entity1);
+            $em->flush();
 
 
             return $this->redirect($this->generateUrl('issue_show', array('id' => $entity->getId())));

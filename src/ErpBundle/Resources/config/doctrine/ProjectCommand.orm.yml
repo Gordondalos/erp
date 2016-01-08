@@ -10,12 +10,22 @@ ErpBundle\Entity\ProjectCommand:
             generator:
                 strategy: IDENTITY
     fields:
-        user:
+        issue:
             type: integer
-            nullable: true
+            nullable: false
             unsigned: false
         project:
             type: integer
+            nullable: false
+            unsigned: false
+        issueExecutor:
+            type: integer
             nullable: true
             unsigned: false
+            column: issue_executor
+        issueAutor:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: issue_autor
     lifecycleCallbacks: {  }

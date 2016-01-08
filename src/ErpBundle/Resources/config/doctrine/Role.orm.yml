@@ -9,7 +9,7 @@ ErpBundle\Entity\Role:
             fixed: false
             id: true
             generator:
-                strategy: NONE
+                strategy: IDENTITY
     fields:
         roleName:
             type: string

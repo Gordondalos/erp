@@ -17,7 +17,17 @@ class ProjectCommand
     /**
      * @var integer
      */
-    private $user;
+    private $issue;
+
+    /**
+     * @var integer
+     */
+    private $issueAutor;
+
+    /**
+     * @var integer
+     */
+    private $issueExecutor;
 
     /**
      * @var integer
@@ -36,27 +46,81 @@ class ProjectCommand
     }
 
     /**
-     * Set user
+     * Get issue
      *
-     * @param integer $user
+     * @return integer
+     */
+    public function getIssue()
+    {
+        return $this->issue;
+    }
+
+    /**
+     * Get issueExecutor
+     *
+     * @return integer
+     */
+    public function getIssueExecutor()
+    {
+        return $this->issueExecutor;
+    }
+
+
+    /**
+     * Get issueAutor
+     *
+     * @return integer
+     */
+    public function getIssueAutor()
+    {
+        return $this->issueAutor;
+    }
+
+
+
+    /**
+     * Set issue
+     *
+     * @param integer issue
      * @return ProjectCommand
      */
-    public function setUser($user)
+    public function setIssue($issue)
     {
-        $this->user = $user;
+        $this->issue = $issue;
+
+        return $this;
+    }
+
+
+    /**
+     * Set issueExecutor
+     *
+* @param integer issueExecutor
+* @return ProjectCommand
+*/
+    public function setIssueExecutor($issueExecutor)
+    {
+        $this->issueExecutor = $issueExecutor;
 
         return $this;
     }
 
     /**
-     * Get user
+     * Set issueAutor
      *
-     * @return integer 
+     * @param integer issueAutor
+     * @return ProjectCommand
      */
-    public function getUser()
+    public function setIssueAutor($issueAutor)
     {
-        return $this->user;
+        $this->issueAutor= $issueAutor;
+
+        return $this;
     }
+
+
+
+
 
     /**
      * Set project
