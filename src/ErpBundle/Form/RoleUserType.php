@@ -6,8 +6,10 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class UsersType extends AbstractType
+class RoleUsersType extends AbstractType
 {
+
+
     /**
      * @param FormBuilderInterface $builder
      * @param array $options
@@ -15,18 +17,33 @@ class UsersType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
 
+        $ut = new RoleController();
+        $em = $this->getDoctrine()->getManager();
+        $role = $ut->allRoleAction($em);
+        $roles = array();
+        foreach ($role as $value ) {
+            $arr = (array)($value);
+            $roleId = array_shift($arr);
+            $roleName = array_shift($arr);
+            $roles += [$roleId => $roleName];
 
-        $builder
+        }
 
+        $builder->add("UsersType",new UsersType());
+
+        $builder->add('role', 'choice', array('label' => 'Выберите роль',
+                 'multiple' => false,
+                 'choices' => $roles,
+                 'mapped'=>false
+             ))
             ->add('roles')
             ->add('email')
             ->add('Phone')
-            ->add('description')
-        ;
+            ->add('description');
 
 
     }
-    
+
     /**
      * @param OptionsResolverInterface $resolver
      */

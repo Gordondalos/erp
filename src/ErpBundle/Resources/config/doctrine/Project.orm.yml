@@ -48,4 +48,9 @@ ErpBundle\Entity\Project:
             type: integer
             nullable: true
             unsigned: false
+        projectType:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: project_type
     lifecycleCallbacks: {  }

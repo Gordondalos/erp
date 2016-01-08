@@ -1,3 +1,7 @@
+erp_projecttype:
+    resource: "@ErpBundle/Resources/config/routing/projecttype.yml"
+    prefix:   /projecttype
+
 erp_projectcommand:
     resource: "@ErpBundle/Resources/config/routing/projectcommand.yml"
     prefix:   /projectcommand

@@ -165,9 +165,10 @@ class UsersController extends Controller
      * Displays a form to edit an existing Users entity.
      *
      */
-    public function editAction($id)
+    public function editAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
+
 
 
         $entity = $em->getRepository('ErpBundle:Users')->find($id);
@@ -207,9 +208,7 @@ class UsersController extends Controller
             $roles += [$roleId => $roleName];
 
         }
-
-
-
+//var_dump($roles);
 
 
         $form = $this->createForm(new UsersType(), $entity, array(
@@ -217,9 +216,10 @@ class UsersController extends Controller
             'method' => 'PUT',
         ));
 
-        $form->add('role', 'choice', array('label' => 'Выберите роль',
+        $form->add('roless', 'choice', array('label' => 'Выберите роль',
             'multiple' => false,
             'choices' => $roles,
+            'mapped'=>false
         ));
 
 
@@ -233,6 +233,8 @@ class UsersController extends Controller
      */
     public function updateAction(Request $request, $id)
     {
+
+        //var_dump($_POST, $request->request->get('erpbundle_users')['roless']);die;
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('ErpBundle:Users')->find($id);
@@ -241,11 +243,14 @@ class UsersController extends Controller
             throw $this->createNotFoundException('Unable to find Users entity.');
         }
 
+
+
         $deleteForm = $this->createDeleteForm($id);
         $editForm = $this->createEditForm($entity);
         $editForm->handleRequest($request);
 
         if ($editForm->isValid()) {
+            $entity->setRoles(array($request->request->get('erpbundle_users')['roless']));
             $em->flush();
 
             return $this->redirect($this->generateUrl('users_edit', array('id' => $id)));

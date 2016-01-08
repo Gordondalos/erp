@@ -1,6 +1,6 @@
 ErpBundle\Entity\Users:
     type: entity
-    table: users
+    table: fos_user
     id:
         id:
             type: integer
@@ -10,32 +10,6 @@ ErpBundle\Entity\Users:
             generator:
                 strategy: IDENTITY
     fields:
-        userName:
-            type: string
-            nullable: false
-            length: 50
-            fixed: false
-            column: user_name
-        login:
-            type: string
-            nullable: false
-            length: 255
-            fixed: false
-        password:
-            type: string
-            nullable: false
-            length: 255
-            fixed: false
-        role:
-            type: integer
-            nullable: false
-            unsigned: false
-            default: '1'
-        mail:
-            type: string
-            nullable: true
-            length: 255
-            fixed: false
         description:
             type: text
             nullable: true

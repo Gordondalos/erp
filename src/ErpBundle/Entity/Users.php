@@ -2,47 +2,45 @@
 
 namespace ErpBundle\Entity;
 
+use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Users
  */
-class Users
+class Users extends BaseUser
 {
-    /**
-     * @var integer
-     */
-    private $id;
 
-    /**
-     * @var string
-     */
-    private $userName;
-
-    /**
-     * @var string
-     */
-    private $login;
-
-    /**
-     * @var string
-     */
-    private $password;
+    public function __construct(){
+        parent::__construct();
+//        $this->addRole("ROLE_USER");
+        $this->roles = Array("ROLE_USER");
+    }
 
     /**
      * @var integer
      */
-    private $role;
+    protected $id;
 
     /**
      * @var string
      */
-    private $mail;
+//    private $userName;
 
     /**
      * @var string
      */
     private $description;
+
+    /**
+     * @var string
+     */
+    private $avatar;
+
+    /**
+     * @var string
+     */
+    private $phone;
 
 
     /**
@@ -61,114 +59,22 @@ class Users
      * @param string $userName
      * @return Users
      */
-    public function setUserName($userName)
-    {
-        $this->userName = $userName;
-
-        return $this;
-    }
+//    public function setUserName($userName)
+//    {
+//        $this->userName = $userName;
+//
+//        return $this;
+//    }
 
     /**
      * Get userName
      *
      * @return string 
      */
-    public function getUserName()
-    {
-        return $this->userName;
-    }
-
-    /**
-     * Set login
-     *
-     * @param string $login
-     * @return Users
-     */
-    public function setLogin($login)
-    {
-        $this->login = $login;
-
-        return $this;
-    }
-
-    /**
-     * Get login
-     *
-     * @return string 
-     */
-    public function getLogin()
-    {
-        return $this->login;
-    }
-
-    /**
-     * Set password
-     *
-     * @param string $password
-     * @return Users
-     */
-    public function setPassword($password)
-    {
-        $this->password = $password;
-
-        return $this;
-    }
-
-    /**
-     * Get password
-     *
-     * @return string 
-     */
-    public function getPassword()
-    {
-        return $this->password;
-    }
-
-    /**
-     * Set role
-     *
-     * @param integer $role
-     * @return Users
-     */
-    public function setRole($role)
-    {
-        $this->role = $role;
-
-        return $this;
-    }
-
-    /**
-     * Get role
-     *
-     * @return integer 
-     */
-    public function getRole()
-    {
-        return $this->role;
-    }
-
-    /**
-     * Set mail
-     *
-     * @param string $mail
-     * @return Users
-     */
-    public function setMail($mail)
-    {
-        $this->mail = $mail;
-
-        return $this;
-    }
-
-    /**
-     * Get mail
-     *
-     * @return string 
-     */
-    public function getMail()
-    {
-        return $this->mail;
-    }
+//    public function getUserName()
+//    {
+//        return $this->userName;
+//    }
 
     /**
      * Set description
@@ -192,11 +98,6 @@ class Users
     {
         return $this->description;
     }
-    /**
-     * @var string
-     */
-    private $avatar;
-
 
     /**
      * Set avatar
@@ -220,11 +121,6 @@ class Users
     {
         return $this->avatar;
     }
-    /**
-     * @var string
-     */
-    private $phone;
-
 
     /**
      * Set phone
@@ -248,4 +144,5 @@ class Users
     {
         return $this->phone;
     }
+
 }

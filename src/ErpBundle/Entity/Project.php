@@ -248,4 +248,32 @@ class Project
     {
         return $this->summ;
     }
+    /**
+     * @var integer
+     */
+    private $projectType;
+
+
+    /**
+     * Set projectType
+     *
+     * @param integer $projectType
+     * @return Project
+     */
+    public function setProjectType($projectType)
+    {
+        $this->projectType = $projectType;
+
+        return $this;
+    }
+
+    /**
+     * Get projectType
+     *
+     * @return integer 
+     */
+    public function getProjectType()
+    {
+        return $this->projectType;
+    }
 }

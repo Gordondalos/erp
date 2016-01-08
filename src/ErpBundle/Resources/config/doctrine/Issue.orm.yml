@@ -44,7 +44,6 @@ ErpBundle\Entity\Issue:
             type: integer
             nullable: true
             unsigned: false
-            default: '1'
         summa:
             type: integer
             nullable: true

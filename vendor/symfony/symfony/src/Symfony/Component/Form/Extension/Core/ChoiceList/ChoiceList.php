@@ -455,6 +455,7 @@ class ChoiceList implements ChoiceListInterface
      */
     protected function fixIndex($index)
     {
+      //  var_dump($index);
         if (is_bool($index) || (string) (int) $index === (string) $index) {
             return (int) $index;
         }

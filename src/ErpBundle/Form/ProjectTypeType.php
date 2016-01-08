@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class UsersType extends AbstractType
+class ProjectTypeType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -14,17 +14,9 @@ class UsersType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-
-
         $builder
-
-            ->add('roles')
-            ->add('email')
-            ->add('Phone')
-            ->add('description')
+            ->add('typeName')
         ;
-
-
     }
     
     /**
@@ -33,7 +25,7 @@ class UsersType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'ErpBundle\Entity\Users'
+            'data_class' => 'ErpBundle\Entity\ProjectType'
         ));
     }
 
@@ -42,6 +34,6 @@ class UsersType extends AbstractType
      */
     public function getName()
     {
-        return 'erpbundle_users';
+        return 'erpbundle_projecttype';
     }
 }

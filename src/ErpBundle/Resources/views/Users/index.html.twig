@@ -34,18 +34,20 @@
             <tr>
                 <td><a href="{{ path('users_show', { 'id': entity.id }) }}">{{ entity.userName }}</a></td>
 
-                <td>{{ entity.login }}</td>
+                <td>{{ entity.username }}</td>
                 {#<td>{{ entity.password }}</td>#}
 
-                {#<td>{{ entity.role }}</td>#}
+                {#<td>{{ entity.roles }}</td>#}
 
                 {% for key,role in roles %}
-                {% if key  ==  entity.role %}
-                <td>{{ role }}</td>
-                {% endif %}
+                    {% for keys,roler in entity.roles %}
+                        {% if(role == roler)  %}
+                            <td>{{ role }}</td>
+                        {% endif %}
+                    {% endfor %}
                 {% endfor %}
 
-                <td>{{ entity.mail }}</td>
+                <td>{{ entity.email }}</td>
                 {#<td>{{ entity.description }}</td>#}
                 {#<td>{{ entity.avatar }}</td>#}
                 <td>{{ entity.phone }}</td>

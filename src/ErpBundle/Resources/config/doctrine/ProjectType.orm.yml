@@ -1,20 +1,19 @@
-ErpBundle\Entity\Role:
+ErpBundle\Entity\ProjectType:
     type: entity
-    table: role
+    table: project_type
     id:
         id:
-            type: string
+            type: integer
             nullable: false
-            length: 255
-            fixed: false
+            unsigned: false
             id: true
             generator:
                 strategy: IDENTITY
     fields:
-        roleName:
+        typeName:
             type: string
-            nullable: false
+            nullable: true
             length: 50
             fixed: false
-            column: role_name
+            column: type_name
     lifecycleCallbacks: {  }
