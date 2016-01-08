@@ -25,19 +25,15 @@ class IssueController extends Controller
 
     }
 
-
-
-
-
     public function Alluser(){
         $us = new UsersController();
         $em = $this->getDoctrine()->getManager();
         $user = $us->getAllUserAction($em);
         $users = array();
         foreach ($user as $value ) {
-            $arr = (array)($value);
-            $UserId = array_shift($arr);
-            $UserName = array_shift($arr);
+
+            $UserId = $value->getId();
+            $UserName = $value->getUsername();
             $users += [$UserId => $UserName];
         }
         return  $users;

@@ -27,13 +27,15 @@
                 </tr>
                 <tr>
                     <th>{{ 'Projectcreator'|trans }}</th>
-                    {% for key,user in users %}
+                    <td>
+                        {% for key,user in users %}
 
-                        {% if key == entity.projectCreator %}
-                            <td><a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a></td>
-                        {% endif %}
+                            {% if key == entity.projectCreator %}
+                                <a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a>
+                            {% endif %}
 
-                    {% endfor %}
+                        {% endfor %}
+                    </td>
                 </tr>
                 <tr>
                     <th>{{ 'Datecreate'|trans }}</th>
@@ -49,7 +51,7 @@
 
                         {% if key == entity.client %}
                             <td><a href="{{ path('client_show', { 'id': key }) }}">{{ client }}</a>
-                                </td>
+                            </td>
                         {% endif %}
 
                     {% endfor %}
@@ -120,25 +122,26 @@
         {% for issue in issuearr %}
             <tr>
                 {#<td><a href="{{ path('issue_show', { 'id': issue.id }) }}">{{ issue.id }}</a></td>#}
-                <td><a href="{{ path('issue_show', { 'id': issue.id }) }}">{{ issue.issueName }}</a> </td>
+                <td><a href="{{ path('issue_show', { 'id': issue.id }) }}">{{ issue.issueName }}</a></td>
                 <td>{{ issue.issueDescription }}</td>
                 {#{% for key,user in users %}#}
 
-                    {#{% if key == issue.issueAutor %}#}
-                        {#<td>{{ user }}</td>#}
-                    {#{% endif %}#}
+                {#{% if key == issue.issueAutor %}#}
+                {#<td>{{ user }}</td>#}
+                {#{% endif %}#}
 
                 {#{% endfor %}#}
                 {#<td>{{ entity.issueExecutor }}</td>#}
+                <td>
+                    {% for key,user in users %}
 
-                {% for key,user in users %}
+                        {% if key == issue.issueExecutor %}
+                            <a href="{{ path('users_show', { 'id': issue.issueExecutor }) }}">{{ user }}</a>
+                            {#<td>{{ user }}</td>#}
+                        {% endif %}
 
-                    {% if key == issue.issueExecutor %}
-                        <td><a href="{{ path('users_show', { 'id': issue.issueExecutor }) }}">{{ user }}</a></td>
-                        {#<td>{{ user }}</td>#}
-                    {% endif %}
-
-                {% endfor %}
+                    {% endfor %}
+                </td>
 
 
                 <td>{% if issue.dateCreate %}{{ issue.dateCreate|date('Y-m-d H:i') }}{% endif %}</td>
@@ -156,7 +159,6 @@
 
                 {#<td>{{ issue.summa }}</td>#}
                 <td>{% if issue.dateStart %}{{ issue.dateStart|date('Y-m-d H:i:s') }}{% endif %}</td>
-
 
 
                 <td>
@@ -204,14 +206,18 @@
             <tr>
 
                 <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    {% for key,user in users %}
 
-                {% for key,user in users %}
 
-                    {% if key ==  entity.user %}
-                        <td><a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a></td>
-                    {% endif %}
 
-                {% endfor %}
+                        {% if key ==  entity.user %}
+
+                            <a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a>
+                        {% endif %}
+
+                    {% endfor %}
+                </td>
 
 
                 {#<td>{{ entity.type }}</td>#}
@@ -227,12 +233,11 @@
                 <td>{% if entity.nextDateContact %}{{ entity.nextDateContact|date('Y-m-d H:i:s') }}{% endif %}</td>
 
 
-
                 {#{% for key,user in users %}#}
 
-                    {#{% if key ==  entity.userDoer %}#}
-                        {#<td>{{ user }}</td>#}
-                    {#{% endif %}#}
+                {#{% if key ==  entity.userDoer %}#}
+                {#<td>{{ user }}</td>#}
+                {#{% endif %}#}
 
                 {#{% endfor %}#}
 
@@ -282,37 +287,38 @@
             <tr>
 
                 <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    {% for key,user in users %}
 
-                {% for key,user in users %}
+                        {% if key ==  entity.user %}
+                            <a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a>
+                        {% endif %}
 
-                    {% if key ==  entity.user %}
-                        <td><a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a></td>
-                    {% endif %}
+                    {% endfor %}
+                </td>
 
-                {% endfor %}
+                <td>
+                    {#<td>{{ entity.type }}</td>#}
+                    {% for key,type in types %}
 
+                        {% if key ==  entity.type %}
+                            {{ type }}
+                        {% endif %}
 
-                {#<td>{{ entity.type }}</td>#}
-                {% for key,type in types %}
-
-                    {% if key ==  entity.type %}
-                        <td>{{ type }}</td>
-                    {% endif %}
-
-                {% endfor %}
-
+                    {% endfor %}
+                </td>
                 <td><a href="{{ path('contact_show', { 'id': entity.id }) }}">{{ entity.desctiption }}</a></td>
                 <td>{% if entity.nextDateContact %}{{ entity.nextDateContact|date('Y-m-d H:i:s') }}{% endif %}</td>
 
+                <td>
+                    {% for key,user in users %}
 
+                        {% if key ==  entity.userDoer %}
+                            <a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a>
+                        {% endif %}
 
-                {% for key,user in users %}
-
-                {% if key ==  entity.userDoer %}
-                    <td><a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a></td>
-                {% endif %}
-
-                {% endfor %}
+                    {% endfor %}
+                </td>
 
                 <td>
                     <ul>

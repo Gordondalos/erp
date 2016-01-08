@@ -54,17 +54,15 @@ class ProjectController extends Controller
         $user = $us->getAllUserAction($em);
         $users = array();
         foreach ($user as $value) {
-            $arr = (array)($value);
 
-            $UserId = array_shift($arr);
-            $UserName = array_shift($arr);
+            //print_r($value->getId());
+
+            $UserId = $value->getId();
+            $UserName = $value->getUsername();
             $users += [$UserId => $UserName];
         }
         return $users;
     }
-
-
-
 
 
     public function getAllProject($em){
@@ -85,7 +83,7 @@ class ProjectController extends Controller
         $entities = $em->getRepository('ErpBundle:Project')->findAll();
 
 
-//        var_dump($users);
+     //  var_dump($users);
         return $this->render('ErpBundle:Project:index.html.twig', array(
             'entities' => $entities,
             'users' => $users,
@@ -197,6 +195,7 @@ class ProjectController extends Controller
         $issueObject = new IssueController();
         // список исполнителей
         $users = $this->Alluser();
+        //var_dump($users);
         //список клиентов
         $clients = $this->AllClient();
         // статусы задач
@@ -205,6 +204,7 @@ class ProjectController extends Controller
         $issuearr = $issueObject->getIssueProject($em,$id);
         //Список контактов
         $contactObject = new ContactController();
+
         $contactProject = $contactObject->getAllContactProject($em,$id);
         $contactProjectDoer = $contactObject->getAllContactProjectDoer($em,$id);
 
@@ -221,6 +221,7 @@ class ProjectController extends Controller
         $deleteForm = $this->createDeleteForm($id);
 
 
+       // var_dump($contactProject);
 
         return $this->render('ErpBundle:Project:show.html.twig', array(
             'entity' => $entity,

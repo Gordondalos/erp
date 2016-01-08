@@ -39,13 +39,18 @@
 
                 {#<td>{{ entity.roles }}</td>#}
 
-                {% for key,role in roles %}
-                    {% for keys,roler in entity.roles %}
-                        {% if(role == roler)  %}
-                            <td>{{ role }}</td>
+                <td>
+                    {% for key, rolers in roles %}
+                        {#{% for role in entity.roles %}#}
+
+                        {% if key  ==  entity.roles[0] %}
+
+                            {{ rolers }}
+
                         {% endif %}
+                        {#{% endfor %}#}
                     {% endfor %}
-                {% endfor %}
+                </td>
 
                 <td>{{ entity.email }}</td>
                 {#<td>{{ entity.description }}</td>#}

@@ -1,64 +1,72 @@
 {% extends '::base.html.twig' %}
 {% block body %}
 
-    <h1>Users</h1>
+    <h1>{{ entity.userName }}</h1>
 
-    <table class="record_properties">
-        <tbody>
+    <div class="col-md-4 col-md-offset-8">
+        <div class="right">
+            <ul class="record_actions">
+                <li>
+                    <a href="{{ path('users') }}">
+                        {{ 'Back to the list'|trans }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('users_edit', { 'id': entity.id }) }}">
+                        {{ 'edit'|trans }}
+                    </a>
+                </li>
+                <li>{{ form(delete_form) }}</li>
+            </ul>
+        </div>
+
+        <table class="record_properties">
+            <tbody>
             <tr>
-                <th>Id</th>
+                <th>{{ 'id'|trans }}</th>
                 <td>{{ entity.id }}</td>
             </tr>
-            <tr>
-                <th>Username</th>
-                <td>{{ entity.userName }}</td>
-            </tr>
-            <tr>
-                <th>Login</th>
-                <td>{{ entity.login }}</td>
-            </tr>
+
+
             {#<tr>#}
-                {#<th>Password</th>#}
-                {#<td>{{ entity.password }}</td>#}
+            {#<th>Password</th>#}
+            {#<td>{{ entity.password }}</td>#}
             {#</tr>#}
             <tr>
-                <th>Role</th>
-                {% for key,role in roles %}
-                    {% if key  ==  entity.role %}
-                        <td>{{ role }}</td>
-                    {% endif %}
-                {% endfor %}
+                <th>{{ 'Role'|trans }}</th>
+                <td>
+                    {% for key, rolers in roless %}
+                        {#{% for role in entity.roles %}#}
+
+                        {% if key  ==  entity.roles[0] %}
+
+                            {{ rolers }}
+
+                        {% endif %}
+                        {#{% endfor %}#}
+                    {% endfor %}
+                </td>
             </tr>
             <tr>
-                <th>Mail</th>
-                <td>{{ entity.mail }}</td>
+                <th>{{ 'Email'|trans }}</th>
+                <td>{{ entity.email }}</td>
             </tr>
             <tr>
-                <th>Description</th>
+                <th>{{ 'description'|trans }}</th>
                 <td>{{ entity.description }}</td>
             </tr>
             <tr>
-                <th>Avatar</th>
+                <th>{{ 'Avatar'|trans }}</th>
                 <td>{{ entity.avatar }}</td>
             </tr>
             <tr>
-                <th>Phone</th>
+                <th>{{ 'Phone'|trans }}</th>
                 <td>{{ entity.phone }}</td>
             </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('users') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('users_edit', { 'id': entity.id }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+
+
 {% endblock %}

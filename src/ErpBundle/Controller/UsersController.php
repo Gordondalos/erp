@@ -17,6 +17,7 @@ class UsersController extends Controller
 
     public function getAllUserAction($em){
         $AllUser = $em->getRepository('ErpBundle:Users')->findAll();
+      // var_dump($AllUser);
         return $AllUser;
     }
 
@@ -60,6 +61,19 @@ class UsersController extends Controller
         $form->handleRequest($request);
 
         if ($form->isValid()) {
+
+/**/
+            $factory= $this->container->get('security.encoder_factory');
+            $encoder = $factory->getEncoder($entity);
+
+            $entity->setRoles(array($request->request->get('erpbundle_users')['roless']));
+
+            if(!empty( $form['passwort']->getData())){
+                $entity->setPassword($encoder->encodePassword( $form['passwort']->getData(),$entity->getSalt()));
+            }
+            /**/
+
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
@@ -103,9 +117,23 @@ class UsersController extends Controller
         ));
 
 
-        $form->add('role', 'choice', array('label' => 'Выберите роль',
+//        $form->add('role', 'choice', array('label' => 'Выберите роль',
+//            'multiple' => false,
+//            'choices' => $roles,
+//        ));
+
+
+        $form->add('roless', 'choice', array('label' => 'Выберите роль',
             'multiple' => false,
             'choices' => $roles,
+            'mapped'=>false,
+            'data'=> $entity->getDbRole()
+        ));
+
+        $form->add('passwort','text',array(
+            'label' => 'Новый пароль',
+            'mapped'=>false,
+            'required'=>false
         ));
 
         $form->add('submit', 'submit', array('label' => 'Create'));
@@ -154,10 +182,15 @@ class UsersController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
+
+//        var_dump($entity);
+//echo "<br><br>";
+//        var_dump($roles);
+
         return $this->render('ErpBundle:Users:show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
-            'roles' => $roles,
+            'roless' => $roles,
         ));
     }
 

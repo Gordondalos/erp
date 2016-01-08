@@ -40,8 +40,8 @@ class ContactController extends Controller
         $users = array();
         foreach ($user as $value ) {
             $arr = (array)($value);
-            $UserId = array_shift($arr);
-            $UserName = array_shift($arr);
+            $UserId = $value->getId();
+            $UserName = $value->getUsername();
             $users += [$UserId => $UserName];
         }
         return  $users;
@@ -175,9 +175,10 @@ class ContactController extends Controller
 
         $clients = $this->AllClient();
 
+
         $epmtyarr = array("");
-        $clients =  array_merge($epmtyarr, $clients);
-        $users =  array_merge($epmtyarr, $users);
+        $clients = $epmtyarr + $clients;  // array_merge($epmtyarr, $clients);
+        $users = $epmtyarr + $users;   //array_merge($epmtyarr, $users);
 
 
         $form = $this->createForm(new ContactType(), $entity, array(
@@ -307,8 +308,8 @@ class ContactController extends Controller
 
 
         $epmtyarr = array("");
-        $clients =  array_merge($epmtyarr, $clients);
-        $users =  array_merge($epmtyarr, $users);
+        $clients = $epmtyarr + $clients;  // array_merge($epmtyarr, $clients);
+        $users = $epmtyarr + $users;   //array_merge($epmtyarr, $users););
 
 
         $form = $this->createForm(new ContactType(), $entity, array(
