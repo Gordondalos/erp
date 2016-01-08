@@ -10,4 +10,16 @@ class DefaultController extends Controller
     {
         return $this->render('ErpBundle:Default:index.html.twig');
     }
+
+
+    public function hooImAction(){
+        $us  = $this->getUser();
+        //var_dump($us); die;
+
+        return $this->render('ErpBundle:Default:user.html.twig', array(
+            'us' => $us,
+        ));
+    }
+
+
 }

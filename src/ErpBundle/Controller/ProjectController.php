@@ -1,4 +1,5 @@
 <?php
+//$em->persist($entity1); $em->persist($entity2); $em->flush();
 
 namespace ErpBundle\Controller;
 
@@ -16,6 +17,33 @@ use ErpBundle\Form\ProjectType;
 class ProjectController extends Controller
 {
 
+    // Проекты текущего пользователя где id айдишник текущего пользователя в проектах
+    public function getUserProject($em,$id){
+
+        //  var_dump($id);
+        $dql   = "SELECT u FROM ErpBundle:Project u WHERE u.projectManager = ".$id." OR u.projectCreator = ".$id." ORDER BY u.id Desc ";
+        $query = $em->createQuery($dql);
+
+        $result = $query->getResult();
+       //  var_dump($result);
+        return $result;
+    }
+
+    // id проектов где пользователь является автором задач или исполнителем, по айдишнику пользователя
+    public function getUserIssueProject($em,$id){
+
+        $dql   = "SELECT u.project FROM ErpBundle:Issue u WHERE u.issueAutor = ".$id." OR u.issueExecutor = ".$id." ORDER BY u.id Desc ";
+        $query = $em->createQuery($dql);
+        $result = $query->getResult();
+
+        //var_dump($result);
+        //die;
+        return $result;
+    }
+
+
+
+
     // Проекты Клиента
     public function getClientProject($em,$id){
 
@@ -24,7 +52,6 @@ class ProjectController extends Controller
         $query = $em->createQuery($dql);
         // var_dump($query);
         return $query->getResult();
-
     }
 
 
@@ -70,6 +97,11 @@ class ProjectController extends Controller
         return $entities;
     }
 
+
+
+
+
+
     /**
      * Lists all Project entities.
      *
@@ -80,12 +112,17 @@ class ProjectController extends Controller
         $users = $this->Alluser();
         $clients = $this->AllClient();
 
-        $entities = $em->getRepository('ErpBundle:Project')->findAll();
+        $usId  = $this->getUser()->getId();
 
 
-     //  var_dump($users);
+
+        $rezultat = $this->getUserIssueProject($em,$usId);
+        $rezult = $this->getUserProject($em,$usId);
+      //  $entities = $em->getRepository('ErpBundle:Project')->findAll();
+    //   echo"<br><br>";
+//var_dump($entities);
         return $this->render('ErpBundle:Project:index.html.twig', array(
-            'entities' => $entities,
+            'entities' => $rezult,
             'users' => $users,
             'clients' => $clients,
         ));

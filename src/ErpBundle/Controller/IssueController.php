@@ -122,7 +122,23 @@ class IssueController extends Controller
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
+
+
+
+
             $em->flush();
+
+            $issue = $entity->getId();
+            $project = $entity->getProject();
+            $issueExecutor = $entity->getissueExecutor();
+            $issueAutor = $entity->getissueAutor();
+
+
+
+
+            var_dump($entity); die;
+
+
 
             return $this->redirect($this->generateUrl('issue_show', array('id' => $entity->getId())));
         }
