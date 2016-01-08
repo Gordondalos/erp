@@ -165,7 +165,7 @@ class UsersController extends Controller
      * Displays a form to edit an existing Users entity.
      *
      */
-    public function editAction(Request $request, $id)
+    public function editAction($id)
     {
         $em = $this->getDoctrine()->getManager();
 
@@ -206,7 +206,6 @@ class UsersController extends Controller
             $roleId = array_shift($arr);
             $roleName = array_shift($arr);
             $roles += [$roleId => $roleName];
-
         }
 //var_dump($roles);
 
@@ -219,7 +218,14 @@ class UsersController extends Controller
         $form->add('roless', 'choice', array('label' => 'Выберите роль',
             'multiple' => false,
             'choices' => $roles,
-            'mapped'=>false
+            'mapped'=>false,
+            'data'=> $entity->getDbRole()
+        ));
+
+        $form->add('passwort','text',array(
+            'label' => 'Новый пароль',
+            'mapped'=>false,
+            'required'=>false
         ));
 
 
@@ -250,7 +256,19 @@ class UsersController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isValid()) {
+            $factory= $this->container->get('security.encoder_factory');
+            $encoder = $factory->getEncoder($entity);
+
             $entity->setRoles(array($request->request->get('erpbundle_users')['roless']));
+
+            if(!empty( $editForm['passwort']->getData())){
+                $entity->setPassword($encoder->encodePassword( $editForm['passwort']->getData(),$entity->getSalt()));
+            }
+
+//            $entity->setPassword($editForm['roless']->getData());
+
+
+
             $em->flush();
 
             return $this->redirect($this->generateUrl('users_edit', array('id' => $id)));

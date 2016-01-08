@@ -17,6 +17,20 @@ class Users extends BaseUser
         $this->roles = Array("ROLE_USER");
     }
 
+
+    public function getDbRole(){
+        $foundRole = Null;
+        foreach($this->roles as $role){
+            if($role != "ROLE_USER" ){
+                $foundRole = $role; break;
+            }
+            else{
+                $foundRole = $role;
+            }
+        }
+        return  $foundRole;
+    }
+
     /**
      * @var integer
      */

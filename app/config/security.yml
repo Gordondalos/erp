@@ -38,3 +38,5 @@ security:
         - { path: ^/settings, role: ROLE_ADMIN }
         - { path: ^/users, role: ROLE_ADMIN }
         - { path: ^/client, role: ROLE_USER }
+        - { path: ^/contact, role: ROLE_USER }
+        - { path: ^/project, role: ROLE_USER }

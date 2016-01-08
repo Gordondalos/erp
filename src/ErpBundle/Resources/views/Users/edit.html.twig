@@ -3,12 +3,18 @@
 
     <h1>Users edit</h1>
 
+    {{ form_start(edit_form) }}
+    {{ form_widget(edit_form.roless) }}
+
+
+
     {{ form(edit_form) }}
+    {{ form_end(edit_form) }}
 
         <ul class="record_actions">
     <li>
         <a href="{{ path('users') }}">
-            Back to the list
+            {{ 'Back to the list'|trans }}
         </a>
     </li>
     <li>{{ form(delete_form) }}</li>
