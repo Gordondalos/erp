@@ -117,6 +117,8 @@ class ProjectController extends Controller
 
 
         $rezultat = $this->getUserIssueProject($em,$usId);
+
+
         $rezult = $this->getUserProject($em,$usId);
       //  $entities = $em->getRepository('ErpBundle:Project')->findAll();
     //   echo"<br><br>";
