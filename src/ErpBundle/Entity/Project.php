@@ -276,4 +276,32 @@ class Project
     {
         return $this->projectType;
     }
+    /**
+     * @var integer
+     */
+    private $projectStatus;
+
+
+    /**
+     * Set projectStatus
+     *
+     * @param integer $projectStatus
+     * @return Project
+     */
+    public function setProjectStatus($projectStatus)
+    {
+        $this->projectStatus = $projectStatus;
+
+        return $this;
+    }
+
+    /**
+     * Get projectStatus
+     *
+     * @return integer 
+     */
+    public function getProjectStatus()
+    {
+        return $this->projectStatus;
+    }
 }

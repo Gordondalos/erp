@@ -53,4 +53,10 @@ ErpBundle\Entity\Project:
             nullable: false
             unsigned: false
             column: project_type
+        projectStatus:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: project_status
     lifecycleCallbacks: {  }

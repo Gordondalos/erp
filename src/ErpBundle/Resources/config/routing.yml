@@ -1,3 +1,7 @@
+erp_projectstatus:
+    resource: "@ErpBundle/Resources/config/routing/projectstatus.yml"
+    prefix:   /projectstatus
+
 erp_projecttype:
     resource: "@ErpBundle/Resources/config/routing/projecttype.yml"
     prefix:   /projecttype

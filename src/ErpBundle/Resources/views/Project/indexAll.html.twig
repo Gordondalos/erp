@@ -14,7 +14,7 @@
                     {{ 'Create a new entry'|trans }}
                 </a>
             </li>
-            <li><a href="{{ path('projectAll') }}">{{ 'look all project'|trans }}</a></li>
+            <li> <a href="{{ path('project') }}">{{ 'look my project'|trans }}</a></li>
         </ul>
     </div>
 
@@ -51,9 +51,9 @@
 
                 {#{% for key,user in users %}#}
 
-                    {#{% if key == entity.projectCreator %}#}
-                        {#<td>{{ user }}</td>#}
-                    {#{% endif %}#}
+                {#{% if key == entity.projectCreator %}#}
+                {#<td>{{ user }}</td>#}
+                {#{% endif %}#}
 
                 {#{% endfor %}#}
 
@@ -74,7 +74,7 @@
                 <td>
                     <ul>
                         {#<li>#}
-                            {#<a href="{{ path('project_show', { 'id': entity.id }) }}">{{ 'show'|trans }}</a>#}
+                        {#<a href="{{ path('project_show', { 'id': entity.id }) }}">{{ 'show'|trans }}</a>#}
                         {#</li>#}
                         <li>
                             <a href="{{ path('project_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>

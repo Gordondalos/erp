@@ -1,0 +1,30 @@
+projectstatus:
+    path:     /
+    defaults: { _controller: "ErpBundle:ProjectStatus:index" }
+
+projectstatus_show:
+    path:     /{id}/show
+    defaults: { _controller: "ErpBundle:ProjectStatus:show" }
+
+projectstatus_new:
+    path:     /new
+    defaults: { _controller: "ErpBundle:ProjectStatus:new" }
+
+projectstatus_create:
+    path:     /create
+    defaults: { _controller: "ErpBundle:ProjectStatus:create" }
+    requirements: { _method: post }
+
+projectstatus_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ErpBundle:ProjectStatus:edit" }
+
+projectstatus_update:
+    path:     /{id}/update
+    defaults: { _controller: "ErpBundle:ProjectStatus:update" }
+    requirements: { _method: post|put }
+
+projectstatus_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ErpBundle:ProjectStatus:delete" }
+    requirements: { _method: post|delete }

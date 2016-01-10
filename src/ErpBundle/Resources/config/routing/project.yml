@@ -1,6 +1,11 @@
 project:
     path:     /
     defaults: { _controller: "ErpBundle:Project:index" }
+projectAll:
+    path:     /all
+    defaults: { _controller: "ErpBundle:Project:indexAll" }
+
+
 
 project_show:
     path:     /{id}/show

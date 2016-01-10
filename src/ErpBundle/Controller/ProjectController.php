@@ -18,47 +18,72 @@ class ProjectController extends Controller
 {
 
     // Проекты текущего пользователя где id айдишник текущего пользователя в проектах
-    public function getUserProject($em,$id){
+    public function getUserProject($em,$id,$all){
 
-        //  var_dump($id);
-        $dql   = "SELECT u FROM ErpBundle:Project u WHERE u.projectManager = ".$id." OR u.projectCreator = ".$id." ORDER BY u.id Desc ";
-        $query = $em->createQuery($dql);
-
-        $result = $query->getResult();
-       //  var_dump($result);
+        if($all){
+            $dql   = "SELECT u FROM ErpBundle:Project u WHERE (u.projectManager = ".$id." OR u.projectCreator = ".$id.") ORDER BY u.id Desc ";
+            $query = $em->createQuery($dql);
+            $result = $query->getResult();
+        }else{
+            $dql   = "SELECT u FROM ErpBundle:Project u WHERE  u.projectStatus != 3 AND (u.projectManager = ".$id." OR u.projectCreator = ".$id.") ORDER BY u.id Desc ";
+            $query = $em->createQuery($dql);
+            $result = $query->getResult();
+        }
         return $result;
     }
 
     // id проектов где пользователь является автором задач или исполнителем, по айдишнику пользователя
-    public function getUserIssueProject($em,$id){
+    public function getUserIssueProject($em,$id,$all){
 
-//        $dql   = "SELECT u.project FROM ErpBundle:Issue u WHERE u.issueAutor = ".$id." OR u.issueExecutor = ".$id." ORDER BY u.id Desc ";
-//        $query = $em->createQuery($dql);
-//        $result = $query->getResult();
+
 
         $dql   = "SELECT DISTINCT (u.project) FROM ErpBundle:projectCommand u WHERE u.issueAutor = ".$id." OR u.issueExecutor = ".$id." ORDER BY u.id Asc ";
         $query = $em->createQuery($dql);
         $result = $query->getResult();
 
 
-        $projectObj = Array();
-        foreach ($result as $project){
-            foreach($project as $value){
 
-                $dql   = "SELECT u FROM ErpBundle:project u WHERE u.id = ".$value."ORDER BY u.id Asc ";
-                $query = $em->createQuery($dql);
-                $projects = $query->getSingleResult();
-                $projectObj[] = $projects;
+        if($all){
+            $projectObj = Array();
+            foreach ($result as $project){
+                foreach($project as $value){
+
+                    $dql = "SELECT u FROM ErpBundle:project u WHERE  u.id =".$value." ORDER BY u.id Asc ";
+                    $query = $em->createQuery($dql);
+                    $projects = $query->getOneOrNullResult();
+
+                    if($projects){
+                        $projectObj[] = $projects;
+                    }
+
+
+                }
 
             }
+        }else{
+            $projectObj = Array();
+            foreach ($result as $project){
+                foreach($project as $value){
 
+                    $dql = "SELECT u FROM ErpBundle:project u WHERE u.projectStatus != 3 AND  u.id =".$value." ORDER BY u.id Asc ";
+                    $query = $em->createQuery($dql);
+                    $projects = $query->getOneOrNullResult();
+
+                    if($projects){
+                        $projectObj[] = $projects;
+                    }
+
+
+                }
+
+            }
         }
+
 
         //var_dump($projectObj);
         //die;
         return $projectObj;
     }
-
 
 
 
@@ -117,9 +142,6 @@ class ProjectController extends Controller
 
 
 
-
-
-
     /**
      * Lists all Project entities.
      *
@@ -129,25 +151,37 @@ class ProjectController extends Controller
         $em = $this->getDoctrine()->getManager();
         $users = $this->Alluser();
         $clients = $this->AllClient();
-
         $usId  = $this->getUser()->getId();
-
-
-
-        $rezultat = $this->getUserIssueProject($em,$usId);
-
-
-        $rezult = $this->getUserProject($em,$usId);
-      //  $entities = $em->getRepository('ErpBundle:Project')->findAll();
-    //   echo"<br><br>";
-//var_dump($entities);
-        return $this->render('ErpBundle:Project:index.html.twig', array(
+        $rezultat = $this->getUserIssueProject($em,$usId,false);
+        $rezult = $this->getUserProject($em,$usId,false);
+         return $this->render('ErpBundle:Project:index.html.twig', array(
             'entities' => $rezult,
             'projectIssueExecutor' => $rezultat,
             'users' => $users,
             'clients' => $clients,
         ));
     }
+
+
+    public function indexAllAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $users = $this->Alluser();
+        $clients = $this->AllClient();
+        $usId  = $this->getUser()->getId();
+        $rezultat = $this->getUserIssueProject($em,$usId,true);
+        $rezult = $this->getUserProject($em,$usId,true);
+        return $this->render('ErpBundle:Project:indexAll.html.twig', array(
+            'entities' => $rezult,
+            'projectIssueExecutor' => $rezultat,
+            'users' => $users,
+            'clients' => $clients,
+        ));
+    }
+
+
+
+
 
     /**
      * Creates a new Project entity.
@@ -328,9 +362,18 @@ class ProjectController extends Controller
      */
     private function createEditForm(Project $entity)
     {
+        $em = $this->getDoctrine()->getManager();
+       $projectStatusObj = new ProjectStatusController();
+        $projectStatus = $projectStatusObj->getAllProjectStatus($em);
+
+       //var_dump($projectStatus);
 
         $users = $this->Alluser();
         $clients = $this->AllClient();
+
+    //    echo "<br><br>";
+     //   var_dump( $clients);
+
         $form = $this->createForm(new ProjectType(), $entity, array(
             'action' => $this->generateUrl('project_update', array('id' => $entity->getId())),
             'method' => 'PUT',
@@ -351,6 +394,11 @@ class ProjectController extends Controller
         $form->add('client', 'choice', array('label' => 'Измените Клиента',
             'multiple' => false,
             'choices' => $clients,
+        ));
+
+        $form->add('projectStatus', 'choice', array('label' => 'Выберите Статус',
+            'multiple' => false,
+            'choices' => $projectStatus,
         ));
 
 
