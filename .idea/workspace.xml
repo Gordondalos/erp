@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f165498-413a-4d1e-a758-f4098d7f3c68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/erp_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\erp\src\ErpBundle\Resources\config\doctrine\Users123.orm.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Entity/FosUser.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Entity/FosUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/erp.iml" afterPath="$PROJECT_DIR$/.idea/erp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\erp\src\ErpBundle\Entity\Users123.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\erp\src\ErpBundle\Entity\Users123456.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="erp.iws" />
@@ -45,17 +41,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-              <folding>
-                <element signature="e#104#146#0#PHP" expanded="false" />
-                <element signature="e#3789#3803#0#PHP" expanded="false" />
-                <element signature="e#3880#3913#0#PHP" expanded="false" />
-                <element signature="e#4662#4678#1#PHP" expanded="false" />
-                <element signature="e#8430#8446#0#PHP" expanded="false" />
-                <element signature="e#9744#9758#0#PHP" expanded="false" />
-                <element signature="e#9822#9856#0#PHP" expanded="false" />
-                <element signature="e#10643#10652#1#PHP" expanded="false" />
-                <element signature="e#10974#10990#0#PHP" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,11 +49,10 @@
       <file leaf-file-name="IssueController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-107.25">
+            <state vertical-scroll-proportion="0.0">
               <caret line="143" column="13" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
               <folding>
                 <element signature="e#40#76#0#PHP" expanded="true" />
-                <element signature="e#3890#3902#0#PHP" expanded="true" />
                 <marker date="1452328001706" expanded="true" signature="409:483" placeholder="SELECT u FRO..ErpBundle..." />
               </folding>
             </state>
@@ -77,7 +62,7 @@
       <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Entity/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8028169">
+            <state vertical-scroll-proportion="0.0">
               <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
                 <element signature="e#36#78#0#PHP" expanded="true" />
@@ -89,7 +74,7 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.4788733">
+            <state vertical-scroll-proportion="0.0">
               <caret line="381" column="20" selection-start-line="381" selection-start-column="20" selection-end-line="381" selection-end-column="20" />
               <folding />
             </state>
@@ -99,7 +84,7 @@
       <file leaf-file-name="FosUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Entity/FosUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.083334">
+            <state vertical-scroll-proportion="0.0">
               <caret line="495" column="0" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
               <folding />
             </state>
@@ -139,7 +124,7 @@
       <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21121252">
+            <state vertical-scroll-proportion="0.12398374">
               <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding />
             </state>
@@ -282,6 +267,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -552,8 +539,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -760,14 +745,15 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32855436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RemoteSynchronizer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7108722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30704898" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30585423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27977163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28548124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -780,7 +766,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -820,7 +805,8 @@
     <MESSAGE value="починил всех добавление ролей" />
     <MESSAGE value="поправил в бд таблицу с проектной командой собираюсь делать мапинг импорт" />
     <MESSAGE value="create object project_command and add this in bd" />
-    <option name="LAST_COMMIT_MESSAGE" value="create object project_command and add this in bd" />
+    <MESSAGE value="слил ветки с возможностями добавления проектной команды" />
+    <option name="LAST_COMMIT_MESSAGE" value="слил ветки с возможностями добавления проектной команды" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1020,23 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34701055">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#639#656#1#PHP" expanded="false" />
-            <element signature="e#1046#1079#0#PHP" expanded="false" />
-            <element signature="e#2043#2055#0#PHP" expanded="false" />
-            <element signature="e#3931#3962#0#PHP" expanded="false" />
-            <element signature="e#4580#4597#1#PHP" expanded="false" />
-            <element signature="e#4889#4921#0#PHP" expanded="false" />
-            <element signature="e#5287#5304#1#PHP" expanded="false" />
-            <element signature="e#5570#5602#0#PHP" expanded="false" />
-            <element signature="e#6496#6510#0#PHP" expanded="false" />
-            <element signature="e#7364#7381#1#PHP" expanded="false" />
-            <element signature="e#8264#8276#0#PHP" expanded="false" />
-            <element signature="e#8340#8372#0#PHP" expanded="false" />
-            <element signature="e#8877#8894#1#PHP" expanded="false" />
-            <element signature="e#9159#9166#1#PHP" expanded="false" />
-            <element signature="e#9486#9500#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,7 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6585366">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1145,7 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,17 +1120,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="e#104#146#0#PHP" expanded="false" />
-            <element signature="e#3789#3803#0#PHP" expanded="false" />
-            <element signature="e#3880#3913#0#PHP" expanded="false" />
-            <element signature="e#4662#4678#1#PHP" expanded="false" />
-            <element signature="e#8430#8446#0#PHP" expanded="false" />
-            <element signature="e#9744#9758#0#PHP" expanded="false" />
-            <element signature="e#9822#9856#0#PHP" expanded="false" />
-            <element signature="e#10643#10652#1#PHP" expanded="false" />
-            <element signature="e#10974#10990#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,11 +1141,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-107.25">
+        <state vertical-scroll-proportion="0.0">
           <caret line="143" column="13" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
           <folding>
             <element signature="e#40#76#0#PHP" expanded="true" />
-            <element signature="e#3890#3902#0#PHP" expanded="true" />
             <marker date="1452328001706" expanded="true" signature="409:483" placeholder="SELECT u FRO..ErpBundle..." />
           </folding>
         </state>
@@ -1204,7 +1160,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Entity/FosUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.083334">
+        <state vertical-scroll-proportion="0.0">
           <caret line="495" column="0" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
           <folding />
         </state>
@@ -1212,7 +1168,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4788733">
+        <state vertical-scroll-proportion="0.0">
           <caret line="381" column="20" selection-start-line="381" selection-start-column="20" selection-end-line="381" selection-end-column="20" />
           <folding />
         </state>
@@ -1220,7 +1176,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Entity/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8028169">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
             <element signature="e#36#78#0#PHP" expanded="true" />
@@ -1230,7 +1186,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21121252">
+        <state vertical-scroll-proportion="0.12398374">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
