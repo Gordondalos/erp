@@ -56,6 +56,7 @@ class IssueController extends Controller
     }
 
 
+
     public function AllStatus(){
         $us = new IssueStatusController();
         $em = $this->getDoctrine()->getManager();
@@ -125,8 +126,6 @@ class IssueController extends Controller
             $em->persist($entity);
 
 
-
-
             $em->flush();
 
             $issue = $entity->getId();
@@ -135,8 +134,6 @@ class IssueController extends Controller
             $issueAutor = $entity->getissueAutor();
 
             $entity1 = new ProjectCommand();
-
-
 
             $entity1->setIssue($issue);
 
@@ -206,6 +203,64 @@ class IssueController extends Controller
         return $form;
     }
 
+
+
+    /**
+     * Creates a form to create a Issue entity.
+     *
+     * @param Issue $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createCreateIssueInProjectForm(Issue $entity,$id_project)
+    {
+
+
+
+
+        $em = $this->getDoctrine()->getManager();
+
+        $objProd = new ProjectController();
+       //
+        $projects = $objProd->getOneProject( $em, $id_project);
+        //var_dump($projects);
+        $users = $this->Alluser();
+        $statuses = $this->AllStatus();
+
+        $form = $this->createForm(new IssueType(), $entity, array(
+            'action' => $this->generateUrl('issue_create'),
+            'method' => 'POST',
+        ));
+
+
+        $form->add('issueAutor', 'choice', array('label' => 'Создатель Задачи',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+        $form->add('issueExecutor', 'choice', array('label' => 'Исполнитель',
+            'multiple' => false,
+            'choices' => $users,
+        ));
+
+
+        $form->add('status', 'choice', array('label' => 'Статус задачи',
+            'multiple' => false,
+            'choices' => $statuses,
+        ));
+
+        $form->add('project', 'text', array('label' => 'Проект',
+
+// Тут в форму нужно запихать имя проекта и айдишник
+
+        ));
+
+        $form->add('submit', 'submit', array('label' => 'Create'));
+
+        return $form;
+    }
+
+
     /**
      * Displays a form to create a new Issue entity.
      *
@@ -220,6 +275,22 @@ class IssueController extends Controller
             'form'   => $form->createView(),
         ));
     }
+
+
+
+    public function newInProjectAction($id)
+    {
+      // var_dump(123) ; die;
+        $entity = new Issue();
+       // var_dump(123) ;
+        $form   = $this->createCreateIssueInProjectForm($entity,$id);
+
+        return $this->render('ErpBundle:Issue:new.html.twig', array(
+            'entity' => $entity,
+            'form'   => $form->createView(),
+        ));
+    }
+
 
     /**
      * Finds and displays a Issue entity.
@@ -340,8 +411,12 @@ class IssueController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('issue_edit', array('id' => $id)));
+           $project_id = $entity->getProject();
+
+            return $this->redirect($this->generateUrl('project_show', array('id' => $project_id)));
         }
+
+
 
         return $this->render('ErpBundle:Issue:edit.html.twig', array(
             'entity'      => $entity,

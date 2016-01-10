@@ -10,6 +10,14 @@ issue_new:
     path:     /new
     defaults: { _controller: "ErpBundle:Issue:new" }
 
+
+issue_new_in_project:
+    path:     /{id}/new_in_project
+    defaults: { _controller: "ErpBundle:Issue:newInProject" }
+
+
+
+
 issue_create:
     path:     /create
     defaults: { _controller: "ErpBundle:Issue:create" }

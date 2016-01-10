@@ -94,7 +94,7 @@
     <div class="right">
         <ul>
             <li>
-                <a href="{{ path('issue_new') }}">
+                <a href="{{ path('issue_new_in_project',{'id': entity.id}) }}">
                     {{ 'Create a new entry'|trans }}
                 </a>
             </li>

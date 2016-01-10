@@ -3,8 +3,7 @@ h1, h2, h3, h4, h5 {
   font-family: RobotoRegular, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 35px;
   color: #000066;
-  margin-bottom: -30px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 /* line 47, ../../../../src/sass/__base/part/common.sass */

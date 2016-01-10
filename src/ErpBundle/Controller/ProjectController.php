@@ -35,13 +35,9 @@ class ProjectController extends Controller
     // id проектов где пользователь является автором задач или исполнителем, по айдишнику пользователя
     public function getUserIssueProject($em,$id,$all){
 
-
-
         $dql   = "SELECT DISTINCT (u.project) FROM ErpBundle:projectCommand u WHERE u.issueAutor = ".$id." OR u.issueExecutor = ".$id." ORDER BY u.id Asc ";
         $query = $em->createQuery($dql);
         $result = $query->getResult();
-
-
 
         if($all){
             $projectObj = Array();
@@ -138,6 +134,13 @@ class ProjectController extends Controller
     public function getAllProject($em){
         $entities = $em->getRepository('ErpBundle:Project')->findAll();
         return $entities;
+    }
+
+
+    public function getOneProject($em,$id){
+        $entity = $em->getRepository('ErpBundle:Project')->find($id);
+       // var_dump($entity); die;
+        return $entity;
     }
 
 
