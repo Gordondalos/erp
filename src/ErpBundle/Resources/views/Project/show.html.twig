@@ -124,20 +124,13 @@
                 {#<td><a href="{{ path('issue_show', { 'id': issue.id }) }}">{{ issue.id }}</a></td>#}
                 <td><a href="{{ path('issue_show', { 'id': issue.id }) }}">{{ issue.issueName }}</a></td>
                 <td>{{ issue.issueDescription }}</td>
-                {#{% for key,user in users %}#}
 
-                {#{% if key == issue.issueAutor %}#}
-                {#<td>{{ user }}</td>#}
-                {#{% endif %}#}
-
-                {#{% endfor %}#}
-                {#<td>{{ entity.issueExecutor }}</td>#}
                 <td>
                     {% for key,user in users %}
 
                         {% if key == issue.issueExecutor %}
                             <a href="{{ path('users_show', { 'id': issue.issueExecutor }) }}">{{ user }}</a>
-                            {#<td>{{ user }}</td>#}
+
                         {% endif %}
 
                     {% endfor %}

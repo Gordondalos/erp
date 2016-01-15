@@ -1,0 +1,23 @@
+/* line 3, ../../../../src/sass/_project/section/section_2.sass */
+.name {
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 8, ../../../../src/sass/_project/section/section_2.sass */
+input, select {
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+
+/* line 12, ../../../../src/sass/_project/section/section_2.sass */
+.cke {
+  margin-bottom: 40px !important;
+}
+
+/* line 14, ../../../../src/sass/_project/section/section_2.sass */
+.select {
+  padding: 5px 10px;
+  margin: 5px 10px;
+}

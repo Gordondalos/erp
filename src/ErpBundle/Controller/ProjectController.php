@@ -234,39 +234,53 @@ class ProjectController extends Controller
 
         $DateCreate = new \DateTime('today');
 
-        $form->add('dateCreate', 'date', array('label' => 'Дата',
-            'data' => $DateCreate,
+        $form->add('projectName', 'text', array('label' => ' ',
+            'required'    => true,
+            'attr'=> array( 'placeholder' => 'Название Проекта', 'class'=>'name')
 
         ));
+        $form->add('projectDescription', 'textarea', array('label' => 'Описание проекта',
+
+        ));
+
+        $form->add('dateCreate', 'date', array('label' => 'Дата',
+            'data' => $DateCreate,
+        ));
+        $form->add('dateFinish', 'date', array('label' => 'Дата Окончания'));
 
         $form->add('projectType', 'choice', array('label' => 'Выберете Тип Проекта',
             'multiple' => false,
             'choices' => $projectType,
+            'attr'=> array( 'class'=>'select')
         ));
 
         $form->add('projectStatus', 'choice', array('label' => 'Выберете Статус Проекта',
             'multiple' => false,
             'choices' => $projectStatus,
+            'attr'=> array( 'class'=>'select')
         ));
 
 
         $form->add('projectManager', 'choice', array('label' => 'Выберете Менеджера',
             'multiple' => false,
             'choices' => $users,
+            'attr'=> array( 'class'=>'select')
         ));
 
         $form->add('projectCreator', 'choice', array('label' => 'Создатель проекта',
             'multiple' => false,
             'choices' => $users,
+            'attr'=> array( 'class'=>'select')
         ));
 
 
         $form->add('client', 'choice', array('label' => 'Выберете Клиента',
             'multiple' => false,
             'choices' => $clients,
+            'attr'=> array( 'class'=>'select')
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        $form->add('submit', 'submit', array('label' => 'Создать'));
 
         return $form;
     }

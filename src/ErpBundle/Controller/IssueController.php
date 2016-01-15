@@ -176,6 +176,11 @@ var_dump($request->request);
             'method' => 'POST',
         ));
 
+        $form->add('issueName', 'text', array('label' => ' ',
+            'required'    => true,
+            'attr'=> array( 'placeholder' => 'Название Задачи', 'class'=>'name')
+
+        ));
 
         $form->add('issueAutor', 'choice', array('label' => 'Создатель Задачи',
             'multiple' => false,
@@ -223,6 +228,11 @@ var_dump($request->request);
             'method' => 'POST',
         ));
 
+        $form->add('issueName', 'text', array('label' => ' ',
+            'required'    => true,
+            'attr'=> array( 'placeholder' => 'Название Задачи', 'class'=>'name')
+
+        ));
 
         $form->add('issueAutor', 'choice', array('label' => 'Создатель Задачи',
             'multiple' => false,
