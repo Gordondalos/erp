@@ -61,14 +61,15 @@
                 <td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>
                 {#<td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>#}
 
-
+                <td>
                 {% for key,client in clients %}
 
                     {% if key == entity.client %}
-                        <td>{{ client }}</td>
+                       {{ client }}
                     {% endif %}
 
                 {% endfor %}
+                </td>
 
                 <td>{{ entity.summ }}</td>
                 <td>
