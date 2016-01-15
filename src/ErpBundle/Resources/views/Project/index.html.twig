@@ -88,9 +88,6 @@
     </table>
 
 
-
-
-
     <h1>
         {{ 'Project list iisue'|trans }}
     </h1>
@@ -127,42 +124,32 @@
                 <td><a href="{{ path('project_show', { 'id': entity.id }) }}">{{ entity.projectName }}</a></td>
 
                 {#<td>{{ entity.projectDescription }}</td>#}
-
+                <td>
                 {% for key,user in users %}
 
                     {% if key == entity.projectManager %}
-                        <td>{{ user }}</td>
+                        {{ user }}
                     {% endif %}
 
                 {% endfor %}
-
-                {#{% for key,user in users %}#}
-
-                {#{% if key == entity.projectCreator %}#}
-                {#<td>{{ user }}</td>#}
-                {#{% endif %}#}
-
-                {#{% endfor %}#}
-
+                </td>
 
                 <td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>
                 {#<td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>#}
 
-
+                <td>
                 {% for key,client in clients %}
 
                     {% if key == entity.client %}
-                        <td>{{ client }}</td>
+                        {{ client }}
                     {% endif %}
 
                 {% endfor %}
-
+                </td>
                 <td>{{ entity.summ }}</td>
                 <td>
                     <ul>
-                        {#<li>#}
-                        {#<a href="{{ path('project_show', { 'id': entity.id }) }}">{{ 'show'|trans }}</a>#}
-                        {#</li>#}
+
                         <li>
                             <a href="{{ path('project_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
                         </li>
