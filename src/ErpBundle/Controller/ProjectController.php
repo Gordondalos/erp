@@ -61,7 +61,7 @@ class ProjectController extends Controller
             foreach ($result as $project){
                 foreach($project as $value){
 
-                    $dql = "SELECT u FROM ErpBundle:project u WHERE u.projectStatus != 3 AND  u.id =".$value." ORDER BY u.id Asc ";
+                    $dql = "SELECT u FROM ErpBundle:Project u WHERE u.projectStatus != 3 AND  u.id =".$value." ORDER BY u.id Asc ";
                     $query = $em->createQuery($dql);
                     $projects = $query->getOneOrNullResult();
 
