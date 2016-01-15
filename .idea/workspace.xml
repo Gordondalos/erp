@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f165498-413a-4d1e-a758-f4098d7f3c68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="erp.iws" />
@@ -26,28 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IssueController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.5">
-              <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#76#0#PHP" expanded="true" />
-                <element signature="e#6805#6836#0#PHP" expanded="true" />
-                <element signature="e#7273#7304#0#PHP" expanded="true" />
-                <element signature="e#8007#8039#0#PHP" expanded="true" />
-                <element signature="e#8774#8806#0#PHP" expanded="true" />
-                <element signature="e#9429#9443#0#PHP" expanded="true" />
-                <element signature="e#10919#10933#0#PHP" expanded="true" />
-                <element signature="e#11007#11039#0#PHP" expanded="true" />
-                <element signature="e#11826#11833#1#PHP" expanded="true" />
-                <element signature="e#12153#12167#0#PHP" expanded="true" />
-                <marker date="1452847704856" expanded="true" signature="409:483" placeholder="SELECT u FRO..ErpBundle..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProjectCommand.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Entity/ProjectCommand.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,21 +55,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23536737">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5427136">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -118,40 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Project.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Entity/Project.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.323944">
-              <caret line="85" column="31" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6338028">
-              <caret line="188" column="28" selection-start-line="188" selection-start-column="21" selection-end-line="188" selection-end-column="28" />
-              <folding>
-                <element signature="e#4554#4589#0#PHP" expanded="true" />
-                <element signature="e#5129#5167#0#PHP" expanded="true" />
-                <marker date="1452855025455" expanded="true" signature="572:689" placeholder="SELECT u FRO..ErpBundle..." />
-                <marker date="1452855025455" expanded="true" signature="818:961" placeholder="SELECT u FRO..ErpBundle..." />
-                <marker date="1452855025455" expanded="true" signature="1271:1406" placeholder="SELECT DISTI..ErpBundle..." />
-                <marker date="1452855025455" expanded="true" signature="1661:1736" placeholder="SELECT u FRO..ErpBundle..." />
-                <marker date="1452855025455" expanded="true" signature="2166:2266" placeholder="SELECT u FRO..ErpBundle..." />
-                <marker date="1452855025455" expanded="true" signature="2742:2818" placeholder="SELECT u FRO..ErpBundle..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:mapping:import  ErpBundle yml" />
       <command text="s doctrine:generate:entities ErpBundle" />
       <command text="s doctrine:generate:crud --entity=ErpBundle:Project --with-write --overwrite" />
       <command text="s doctrine:mapping:import  ErpBundle yml" />
@@ -176,10 +133,14 @@
       <command text="s doctrine:generate:entities ErpBundle" />
       <command text="s doctrine:mapping:import  ErpBundle yml" />
       <command text="s doctrine:generate:entities ErpBundle" />
+      <command text="s cache:clear" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -705,7 +666,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452867674136</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="язык">
+      <created>1452867869968</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1452867869968</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -717,6 +684,7 @@
       <window_info id="RemoteSynchronizer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4265233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45519713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28169015" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -724,7 +692,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2512235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24611709" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -736,7 +704,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14301191" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -789,13 +756,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25322393">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.75967175">
@@ -1044,14 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45556805">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8333333">
@@ -1094,12 +1046,12 @@
           <folding>
             <element signature="e#4554#4589#0#PHP" expanded="true" />
             <element signature="e#5129#5167#0#PHP" expanded="true" />
-            <marker date="1452855025455" expanded="true" signature="572:689" placeholder="SELECT u FRO..ErpBundle..." />
-            <marker date="1452855025455" expanded="true" signature="818:961" placeholder="SELECT u FRO..ErpBundle..." />
-            <marker date="1452855025455" expanded="true" signature="1271:1406" placeholder="SELECT DISTI..ErpBundle..." />
-            <marker date="1452855025455" expanded="true" signature="1661:1736" placeholder="SELECT u FRO..ErpBundle..." />
-            <marker date="1452855025455" expanded="true" signature="2166:2266" placeholder="SELECT u FRO..ErpBundle..." />
-            <marker date="1452855025455" expanded="true" signature="2742:2818" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1452855025455" expanded="true" signature="-1:-1" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1452855025455" expanded="true" signature="-1:-1" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1452855025455" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..ErpBundle..." />
+            <marker date="1452855025455" expanded="true" signature="-1:-1" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1452855025455" expanded="true" signature="-1:-1" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1452855025455" expanded="true" signature="-1:-1" placeholder="SELECT u FRO..ErpBundle..." />
           </folding>
         </state>
       </provider>
@@ -1127,7 +1079,7 @@
             <element signature="e#11007#11039#0#PHP" expanded="true" />
             <element signature="e#11826#11833#1#PHP" expanded="true" />
             <element signature="e#12153#12167#0#PHP" expanded="true" />
-            <marker date="1452847704856" expanded="true" signature="409:483" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1452847704856" expanded="true" signature="-1:-1" placeholder="SELECT u FRO..ErpBundle..." />
           </folding>
         </state>
       </provider>
@@ -1144,14 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4722223">
           <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2677686">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1180,18 +1124,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23536737">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/extensions/doc/intl.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025125628">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7236181">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5427136">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
         </state>
       </provider>
