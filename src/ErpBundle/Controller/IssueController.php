@@ -125,11 +125,13 @@ class IssueController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
 
+var_dump($request->request);
 
             $em->flush();
 
             $issue = $entity->getId();
             $project = $entity->getProject();
+
             $issueExecutor = $entity->getissueExecutor();
             $issueAutor = $entity->getissueAutor();
 
@@ -215,15 +217,6 @@ class IssueController extends Controller
     private function createCreateIssueInProjectForm(Issue $entity,$id_project)
     {
 
-
-
-
-        $em = $this->getDoctrine()->getManager();
-
-        $objProd = new ProjectController();
-       //
-        $projects = $objProd->getOneProject( $em, $id_project);
-        //var_dump($projects);
         $users = $this->Alluser();
         $statuses = $this->AllStatus();
 
@@ -243,17 +236,16 @@ class IssueController extends Controller
             'choices' => $users,
         ));
 
-
         $form->add('status', 'choice', array('label' => 'Статус задачи',
             'multiple' => false,
             'choices' => $statuses,
         ));
 
-        $form->add('project', 'text', array('label' => 'Проект',
 
-// Тут в форму нужно запихать имя проекта и айдишник
-
+        $form->add('project', 'hidden', array('label' => 'Проект',
+            'data' => $id_project,
         ));
+
 
         $form->add('submit', 'submit', array('label' => 'Create'));
 
@@ -268,6 +260,7 @@ class IssueController extends Controller
     public function newAction()
     {
         $entity = new Issue();
+
         $form   = $this->createCreateForm($entity);
 
         return $this->render('ErpBundle:Issue:new.html.twig', array(
@@ -280,13 +273,16 @@ class IssueController extends Controller
 
     public function newInProjectAction($id)
     {
-      // var_dump(123) ; die;
         $entity = new Issue();
-       // var_dump(123) ;
         $form   = $this->createCreateIssueInProjectForm($entity,$id);
+
+        $projObj = new ProjectController();
+        $em = $this->getDoctrine()->getManager();
+        $project = $projObj->getOneProject($em,$id);
 
         return $this->render('ErpBundle:Issue:new.html.twig', array(
             'entity' => $entity,
+            'project' => $project->getProjectName(),
             'form'   => $form->createView(),
         ));
     }

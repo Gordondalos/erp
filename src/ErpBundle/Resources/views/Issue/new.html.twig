@@ -1,7 +1,8 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Issue creation</h1>
+    <h1>{{ 'Issue creation'|trans }}</h1>
+    <h2>{{ 'project'|trans }}: {{ project }}</h2>
 
     {{ form(form) }}
 

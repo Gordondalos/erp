@@ -139,7 +139,6 @@ class ProjectController extends Controller
 
     public function getOneProject($em,$id){
         $entity = $em->getRepository('ErpBundle:Project')->find($id);
-       // var_dump($entity); die;
         return $entity;
     }
 
