@@ -15,6 +15,24 @@ use ErpBundle\Form\ProjectTypeType;
 class ProjectTypeController extends Controller
 {
 
+    public function GetAllTypeAction($em){
+        $entities = $em->getRepository('ErpBundle:ProjectType')->findAll();
+
+        $projectType = Array();
+        foreach($entities as $projectTypeVall){
+
+            $projectTypeId = $projectTypeVall->getId();
+            $projectTypeName = $projectTypeVall->gettypeName();
+            $projectType += [$projectTypeId => $projectTypeName];
+        }
+        return $projectType;
+
+
+
+    }
+
+
+
     /**
      * Lists all ProjectType entities.
      *

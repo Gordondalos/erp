@@ -24,6 +24,7 @@ class ProjectType extends AbstractType
             ->add('client')
             ->add('summ')
             ->add('projectStatus')
+            ->add('projectType')
         ;
     }
     

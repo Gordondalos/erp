@@ -218,24 +218,50 @@ class ProjectController extends Controller
      */
     private function createCreateForm(Project $entity)
     {
-        // $em = $this->getDoctrine()->getManager();
+         $em = $this->getDoctrine()->getManager();
         $users = $this->Alluser();
         $clients = $this->AllClient();
 
 
-        //var_dump($clients);
+        $projectTypeobgect = new ProjectTypeController();
+        $projectType = $projectTypeobgect->GetAllTypeAction($em);
 
-        $DateCreate = new \DateTime('today');
-        $DateCreate = $DateCreate->format('Y-m-d H:i');
 
-        // var_dump($DateCreate);
+
+        $projectStatusobgect = new ProjectStatusController();
+        $projectStatus  = $projectStatusobgect->getAllProjectStatus($em);
+
+
+
+
+
+
+
+
+
 
         $form = $this->createForm(new ProjectType(), $entity, array(
             'action' => $this->generateUrl('project_create'),
             'method' => 'POST',
         ));
 
-        //$form->add('dateCreate', $DateCreate );
+        $DateCreate = new \DateTime('today');
+
+        $form->add('dateCreate', 'date', array('label' => 'Дата',
+            'data' => $DateCreate,
+
+        ));
+
+        $form->add('projectType', 'choice', array('label' => 'Выберете Тип Проекта',
+            'multiple' => false,
+            'choices' => $projectType,
+        ));
+
+        $form->add('projectStatus', 'choice', array('label' => 'Выберете Статус Проекта',
+            'multiple' => false,
+            'choices' => $projectStatus,
+        ));
+
 
         $form->add('projectManager', 'choice', array('label' => 'Выберете Менеджера',
             'multiple' => false,
