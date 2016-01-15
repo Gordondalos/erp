@@ -35,7 +35,7 @@ class ProjectController extends Controller
     // id проектов где пользователь является автором задач или исполнителем, по айдишнику пользователя
     public function getUserIssueProject($em,$id,$all){
 
-        $dql   = "SELECT DISTINCT (u.project) FROM ErpBundle:projectCommand u WHERE u.issueAutor = ".$id." OR u.issueExecutor = ".$id." ORDER BY u.id Asc ";
+        $dql   = "SELECT DISTINCT (u.project) FROM ErpBundle:ProjectCommand u WHERE u.issueAutor = ".$id." OR u.issueExecutor = ".$id." ORDER BY u.id Asc ";
         $query = $em->createQuery($dql);
         $result = $query->getResult();
 
@@ -44,7 +44,7 @@ class ProjectController extends Controller
             foreach ($result as $project){
                 foreach($project as $value){
 
-                    $dql = "SELECT u FROM ErpBundle:project u WHERE  u.id =".$value." ORDER BY u.id Asc ";
+                    $dql = "SELECT u FROM ErpBundle:Project u WHERE  u.id =".$value." ORDER BY u.id Asc ";
                     $query = $em->createQuery($dql);
                     $projects = $query->getOneOrNullResult();
 
