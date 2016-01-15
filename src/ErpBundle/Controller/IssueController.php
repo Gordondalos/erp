@@ -18,10 +18,8 @@ class IssueController extends Controller
 
     public function getIssueProject( $em, $id){
 
-      //  var_dump($id);
-        $dql   = "SELECT u FROM ErpBundle:Issue u WHERE u.project = ".$id."ORDER BY u.id ASC ";
+        $dql   = "SELECT u FROM ErpBundle:Issue u WHERE u.project = ".$id."And u.status !=3  ORDER BY u.id ASC ";
         $query = $em->createQuery($dql);
-       // var_dump($query);
         return $query->getResult();
 
     }

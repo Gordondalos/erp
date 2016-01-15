@@ -82,7 +82,6 @@ class ProjectController extends Controller
     }
 
 
-
     // Проекты Клиента
     public function getClientProject($em,$id){
 
@@ -111,7 +110,6 @@ class ProjectController extends Controller
         return $clients;
     }
 
-
     public function Alluser()
     {
 
@@ -130,12 +128,10 @@ class ProjectController extends Controller
         return $users;
     }
 
-
     public function getAllProject($em){
         $entities = $em->getRepository('ErpBundle:Project')->findAll();
         return $entities;
     }
-
 
     public function getOneProject($em,$id){
         $entity = $em->getRepository('ErpBundle:Project')->find($id);
@@ -227,17 +223,8 @@ class ProjectController extends Controller
         $projectType = $projectTypeobgect->GetAllTypeAction($em);
 
 
-
         $projectStatusobgect = new ProjectStatusController();
         $projectStatus  = $projectStatusobgect->getAllProjectStatus($em);
-
-
-
-
-
-
-
-
 
 
         $form = $this->createForm(new ProjectType(), $entity, array(
