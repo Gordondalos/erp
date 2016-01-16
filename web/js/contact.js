@@ -1,0 +1,1 @@
+CKEDITOR.replace("erpbundle_contact[desctiption]");

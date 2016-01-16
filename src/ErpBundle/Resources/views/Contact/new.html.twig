@@ -1,15 +1,18 @@
 {% extends '::base.html.twig' %}
 {% block body %}
 
-    <h1>Contact creation</h1>
+    <h1>{{ 'Contact creation'|trans }}</h1>
 
     {{ form(form) }}
 
         <ul class="record_actions">
     <li>
         <a href="{{ path('contact') }}">
-            Back to the list
+            {{ 'Back to the list'|trans }}
         </a>
     </li>
 </ul>
+    {% block javascripts %}
+        <script src="{{ asset('js/contact.js') }}" type="text/javascript"></script>
+    {% endblock %}
 {% endblock %}

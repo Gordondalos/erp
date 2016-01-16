@@ -1,7 +1,7 @@
 {% extends '::base.html.twig' %}
 {% block body %}
 
-    <h1>Contact edit</h1>
+    <h1>{{ 'Contact edit'|trans }}</h1>
 
     {{ form(edit_form) }}
 
@@ -13,4 +13,7 @@
     </li>
     <li>{{ form(delete_form) }}</li>
 </ul>
+    {% block javascripts %}
+        <script src="{{ asset('js/contact.js') }}" type="text/javascript"></script>
+    {% endblock %}
 {% endblock %}

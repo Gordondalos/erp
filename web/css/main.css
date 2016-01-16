@@ -12376,7 +12376,7 @@ input, select {
 }
 
 /* line 27, ../../src/sass/_project/section/section_2.sass */
-#erpbundle_issue_submit, #erpbundle_project_submit {
+#erpbundle_issue_submit, #erpbundle_project_submit, #erpbundle_contact_submit {
   min-width: 250px;
   margin: 40px 0;
   height: 40px;
@@ -12411,4 +12411,10 @@ input, select {
 label {
   font-weight: 400;
   font-style: italic;
+}
+
+/* line 62, ../../src/sass/_project/section/section_2.sass */
+.clear {
+  clear: both;
+  display: table;
 }

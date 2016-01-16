@@ -14,14 +14,12 @@ use ErpBundle\Form\ContactType;
  */
 class ContactController extends Controller
 {
-
     public function getAllContactProject($em,$id_project){
         //  var_dump($id);
         $dql   = "SELECT u FROM ErpBundle:Contact u WHERE u.project = ".$id_project." And u.client != 0 ORDER BY u.date desc ";
         $query = $em->createQuery($dql);
         // var_dump($query);
         return $query->getResult();
-
     }
     public function getAllContactProjectDoer($em,$id_project){
         //  var_dump($id);
@@ -29,9 +27,7 @@ class ContactController extends Controller
         $query = $em->createQuery($dql);
         // var_dump($query);
         return $query->getResult();
-
     }
-
 
     public function Alluser(){
         $us = new UsersController();
@@ -104,12 +100,10 @@ class ContactController extends Controller
             $clientId = array_shift($arr);
             $clientName = array_shift($arr);
             $clients += [$clientId => $clientName];
-
         }
         return $clients;
 
     }
-
 
 
     /**
@@ -172,50 +166,39 @@ class ContactController extends Controller
         $projects = $this->AllProject();
         $users = $this->Alluser();
         $types = $this->AllType();
-
         $clients = $this->AllClient();
-
-
         $epmtyarr = array("");
         $clients = $epmtyarr + $clients;  // array_merge($epmtyarr, $clients);
         $users = $epmtyarr + $users;   //array_merge($epmtyarr, $users);
-
-
         $form = $this->createForm(new ContactType(), $entity, array(
             'action' => $this->generateUrl('contact_create'),
             'method' => 'POST',
         ));
-
-
         $form->add('client', 'choice', array('label' => 'Выберите клиента',
             'multiple' => false,
             'choices' => $clients,
         ));
-
-
         $form->add('user', 'choice', array('label' => 'Автор сообщения',
             'multiple' => false,
             'choices' => $users,
         ));
-
         $form->add('type', 'choice', array('label' => 'Тип Сообщения',
             'multiple' => false,
             'choices' => $types,
         ));
-
-
         $form->add('userDoer', 'choice', array('label' => 'Исполнитель Сообщения',
             'multiple' => false,
             'choices' => $users,
         ));
-
         $form->add('project', 'choice', array('label' => 'Проект',
             'multiple' => false,
             'choices' => $projects,
         ));
+        $form->add('desctiption', 'textarea', array('label' => 'Описание'));
+        $form->add('nextDateContact', 'datetime', array('label' => 'Дата следующего контакта'));
 
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        $form->add('submit', 'submit', array('label' => 'Создать'));
 
         return $form;
     }
@@ -245,18 +228,12 @@ class ContactController extends Controller
         $users = $this->Alluser();
         $types = $this->AllType();
         $clients = $this->AllClient();
-
-
         $em = $this->getDoctrine()->getManager();
-
         $entity = $em->getRepository('ErpBundle:Contact')->find($id);
-
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find Contact entity.');
         }
-
         $deleteForm = $this->createDeleteForm($id);
-
         return $this->render('ErpBundle:Contact:show.html.twig', array(
             'entity'      => $entity,
             'projects' => $projects,
