@@ -10,9 +10,9 @@ Error: Undefined variable: "$dark-blue".
 31: 	background-color: $dark-blue
 32: 	color: $white
 33: 
-34: .right li a
-35: 	display: block
-36: 	background-color: $dark-blue
+34: .right
+35: 
+36: 	li
 
 Backtrace:
 C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass:31
@@ -69,4 +69,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 31 of C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass\A \A 26: \A 27: #erpbundle_issue_submit\A 28: 	min-width: 250px\A 29: 	margin: 40px 0\A 30: 	height: 40px\A 31: 	background-color: $dark-blue\A 32: 	color: $white\A 33: \A 34: .right li a\A 35: 	display: block\A 36: 	background-color: $dark-blue"; }
+  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 31 of C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass\A \A 26: \A 27: #erpbundle_issue_submit\A 28: 	min-width: 250px\A 29: 	margin: 40px 0\A 30: 	height: 40px\A 31: 	background-color: $dark-blue\A 32: 	color: $white\A 33: \A 34: .right\A 35: \A 36: 	li"; }

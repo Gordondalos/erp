@@ -232,8 +232,6 @@ class ProjectController extends Controller
             'method' => 'POST',
         ));
 
-
-
         $form->add('projectName', 'text', array('label' => ' ',
             'required'    => true,
             'attr'=> array( 'placeholder' => 'Название Проекта', 'class'=>'name')
@@ -303,9 +301,6 @@ class ProjectController extends Controller
     }
 
 
-
-
-
     /**
      * Finds and displays a Project entity.
      *
@@ -351,6 +346,51 @@ class ProjectController extends Controller
        // var_dump($contactProject);
 
         return $this->render('ErpBundle:Project:show.html.twig', array(
+            'entity' => $entity,
+            'users' => $users,
+            'clients' => $clients,
+            'issuearr' => $issuearr,
+            'statuses' => $statuses,
+            'types' => $types,
+            'contactProject' => $contactProject,
+            'contactProjectDoer' => $contactProjectDoer,
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+
+    public function show_project_issueAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $issueObject = new IssueController();
+        // список исполнителей
+        $users = $this->Alluser();
+        //var_dump($users);
+        //список клиентов
+        $clients = $this->AllClient();
+        // статусы задач
+        $statuses = $issueObject->AllStatuses($em);
+
+        // список задач
+        $issuearr = $issueObject->getIssueProjectAll($em,$id);
+        //Список контактов
+        $contactObject = new ContactController();
+
+        $contactProject = $contactObject->getAllContactProject($em,$id);
+        $contactProjectDoer = $contactObject->getAllContactProjectDoer($em,$id);
+
+        // типы контактов
+        $types = $contactObject->AllTypeExt($em);
+
+        $entity = $em->getRepository('ErpBundle:Project')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Project entity.');
+        }
+
+
+        $deleteForm = $this->createDeleteForm($id);
+            return $this->render('ErpBundle:Project:show.html.twig', array(
             'entity' => $entity,
             'users' => $users,
             'clients' => $clients,

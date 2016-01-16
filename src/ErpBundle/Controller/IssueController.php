@@ -22,6 +22,12 @@ class IssueController extends Controller
         return $query->getResult();
     }
 
+    public function getIssueProjectAll( $em, $id){
+        $dql   = "SELECT u FROM ErpBundle:Issue u WHERE u.project = ".$id."And u.status !=3 ORDER BY u.id ASC";
+        $query = $em->createQuery($dql);
+        return $query->getResult();
+    }
+
     public function Alluser(){
         $us = new UsersController();
         $em = $this->getDoctrine()->getManager();

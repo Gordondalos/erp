@@ -6,39 +6,39 @@ h1, h2, h3, h4, h5 {
   margin-top: 40px;
 }
 
-/* line 47, ../../../../src/sass/__base/part/common.sass */
+/* line 44, ../../../../src/sass/__base/part/common.sass */
 h2 {
   font-size: 24px;
 }
 
-/* line 52, ../../../../src/sass/__base/part/common.sass */
+/* line 47, ../../../../src/sass/__base/part/common.sass */
 h3 {
   font-size: 20px;
 }
 
-/* line 56, ../../../../src/sass/__base/part/common.sass */
+/* line 50, ../../../../src/sass/__base/part/common.sass */
 h4 {
   font-size: 18px;
 }
 
-/* line 61, ../../../../src/sass/__base/part/common.sass */
+/* line 53, ../../../../src/sass/__base/part/common.sass */
 h5 {
   font-size: 23px;
 }
 
-/* line 66, ../../../../src/sass/__base/part/common.sass */
+/* line 57, ../../../../src/sass/__base/part/common.sass */
 body {
   font-family: RobotoRegular, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 14px;
   color: #232323;
 }
 
-/* line 72, ../../../../src/sass/__base/part/common.sass */
+/* line 62, ../../../../src/sass/__base/part/common.sass */
 .description {
   text-align: justify;
 }
 
-/* line 76, ../../../../src/sass/__base/part/common.sass */
+/* line 66, ../../../../src/sass/__base/part/common.sass */
 .navigation a {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 14px;
@@ -47,52 +47,52 @@ body {
   text-transform: uppercase;
 }
 
-/* line 87, ../../../../src/sass/__base/part/common.sass */
+/* line 73, ../../../../src/sass/__base/part/common.sass */
 .colors {
   background-color: #fff;
 }
 
-/* line 90, ../../../../src/sass/__base/part/common.sass */
+/* line 76, ../../../../src/sass/__base/part/common.sass */
 ul {
   padding: 0;
   margin: 0;
 }
-/* line 93, ../../../../src/sass/__base/part/common.sass */
+/* line 79, ../../../../src/sass/__base/part/common.sass */
 ul li {
   list-style-type: none;
   display: inline-block;
   padding: 0 10px;
 }
 
-/* line 99, ../../../../src/sass/__base/part/common.sass */
+/* line 85, ../../../../src/sass/__base/part/common.sass */
 .right {
   float: right;
-  padding: 10px;
+  padding: 10px 0;
 }
 
-/* line 103, ../../../../src/sass/__base/part/common.sass */
+/* line 89, ../../../../src/sass/__base/part/common.sass */
 .left {
   float: left;
   padding: 10px;
 }
 
-/* line 107, ../../../../src/sass/__base/part/common.sass */
+/* line 93, ../../../../src/sass/__base/part/common.sass */
 a:hover, a:active, a:visited, a:focus {
   text-decoration: none;
 }
 
-/* line 110, ../../../../src/sass/__base/part/common.sass */
+/* line 96, ../../../../src/sass/__base/part/common.sass */
 table {
   width: 100%;
 }
-/* line 112, ../../../../src/sass/__base/part/common.sass */
+/* line 98, ../../../../src/sass/__base/part/common.sass */
 table th, table td {
   border: 1px solid #d8d8d8;
   background: #efefef;
   padding: 5px;
   text-align: center;
 }
-/* line 117, ../../../../src/sass/__base/part/common.sass */
+/* line 103, ../../../../src/sass/__base/part/common.sass */
 table td {
   text-align: left;
   background-color: #fff;

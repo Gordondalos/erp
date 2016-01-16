@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Controller/UsersController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Entity/Role.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Form/RoleType.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/config/routing/issue.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.en.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig" charset="UTF-8" />

@@ -5,7 +5,9 @@ projectAll:
     path:     /all
     defaults: { _controller: "ErpBundle:Project:indexAll" }
 
-
+show_project_issue:
+    path:     /{id}/show_project_issue
+    defaults: { _controller: "ErpBundle:Project:show_project_issue" }
 
 project_show:
     path:     /{id}/show
