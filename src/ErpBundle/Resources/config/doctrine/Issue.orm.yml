@@ -11,9 +11,9 @@ ErpBundle\Entity\Issue:
                 strategy: IDENTITY
     fields:
         issueName:
-            type: string
+            type: text
             nullable: false
-            length: 50
+            length: 65535
             fixed: false
             column: issue_name
         issueDescription:
