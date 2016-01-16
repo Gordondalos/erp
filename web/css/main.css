@@ -12368,15 +12368,15 @@ input, select {
 }
 
 /* line 18, ../../src/sass/_project/section/section_2.sass */
-#erpbundle_issue_issueName {
+#erpbundle_issue_issueName, #erpbundle_project_projectName {
   width: 100%;
   padding: 5px 10px;
   margin: 5px 0px;
   height: 34px;
 }
 
-/* line 23, ../../src/sass/_project/section/section_2.sass */
-#erpbundle_issue_submit {
+/* line 27, ../../src/sass/_project/section/section_2.sass */
+#erpbundle_issue_submit, #erpbundle_project_submit {
   min-width: 250px;
   margin: 40px 0;
   height: 40px;
@@ -12384,7 +12384,7 @@ input, select {
   color: #fff;
 }
 
-/* line 30, ../../src/sass/_project/section/section_2.sass */
+/* line 34, ../../src/sass/_project/section/section_2.sass */
 .right li a {
   display: block;
   background-color: #000066;
@@ -12392,4 +12392,20 @@ input, select {
   padding: 5px 20px;
   margin: 10px;
   border-radius: 3px;
+}
+
+/* line 42, ../../src/sass/_project/section/section_2.sass */
+.record_actions li a {
+  display: block;
+  background-color: #000066;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+/* line 54, ../../src/sass/_project/section/section_2.sass */
+label {
+  font-weight: 400;
+  font-style: italic;
 }

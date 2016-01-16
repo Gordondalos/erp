@@ -396,6 +396,8 @@ class ProjectController extends Controller
         $em = $this->getDoctrine()->getManager();
        $projectStatusObj = new ProjectStatusController();
         $projectStatus = $projectStatusObj->getAllProjectStatus($em);
+        $projectTypeobgect = new ProjectTypeController();
+        $projectType = $projectTypeobgect->GetAllTypeAction($em);
 
        //var_dump($projectStatus);
 
@@ -409,6 +411,23 @@ class ProjectController extends Controller
             'action' => $this->generateUrl('project_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
+        $form->add('projectName', 'text', array('label' => ' ',
+            'required'    => true,
+            'attr'=> array( 'placeholder' => 'Название Проекта', 'class'=>'name')
+
+        ));
+        $form->add('projectDescription', 'textarea', array('label' => 'Описание проекта',));
+
+        $form->add('projectType', 'choice', array('label' => 'Выберете Тип Проекта',
+            'multiple' => false,
+            'choices' => $projectType,
+            'attr'=> array( 'class'=>'select')
+        ));
+
+
+        $form->add('dateCreate', 'datetime', array('label' => 'Дата',));
+
+        $form->add('dateFinish', 'datetime', array('label' => 'Дата Окончания'));
 
 
         $form->add('projectManager', 'choice', array('label' => 'Выберите Менеджера',

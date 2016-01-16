@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$dark-blue".
-        on line 27 of C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass
+        on line 31 of C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass
 
-22: 	height: 34px
-23: #erpbundle_issue_submit
-24: 	min-width: 250px
-25: 	margin: 40px 0
-26: 	height: 40px
-27: 	background-color: $dark-blue
-28: 	color: $white
-29: 
-30: .right li a
-31: 	display: block
-32: 	background-color: $dark-blue
+26: 
+27: #erpbundle_issue_submit
+28: 	min-width: 250px
+29: 	margin: 40px 0
+30: 	height: 40px
+31: 	background-color: $dark-blue
+32: 	color: $white
+33: 
+34: .right li a
+35: 	display: block
+36: 	background-color: $dark-blue
 
 Backtrace:
-C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass:27
+C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass:31
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -69,4 +69,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.19/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 27 of C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass\A \A 22: 	height: 34px\A 23: #erpbundle_issue_submit\A 24: 	min-width: 250px\A 25: 	margin: 40px 0\A 26: 	height: 40px\A 27: 	background-color: $dark-blue\A 28: 	color: $white\A 29: \A 30: .right li a\A 31: 	display: block\A 32: 	background-color: $dark-blue"; }
+  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 31 of C:/xampp/htdocs/erp/src/sass/_project/section/section_2.sass\A \A 26: \A 27: #erpbundle_issue_submit\A 28: 	min-width: 250px\A 29: 	margin: 40px 0\A 30: 	height: 40px\A 31: 	background-color: $dark-blue\A 32: 	color: $white\A 33: \A 34: .right li a\A 35: 	display: block\A 36: 	background-color: $dark-blue"; }
