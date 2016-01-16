@@ -74,7 +74,9 @@
     <div class="col-md-8">
         <div class="description">
             {{ 'Projectdescription'|trans }}:<br>
+            {% autoescape false %}
             {{ entity.projectDescription }}
+            {% endautoescape %}
         </div>
     </div>
 </div>
@@ -256,7 +258,6 @@
 
                     {% endfor %}
                 </td>
-
 
 
                 <td>
