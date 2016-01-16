@@ -314,7 +314,6 @@ class ProjectController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-
         $issueObject = new IssueController();
         // список исполнителей
         $users = $this->Alluser();
@@ -323,8 +322,13 @@ class ProjectController extends Controller
         $clients = $this->AllClient();
         // статусы задач
         $statuses = $issueObject->AllStatuses($em);
+
+        // получим айдишник текущего пользователяж
+        $userId  = $this -> getUser()->getId();
+        //var_dump($us);
+
         // список задач
-        $issuearr = $issueObject->getIssueProject($em,$id);
+        $issuearr = $issueObject->getIssueProject($em,$id,$userId);
         //Список контактов
         $contactObject = new ContactController();
 

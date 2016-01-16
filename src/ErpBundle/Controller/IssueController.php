@@ -16,12 +16,10 @@ use ErpBundle\Form\IssueType;
 class IssueController extends Controller
 {
 
-    public function getIssueProject( $em, $id){
-
-        $dql   = "SELECT u FROM ErpBundle:Issue u WHERE u.project = ".$id."And u.status !=3  ORDER BY u.id ASC ";
+    public function getIssueProject( $em, $id,$userId){
+        $dql   = "SELECT u FROM ErpBundle:Issue u WHERE u.project = ".$id."And u.status !=3 And u.issueExecutor = $userId ORDER BY u.id ASC";
         $query = $em->createQuery($dql);
         return $query->getResult();
-
     }
 
     public function Alluser(){
