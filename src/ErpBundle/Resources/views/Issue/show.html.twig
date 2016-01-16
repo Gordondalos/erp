@@ -78,13 +78,13 @@
 
         <ul class="record_actions">
     <li>
-        <a href="{{ path('issue') }}">
-            Back to the list
+        <a href="{{ path('project_show', { 'id': entity.project }) }}">
+            {{ 'Back to project'|trans }}
         </a>
     </li>
     <li>
         <a href="{{ path('issue_edit', { 'id': entity.id }) }}">
-            Edit
+            {{ 'edit'|trans }}
         </a>
     </li>
     <li>{{ form(delete_form) }}</li>

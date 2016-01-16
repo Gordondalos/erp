@@ -123,7 +123,7 @@ class IssueController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
 
-var_dump($request->request);
+//var_dump($request->request);
 
             $em->flush();
 
@@ -166,7 +166,6 @@ var_dump($request->request);
      */
     private function createCreateForm(Issue $entity)
     {
-
         $projects = $this->AllProject();
         $users = $this->Alluser();
         $statuses = $this->AllStatus();
@@ -175,24 +174,19 @@ var_dump($request->request);
             'action' => $this->generateUrl('issue_create'),
             'method' => 'POST',
         ));
-
         $form->add('issueName', 'text', array('label' => ' ',
             'required'    => true,
             'attr'=> array( 'placeholder' => 'Название Задачи', 'class'=>'name')
-
         ));
 
         $form->add('issueAutor', 'choice', array('label' => 'Создатель Задачи',
             'multiple' => false,
             'choices' => $users,
         ));
-
         $form->add('issueExecutor', 'choice', array('label' => 'Исполнитель',
             'multiple' => false,
             'choices' => $users,
         ));
-
-
         $form->add('status', 'choice', array('label' => 'Статус задачи',
             'multiple' => false,
             'choices' => $statuses,
@@ -219,7 +213,6 @@ var_dump($request->request);
      */
     private function createCreateIssueInProjectForm(Issue $entity,$id_project)
     {
-
         $users = $this->Alluser();
         $statuses = $this->AllStatus();
 
@@ -249,11 +242,30 @@ var_dump($request->request);
             'choices' => $statuses,
         ));
 
-
         $form->add('project', 'hidden', array('label' => 'Проект',
             'data' => $id_project,
         ));
+        $DateCreate = new \DateTime('now');
+        $form->add('dateCreate', 'datetime', array('label' => 'Дата Создания',
+            'data' => $DateCreate,
 
+        ));
+
+        $form->add('dateFinish', 'datetime', array('label' => 'Дата Завершения',
+            'data' => $DateCreate,
+
+        ));
+
+        $form->add('dateStart', 'datetime', array('label' => 'Дата Начала',
+            'data' => $DateCreate,
+
+        ));
+
+        $form->add('summa', 'text', array('label' => 'Цена выполнения задачи',
+            'required'=>false
+            ));
+
+        $form->add('issueDescription', 'textarea', array('label' => 'Описание задачи'));
 
         $form->add('submit', 'submit', array('label' => 'Create'));
 
@@ -291,6 +303,7 @@ var_dump($request->request);
         return $this->render('ErpBundle:Issue:new.html.twig', array(
             'entity' => $entity,
             'project' => $project->getProjectName(),
+            'projectId' => $project->getId(),
             'form'   => $form->createView(),
         ));
     }
@@ -347,6 +360,7 @@ var_dump($request->request);
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
+
     }
 
     /**
@@ -367,7 +381,6 @@ var_dump($request->request);
             'action' => $this->generateUrl('issue_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
-
 
         $form->add('issueAutor', 'choice', array('label' => 'Создатель Задачи',
             'multiple' => false,
@@ -390,7 +403,18 @@ var_dump($request->request);
             'choices' =>  $projects,
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+        $form->add('issueName', 'textarea', array('label' => 'Задача'));
+        $form->add('issueDescription', 'textarea', array('label' => 'Описнаие Задачи'));
+        $form->add('dateCreate', 'datetime', array('label' => 'Дата создания',
+
+            ));
+        $form->add('dateFinish', 'datetime', array('label' => 'Дата окончания', ));
+        $form->add('dateStart', 'datetime', array('label' => 'Дата Начала выполнения', ));
+        $form->add('summa', 'text', array('label' => 'Цена выполнения (цифра в рублях)',
+            'required'=>false
+            ));
+
+        $form->add('submit', 'submit', array('label' => 'Обновить'));
 
         return $form;
     }
@@ -445,11 +469,12 @@ var_dump($request->request);
                 throw $this->createNotFoundException('Unable to find Issue entity.');
             }
 
+            //var_dump($entity->getProject()); die;
             $em->remove($entity);
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('issue'));
+        return $this->redirect($this->generateUrl('project_show',array('id'=>$entity->getProject())));
     }
 
     /**

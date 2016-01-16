@@ -17,13 +17,15 @@
 
                 <tr>
                     <th>{{ 'Projectmanager'|trans }}</th>
-                    {% for key,user in users %}
+                    <td>
+                        {% for key,user in users %}
 
-                        {% if key == entity.projectManager %}
-                            <td><a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a></td>
-                        {% endif %}
+                            {% if key == entity.projectManager %}
+                                <a href="{{ path('users_show', { 'id': key }) }}">{{ user }}</a>
+                            {% endif %}
 
-                    {% endfor %}
+                        {% endfor %}
+                    </td>
                 </tr>
                 <tr>
                     <th>{{ 'Projectcreator'|trans }}</th>
@@ -47,14 +49,16 @@
                 </tr>
                 <tr>
                     <th>{{ 'Client'|trans }}</th>
-                    {% for key,client in clients %}
+                    <td>
+                        {% for key,client in clients %}
 
-                        {% if key == entity.client %}
-                            <td><a href="{{ path('client_show', { 'id': key }) }}">{{ client }}</a>
-                            </td>
-                        {% endif %}
+                            {% if key == entity.client %}
+                                <a href="{{ path('client_show', { 'id': key }) }}">{{ client }}</a>
 
-                    {% endfor %}
+                            {% endif %}
+
+                        {% endfor %}
+                    </td>
 
                 </tr>
                 <tr>
@@ -142,13 +146,15 @@
 
 
                 {#<td>{{ issue.status }}</td>#}
-                {% for key,status in statuses %}
 
-                    {% if key == issue.status %}
-                        <td>{{ status }}</td>
-                    {% endif %}
+                <td>{% for key,status in statuses %}
 
-                {% endfor %}
+                        {% if key == issue.status %}
+                            {{ status }}
+                        {% endif %}
+
+                    {% endfor %}
+                </td>
 
                 {#<td>{{ issue.summa }}</td>#}
                 <td>{% if issue.dateStart %}{{ issue.dateStart|date('Y-m-d H:i:s') }}{% endif %}</td>
@@ -214,13 +220,15 @@
 
 
                 {#<td>{{ entity.type }}</td>#}
-                {% for key,type in types %}
 
-                    {% if key ==  entity.type %}
-                        <td>{{ type }}</td>
-                    {% endif %}
+                <td>{% for key,type in types %}
 
-                {% endfor %}
+                        {% if key ==  entity.type %}
+                            {{ type }}
+                        {% endif %}
+
+                    {% endfor %}
+                </td>
 
                 <td><a href="{{ path('contact_show', { 'id': entity.id }) }}">{{ entity.desctiption }}</a></td>
                 <td>{% if entity.nextDateContact %}{{ entity.nextDateContact|date('Y-m-d H:i:s') }}{% endif %}</td>

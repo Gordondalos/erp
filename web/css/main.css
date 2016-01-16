@@ -12366,3 +12366,30 @@ input, select {
   padding: 5px 10px;
   margin: 5px 10px;
 }
+
+/* line 18, ../../src/sass/_project/section/section_2.sass */
+#erpbundle_issue_issueName {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 5px 0px;
+  height: 34px;
+}
+
+/* line 23, ../../src/sass/_project/section/section_2.sass */
+#erpbundle_issue_submit {
+  min-width: 250px;
+  margin: 40px 0;
+  height: 40px;
+  background-color: #000066;
+  color: #fff;
+}
+
+/* line 30, ../../src/sass/_project/section/section_2.sass */
+.right li a {
+  display: block;
+  background-color: #000066;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 3px;
+}

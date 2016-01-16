@@ -232,7 +232,7 @@ class ProjectController extends Controller
             'method' => 'POST',
         ));
 
-        $DateCreate = new \DateTime('today');
+
 
         $form->add('projectName', 'text', array('label' => ' ',
             'required'    => true,
@@ -243,9 +243,11 @@ class ProjectController extends Controller
 
         ));
 
-        $form->add('dateCreate', 'date', array('label' => 'Дата',
+        $DateCreate = new \DateTime('today');
+        $form->add('dateCreate', 'datetime', array('label' => 'Дата',
             'data' => $DateCreate,
         ));
+
         $form->add('dateFinish', 'date', array('label' => 'Дата Окончания'));
 
         $form->add('projectType', 'choice', array('label' => 'Выберете Тип Проекта',
