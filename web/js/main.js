@@ -1,3 +1,1 @@
-
-
-
+$('#myTable').DataTable();
