@@ -12,19 +12,19 @@
             </li>
         </ul>
     </div>
-    <table class="records_list">
+    <table class="records_list" id="myTable">
         <thead>
             <tr>
 
                 <th>{{ 'Username'|trans }}</th>
-                <th>{{ 'Login'|trans }}</th>
+                <th>{{ 'description'|trans }}</th>
                 {#<th>Password</th>#}
-                <th>{{ 'Role'|trans }}</th>
+
                 <th>{{ 'Email'|trans }}</th>
                 {#<th>{{ 'description'|trans }}</th>#}
                 {#<th>{{ "Avatar"|trans }}</th>#}
                 <th>{{ 'Phone'|trans }}</th>
-                <th>{{ 'Actions'|trans }}</th>
+                <th class="actions">{{ 'Actions'|trans }}</th>
             </tr>
         </thead>
         <tbody>
@@ -34,23 +34,24 @@
             <tr>
                 <td><a href="{{ path('users_show', { 'id': entity.id }) }}">{{ entity.userName }}</a></td>
 
-                <td>{{ entity.username }}</td>
+                {#<td>{{ entity.username }}</td>#}
                 {#<td>{{ entity.password }}</td>#}
+                {% autoescape false %}
+                <td> {{ entity.description }}</td>
+                {% endautoescape %}
 
-                {#<td>{{ entity.roles }}</td>#}
+                {#<td>#}
+                    {#{% for key, rolers in roles %}#}
+                        {#&#123;&#35;{% for role in entity.roles %}&#35;&#125;#}
 
-                <td>
-                    {% for key, rolers in roles %}
-                        {#{% for role in entity.roles %}#}
+                        {#{% if key  ==  entity.roles[0] %}#}
 
-                        {% if key  ==  entity.roles[0] %}
+                            {#{{ rolers }}#}
 
-                            {{ rolers }}
-
-                        {% endif %}
-                        {#{% endfor %}#}
-                    {% endfor %}
-                </td>
+                        {#{% endif %}#}
+                        {#&#123;&#35;{% endfor %}&#35;&#125;#}
+                    {#{% endfor %}#}
+                {#</td>#}
 
                 <td>{{ entity.email }}</td>
                 {#<td>{{ entity.description }}</td>#}

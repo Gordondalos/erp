@@ -1,15 +1,18 @@
 {% extends '::base.html.twig' %}
 {% block body %}
 
-    <h1>Users creation</h1>
+    <h1>{{ 'Users creation'|trans }}</h1>
 
     {{ form(form) }}
 
         <ul class="record_actions">
     <li>
         <a href="{{ path('users') }}">
-            Back to the list
+            {{ 'Back to the list'|trans }}
         </a>
     </li>
 </ul>
+    {% block javascripts %}
+        <script src="{{ asset('js/user.js') }}" type="text/javascript"></script>
+    {% endblock %}
 {% endblock %}

@@ -107,7 +107,7 @@
         <th>{{ "Issuename"|trans }}</th>
         <th>{{ 'Issuedescription'|trans }}</th>
         <th>{{ 'Issueexecutor'|trans }}</th>
-        <th>{{ 'Datecreate'|trans }}</th>
+        <th>{{ 'Datefinish'|trans }}</th>
         <th>{{ 'status'|trans }}</th>
         <th>{{ 'Datestart'|trans }}</th>
         <th>Actions</th>
@@ -130,7 +130,8 @@
                     {% endif %}
                 {% endfor %}
             </td>
-            <td>{% if issue.dateCreate %}{{ issue.dateCreate|date('Y-m-d H:i') }}{% endif %}</td>
+            <td>{% if issue.dateCreate %}{{ issue.dateFinish|date('Y-m-d H:i') }}{% endif %}</td>
+
             <td>{% for key,status in statuses %}
                     {% if key == issue.status %}
                         {{ status }}

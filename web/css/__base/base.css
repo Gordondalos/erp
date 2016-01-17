@@ -98,6 +98,12 @@ table td {
   background-color: #fff;
 }
 
+/* line 108, ../../../src/sass/__base/part/common.sass */
+#myTable {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 /* line 1, ../../../src/sass/__base/part/_button.sass */
 .btn_primary, .btn_reverse {
   font-family: RobotoRegular, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;

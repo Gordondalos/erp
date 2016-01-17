@@ -26,8 +26,8 @@
             {#<th>{{ 'Projectdescription'|trans }}</th>#}
             <th>{{ 'Projectmanager'|trans }}</th>
             {#<th>{{ 'Projectcreator'|trans }}</th>#}
-            <th>{{ 'Datecreate'|trans }}</th>
-            {#<th>{{ 'Datefinish'|trans }}</th>#}
+            {#<th>{{ 'Datecreate'|trans }}</th>#}
+            <th>{{ 'Datefinish'|trans }}</th>
             <th>{{ 'Client'|trans }}</th>
             <th>{{ 'Summ'|trans }}</th>
             <th>{{ 'Actions'|trans }}</th>
@@ -58,8 +58,8 @@
                 {#{% endfor %}#}
 
 
-                <td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>
-                {#<td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>#}
+                {#<td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>#}
+                <td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>
 
                 <td>
                 {% for key,client in clients %}
@@ -102,7 +102,7 @@
         </ul>
     </div>
 
-    <table class="records_list">
+    <table class="records_list" id="myTable">
         <thead>
         <tr>
             <th>Id</th>
@@ -110,8 +110,8 @@
             {#<th>{{ 'Projectdescription'|trans }}</th>#}
             <th>{{ 'Projectmanager'|trans }}</th>
             {#<th>{{ 'Projectcreator'|trans }}</th>#}
-            <th>{{ 'Datecreate'|trans }}</th>
-            {#<th>{{ 'Datefinish'|trans }}</th>#}
+            {#<th>{{ 'Datecreate'|trans }}</th>#}
+            <th>{{ 'Datefinish'|trans }}</th>
             <th>{{ 'Client'|trans }}</th>
             <th>{{ 'Summ'|trans }}</th>
             <th>{{ 'Actions'|trans }}</th>
@@ -134,8 +134,8 @@
                 {% endfor %}
                 </td>
 
-                <td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>
-                {#<td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>#}
+                {#<td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>#}
+                <td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>
 
 
                 <td>

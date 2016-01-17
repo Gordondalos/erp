@@ -114,13 +114,8 @@ class UsersController extends Controller
 
             'action' => $this->generateUrl('users_create'),
             'method' => 'POST',
+            'attr'=>array('class'=>'form_user')
         ));
-
-
-//        $form->add('role', 'choice', array('label' => 'Выберите роль',
-//            'multiple' => false,
-//            'choices' => $roles,
-//        ));
 
 
         $form->add('roless', 'choice', array('label' => 'Выберите роль',
@@ -136,7 +131,9 @@ class UsersController extends Controller
             'required'=>false
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        $form->add('description', 'textarea', array('label' => 'Описание'));
+
+        $form->add('submit', 'submit', array('label' => 'Создать'));
 
         return $form;
     }
@@ -262,7 +259,7 @@ class UsersController extends Controller
         ));
 
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+        $form->add('submit', 'submit', array('label' => 'Обновить'));
 
         return $form;
     }
