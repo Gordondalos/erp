@@ -1,26 +1,20 @@
 <header>
     <div class="container">
-
-            <nav class="my_navigation">
-                <div class="right">
-
-                        {{ render(controller('ErpBundle:Default:hooIm')) }}
-
-
-                </div>
-                <ul>
-                    <li><a href="{{ path('erp_homepage')}}"><i class="fa fa-home"></i></a></li>
-                    <li><a href="{{ path('users') }}"><i class="fa fa-users"></i></a></li>
-                    <li><a href="{{ path('project') }}"><i class="fa fa-rocket"></i></a></li>
-                    {#<li><a href="{{ path('issue') }}"><i class="fa fa-tasks"></i></a></li>#}
-                    <li><a href="{{ path('client') }}"><i class="fa fa-user-secret"></i></a></li>
-                    <li><a href="{{ path('contact') }}"><i class="fa fa-plug"></i></a></li>
-                    <li><a href="{{ path('erp_settings') }}"><i class="fa fa-cogs"></i></a></li>
-                    <li><a href="http://files.teamexpert.tk"><i class="fa fa-server"></i></a></li>
-                </ul>
-
-            </nav>
-
-
+        <nav class="my_navigation">
+            <div class="right">
+                {{ render(controller('ErpBundle:Default:hooIm')) }}
+            </div>
+            <ul>
+                <li><a href="{{ path('erp_homepage') }}"><i class="fa fa-home"></i></a></li>
+                <li><a href="{{ path('users') }}"><i class="fa fa-users"></i></a></li>
+                <li><a href="{{ path('project') }}"><i class="fa fa-rocket"></i></a></li>
+                {#<li><a href="{{ path('issue') }}"><i class="fa fa-tasks"></i></a></li>#}
+                <li><a href="{{ path('client') }}"><i class="fa fa-user-secret"></i></a></li>
+                <li><a href="{{ path('contact') }}"><i class="fa fa-plug"></i></a></li>
+                <li><a href="{{ path('erp_settings') }}"><i class="fa fa-cogs"></i></a></li>
+                <li><a href="http://files.teamexpert.tk"><i class="fa fa-server"></i></a></li>
+                <li><a href="http://wiki.teamexpert.tk"><i class="fa fa-wikipedia-w"></i></a></li>
+            </ul>
+        </nav>
     </div>
 </header>
