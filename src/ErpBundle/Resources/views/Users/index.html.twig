@@ -30,16 +30,24 @@
         </thead>
         <tbody>
 
-
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('users_show', { 'id': entity.id }) }}">{{ entity.enabled }}</a></td>
+                <td><a href="{{ path('users_show', { 'id': entity.id }) }}">
+                        {% if entity.enabled == 1 %}
+                            <span>{{ 'yes'|trans }}</span>
+
+                        {% else %}
+                            <span>{{ 'no'|trans }}</span>
+
+                        {% endif %}
+
+                    </a></td>
                 <td><a href="{{ path('users_show', { 'id': entity.id }) }}">{{ entity.userName }}</a></td>
 
                 {#<td>{{ entity.username }}</td>#}
                 {#<td>{{ entity.password }}</td>#}
                 {% autoescape false %}
-                <td> {{ entity.description|raw }}</td>
+                <td style="max-width: 300px"> {{ entity.description|raw }}</td>
                 {% endautoescape %}
 
                 {#<td>#}
