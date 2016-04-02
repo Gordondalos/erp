@@ -3,6 +3,14 @@
 {% block body -%}
     <h1>{{ 'Issue list'|trans }}</h1>
 
+    <ul class="pull-right">
+        <li>
+            <a class="btn btn-success" href="{{ path('issue_new') }}">
+                {{ 'Create a new entry'|trans }}
+            </a>
+        </li>
+    </ul>
+
     <table class="records_list" id="myTable">
         <thead>
             <tr>
@@ -83,11 +91,5 @@
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('issue_new') }}">
-                {{ 'Create a new entry'|trans }}
-            </a>
-        </li>
-    </ul>
+
     {% endblock %}

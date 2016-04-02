@@ -129,7 +129,13 @@ class ProjectController extends Controller
     }
 
     public function getAllProject($em){
-        $entities = $em->getRepository('ErpBundle:Project')->findAll();
+        $entities = $em->getRepository('ErpBundle:Project')->findBy(array(
+            'projectStatus'=>'1'
+        ),
+            array(
+                'projectName' => 'ASC'
+            )
+            );
         return $entities;
     }
 

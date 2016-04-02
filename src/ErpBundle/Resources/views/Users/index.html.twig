@@ -16,6 +16,7 @@
         <thead>
             <tr>
 
+                <th>{{ 'En'|trans }}</th>
                 <th>{{ 'Username'|trans }}</th>
                 <th>{{ 'description'|trans }}</th>
                 {#<th>Password</th>#}
@@ -32,6 +33,7 @@
 
         {% for entity in entities %}
             <tr>
+                <td><a href="{{ path('users_show', { 'id': entity.id }) }}">{{ entity.enabled }}</a></td>
                 <td><a href="{{ path('users_show', { 'id': entity.id }) }}">{{ entity.userName }}</a></td>
 
                 {#<td>{{ entity.username }}</td>#}

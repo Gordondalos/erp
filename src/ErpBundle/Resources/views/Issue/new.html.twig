@@ -2,16 +2,16 @@
 
 {% block body -%}
     <h1>{{ 'Issue creation'|trans }}</h1>
-    <h2>{{ 'project'|trans }}: {{ project }}</h2>
+    {#<h2>{{ 'project'|trans }}: {{ project }}</h2>#}
 
     {{ form(form) }}
 
     <ul class="record_actions">
-        <li>
-            <a href="{{ path('project_show', { 'id': projectId }) }}">
-                {{ 'Back to project'|trans }}
-            </a>
-        </li>
+        {#<li>#}
+            {#<a href="{{ path('project_show', { 'id': projectId }) }}">#}
+                {#{{ 'Back to project'|trans }}#}
+            {#</a>#}
+        {#</li>#}
     </ul>
     {% block javascripts %}
         <script src="{{ asset('js/issue.js') }}" type="text/javascript"></script>

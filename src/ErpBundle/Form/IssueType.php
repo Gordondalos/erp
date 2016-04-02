@@ -16,16 +16,15 @@ class IssueType extends AbstractType
     {
         $builder
             ->add('issuePrioritet')
+            ->add('status')
+            ->add('project')
             ->add('issueName')
             ->add('issueDescription')
             ->add('issueAutor')
             ->add('issueExecutor')
-            ->add('dateCreate')
             ->add('dateFinish')
-            ->add('status')
             ->add('summa')
             ->add('dateStart')
-            ->add('project')
         ;
     }
     

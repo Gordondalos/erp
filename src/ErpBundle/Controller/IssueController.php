@@ -54,6 +54,7 @@ class IssueController extends Controller
             $UserName = array_shift($arr);
             $projects += [$UserId => $UserName];
         }
+
         return  $projects;
     }
 
@@ -133,7 +134,7 @@ class IssueController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
 
-//var_dump($request->request);
+            $entity->setDateCreate(new\DateTime());
 
             $em->flush();
 
@@ -151,8 +152,6 @@ class IssueController extends Controller
            // var_dump( $entity1); die;
             $entity1->setIssueAutor($issueAutor);
             $entity1->setproject($project);
-
-
 
             $em->persist($entity1);
             $em->flush();
@@ -197,6 +196,7 @@ class IssueController extends Controller
             'multiple' => false,
             'choices' => $users,
         ));
+
         $form->add('status', 'choice', array('label' => 'Статус задачи',
             'multiple' => false,
             'choices' => $statuses,
@@ -207,7 +207,12 @@ class IssueController extends Controller
             'choices' =>  $projects,
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
+        $form->add('submit', 'submit', array(
+            'label' => 'Создать',
+            'attr'=>array(
+                'class'=> 'btn btn-success pull-right'
+            )
+        ));
 
         return $form;
     }
@@ -392,6 +397,13 @@ class IssueController extends Controller
             'method' => 'PUT',
         ));
 
+        $form->add('submit', 'submit', array(
+            'label' => 'Обновить',
+            'attr'=>array(
+                'class'=>'btn btn-success'
+            )
+        ));
+
         $form->add('issueAutor', 'choice', array('label' => 'Создатель Задачи',
             'multiple' => false,
             'choices' => $users,
@@ -424,7 +436,7 @@ class IssueController extends Controller
             'required'=>false
             ));
 
-        $form->add('submit', 'submit', array('label' => 'Обновить'));
+
 
         return $form;
     }
@@ -451,7 +463,7 @@ class IssueController extends Controller
 
            $project_id = $entity->getProject();
 
-            return $this->redirect($this->generateUrl('project_show', array('id' => $project_id)));
+            return $this->redirect($this->generateUrl('issue_edit', array('id' => $id)));
         }
 
 
