@@ -2,6 +2,10 @@ issue:
     path:     /
     defaults: { _controller: "ErpBundle:Issue:index" }
 
+issueoutcoming:
+    path:     /issueoutcoming
+    defaults: { _controller: "ErpBundle:Issue:indexOut" }
+
 issue_show:
     path:     /{id}/show
     defaults: { _controller: "ErpBundle:Issue:show" }

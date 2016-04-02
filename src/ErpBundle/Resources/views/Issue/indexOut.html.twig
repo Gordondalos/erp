@@ -1,0 +1,95 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>{{ 'Issue my out list'|trans }}</h1>
+
+    <ul class="pull-right">
+        <li>
+            <a class="btn btn-success" href="{{ path('issue_new') }}">
+                {{ 'Create a new entry'|trans }}
+            </a>
+        </li>
+    </ul>
+
+    <table class="records_list" id="myTable">
+        <thead>
+        <tr>
+            <th>Pr</th>
+            <th>Issuename</th>
+            <th>Issuedescription</th>
+            {#<th>Issueautor</th>#}
+            {#<th>Issueexecutor</th>#}
+            <th>Datecreate</th>
+            <th>Datefinish</th>
+            {#<th>Status</th>#}
+            {#<th>Summa</th>#}
+            <th>Datestart</th>
+            <th>Project</th>
+            {#<th>Actions</th>#}
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('issue_show', { 'id': entity.id }) }}">{{ entity.issuePrioritet }}</a></td>
+                <td><a href="{{ path('issue_edit', { 'id': entity.id }) }}">{{ entity.issueName }}</a></td>
+                <td style="max-width: 300px">{{ entity.issueDescription | raw }}</td>
+                {#{% for key,user in users %}#}
+
+                {#{% if key == entity.issueAutor %}#}
+                {#<td>{{ user }}</td>#}
+                {#{% endif %}#}
+
+                {#{% endfor %}#}
+                {#&#123;&#35;<td>{{ entity.issueExecutor }}</td>&#35;&#125;#}
+                {#{% for key,user in users %}#}
+
+                {#{% if key == entity.issueExecutor %}#}
+                {#<td>{{ user }}</td>#}
+                {#{% endif %}#}
+
+                {#{% endfor %}#}
+
+
+                <td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.dateFinish %}{{ entity.dateFinish|date('Y-m-d H:i:s') }}{% endif %}</td>
+
+
+                {#<td>{{ entity.status }}</td>#}
+                {#{% for key,status in statuses %}#}
+
+                {#{% if key == entity.status %}#}
+                {#<td>{{ status }}</td>#}
+                {#{% endif %}#}
+
+                {#{% endfor %}#}
+
+                {#<td>{{ entity.summa }}</td>#}
+                <td>{% if entity.dateStart %}{{ entity.dateStart|date('Y-m-d H:i:s') }}{% endif %}</td>
+
+                {#<td>{{ entity.project }}</td>#}
+                {% for key,project in projects %}
+
+                    {% if key == entity.project %}
+                        <td>{{ project }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+                {#<td>#}
+                {#<ul>#}
+                {#&#123;&#35;<li>&#35;&#125;#}
+                {#&#123;&#35;<a href="{{ path('issue_show', { 'id': entity.id }) }}">show</a>&#35;&#125;#}
+                {#&#123;&#35;</li>&#35;&#125;#}
+                {#<li>#}
+                {#<a href="{{ path('issue_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>#}
+                {#</li>#}
+                {#</ul>#}
+                {#</td>#}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

@@ -96,15 +96,10 @@ class IssueController extends Controller
      */
     public function indexAction()
     {
-
         $projects = $this->AllProject();
         $users = $this->Alluser();
         $statuses = $this->AllStatus();
-
-
-//        var_dump($projects);
         $em = $this->getDoctrine()->getManager();
-
         $entities = $em->getRepository('ErpBundle:Issue')->findBy(array(
             'issueExecutor'=> $this->getUser(),
             'status'=> '1'
@@ -120,6 +115,33 @@ class IssueController extends Controller
             'projects' => $projects,
         ));
     }
+
+    public function indexOutAction()
+    {
+        $projects = $this->AllProject();
+        $users = $this->Alluser();
+        $statuses = $this->AllStatus();
+        $em = $this->getDoctrine()->getManager();
+        $entities = $em->getRepository('ErpBundle:Issue')->findBy(array(
+            'issueAutor'=> $this->getUser(),
+            'status'=> '1'
+        ),
+            array(
+                'issuePrioritet' => 'DESC'
+            ));
+
+        return $this->render('ErpBundle:Issue:indexOut.html.twig', array(
+            'entities' => $entities,
+            'users' => $users,
+            'statuses' => $statuses,
+            'projects' => $projects,
+        ));
+    }
+
+
+
+
+
     /**
      * Creates a new Issue entity.
      *
