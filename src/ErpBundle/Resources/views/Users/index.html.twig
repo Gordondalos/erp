@@ -37,7 +37,7 @@
                 {#<td>{{ entity.username }}</td>#}
                 {#<td>{{ entity.password }}</td>#}
                 {% autoescape false %}
-                <td> {{ entity.description }}</td>
+                <td> {{ entity.description|raw }}</td>
                 {% endautoescape %}
 
                 {#<td>#}

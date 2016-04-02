@@ -104,7 +104,13 @@ class IssueController extends Controller
 //        var_dump($projects);
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('ErpBundle:Issue')->findAll();
+        $entities = $em->getRepository('ErpBundle:Issue')->findBy(array(
+            'issueExecutor'=> $this->getUser(),
+            'status'=> '1'
+        ),
+            array(
+                'issuePrioritet' => 'DESC'
+            ));
 
         return $this->render('ErpBundle:Issue:index.html.twig', array(
             'entities' => $entities,

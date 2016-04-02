@@ -1,1 +1,3 @@
-$('#myTable').DataTable();
+$('#myTable').DataTable({
+    "iDisplayLength": 100
+});

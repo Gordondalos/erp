@@ -15,6 +15,7 @@ class IssueType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('issuePrioritet')
             ->add('issueName')
             ->add('issueDescription')
             ->add('issueAutor')

@@ -6,15 +6,15 @@
     <table class="records_list" id="myTable">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Pr</th>
                 <th>Issuename</th>
                 <th>Issuedescription</th>
-                <th>Issueautor</th>
-                <th>Issueexecutor</th>
+                {#<th>Issueautor</th>#}
+                {#<th>Issueexecutor</th>#}
                 <th>Datecreate</th>
                 <th>Datefinish</th>
-                <th>Status</th>
-                <th>Summa</th>
+                {#<th>Status</th>#}
+                {#<th>Summa</th>#}
                 <th>Datestart</th>
                 <th>Project</th>
                 <th>Actions</th>
@@ -23,24 +23,24 @@
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('issue_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>{{ entity.issueName }}</td>
-                <td>{{ entity.issueDescription }}</td>
-                {% for key,user in users %}
+                <td><a href="{{ path('issue_show', { 'id': entity.id }) }}">{{ entity.issuePrioritet }}</a></td>
+                <td><a href="{{ path('issue_show', { 'id': entity.id }) }}">{{ entity.issueName }}</a></td>
+                <td style="max-width: 300px">{{ entity.issueDescription | raw }}</td>
+                {#{% for key,user in users %}#}
 
-                    {% if key == entity.issueAutor %}
-                        <td>{{ user }}</td>
-                    {% endif %}
+                    {#{% if key == entity.issueAutor %}#}
+                        {#<td>{{ user }}</td>#}
+                    {#{% endif %}#}
 
-                {% endfor %}
-                {#<td>{{ entity.issueExecutor }}</td>#}
-                {% for key,user in users %}
+                {#{% endfor %}#}
+                {#&#123;&#35;<td>{{ entity.issueExecutor }}</td>&#35;&#125;#}
+                {#{% for key,user in users %}#}
 
-                    {% if key == entity.issueExecutor %}
-                        <td>{{ user }}</td>
-                    {% endif %}
+                    {#{% if key == entity.issueExecutor %}#}
+                        {#<td>{{ user }}</td>#}
+                    {#{% endif %}#}
 
-                {% endfor %}
+                {#{% endfor %}#}
 
 
                 <td>{% if entity.dateCreate %}{{ entity.dateCreate|date('Y-m-d H:i:s') }}{% endif %}</td>
@@ -48,15 +48,15 @@
 
 
                 {#<td>{{ entity.status }}</td>#}
-                {% for key,status in statuses %}
+                {#{% for key,status in statuses %}#}
 
-                    {% if key == entity.status %}
-                        <td>{{ status }}</td>
-                    {% endif %}
+                    {#{% if key == entity.status %}#}
+                        {#<td>{{ status }}</td>#}
+                    {#{% endif %}#}
 
-                {% endfor %}
+                {#{% endfor %}#}
 
-                <td>{{ entity.summa }}</td>
+                {#<td>{{ entity.summa }}</td>#}
                 <td>{% if entity.dateStart %}{{ entity.dateStart|date('Y-m-d H:i:s') }}{% endif %}</td>
 
                 {#<td>{{ entity.project }}</td>#}
@@ -70,11 +70,11 @@
 
                 <td>
                 <ul>
+                    {#<li>#}
+                        {#<a href="{{ path('issue_show', { 'id': entity.id }) }}">show</a>#}
+                    {#</li>#}
                     <li>
-                        <a href="{{ path('issue_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('issue_edit', { 'id': entity.id }) }}">edit</a>
+                        <a href="{{ path('issue_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
                     </li>
                 </ul>
                 </td>

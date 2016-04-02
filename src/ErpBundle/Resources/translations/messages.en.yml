@@ -1,1 +1,77 @@
-Create a new entry: Создать новый проект
+Create a new entry: Создать
+Project list: Проекты
+Projectname: Название проекта
+Projectdescription: Описание проекта
+Projectmanager: Руководитель проекта
+Projectcreator: Автор проекта
+Datecreate: Дата создания
+Datefinish: Дата окончания
+Client: Клиент
+Summ: Сумма
+Actions: Действия
+show: Подробнее
+edit: Правка
+Back to the list: Вернуться к списку
+Projectdescription: Описание проекта
+Issue list: Список задач
+Issuename: Название задачи
+Issuedescription: Описание задачи
+Issueautor: Автор задачи
+Issueexecutor: Исполнитель
+status: Статус
+Datestart: Начало выполнения
+id: №
+description: Описание
+Phone: Телефон
+Adress: Адресс
+Email: Электронная почта
+Client list: Список Клиентов
+Contact list: Список контактов
+User contact: Контактировал
+Type contact: Тип Контакта
+Nextdatecontact: Дата следующего контакта
+Date: Дата
+with client: c клиентом
+with doer: c командой
+Doer: Сотрудник
+Users list: Наша команда
+Username: Член команды
+Role: Роль
+Login: Логин
+Avatar: Аватар
+RolenameId: Идентификатор роли
+Rolename: Название Роли
+Role list: Список Ролей
+hello: Привет
+Project list iisue: Исполнитель или автор в проектах
+look all project: Посмотреть все проекты (закрытые в том чиле)
+look my project: Посмотреть только открытые проекты
+Issue creation: Постановка задачи
+project: Проект
+Project creation: Создание нового проекта
+Issue edit: Исправление задачи
+Back to project: Вернуться к проеку
+Project edit: Правка проекта
+show_project_issue: Показать все задачи проекта
+show_project_issue_my: Показать мои задачи
+Contact edit: Правка Контакта
+Contact creation: Создание контакта
+Users creation: Создание пользователя
+Users edit: Правка данных пользователя
+Issue: Задача
+Delete: Удалить
+Issuename: Название
+Issuedescription: Описание
+Issueautor: Автор
+Issueexecutor: Исполнитель
+Datecreate: Дата создания
+Datefinish: Дата окончания
+Status: Статус
+Summa: Сумма
+Datestart: Дата начала
+Project: Проект
+
+
+
+
+

@@ -304,4 +304,32 @@ class Issue
     {
         return $this->project;
     }
+    /**
+     * @var integer
+     */
+    private $issuePrioritet;
+
+
+    /**
+     * Set issuePrioritet
+     *
+     * @param integer $issuePrioritet
+     * @return Issue
+     */
+    public function setIssuePrioritet($issuePrioritet)
+    {
+        $this->issuePrioritet = $issuePrioritet;
+
+        return $this;
+    }
+
+    /**
+     * Get issuePrioritet
+     *
+     * @return integer 
+     */
+    public function getIssuePrioritet()
+    {
+        return $this->issuePrioritet;
+    }
 }

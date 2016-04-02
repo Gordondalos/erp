@@ -16,6 +16,10 @@ ErpBundle\Entity\Issue:
             length: 65535
             fixed: false
             column: issue_name
+        issuePrioritet:
+            type: integer
+            nullable: false
+            column: issue_prioritet
         issueDescription:
             type: text
             nullable: true
