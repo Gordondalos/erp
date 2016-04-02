@@ -2,211 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f165498-413a-4d1e-a758-f4098d7f3c68" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bd/2.04.2016erp.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_alerts.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_alerts.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_alerts.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_alerts.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_animated.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_animated.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_animation.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_animation.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_appearance.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_appearance.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f9b2a7a6637479c5e0110948b24f16b877898524/_asset-pipeline.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f9b2a7a6637479c5e0110948b24f16b877898524/_asset-pipeline.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_assign-inputs.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_assign-inputs.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_backface-visibility.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_backface-visibility.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_background-image.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_background-image.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_background-variant.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_background-variant.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_background.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_background.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_badges.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_badges.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/38c70aa55420e437d84334cd412d111a846efd1f/_bootstrap.scssc" afterPath="$PROJECT_DIR$/.sass-cache/38c70aa55420e437d84334cd412d111a846efd1f/_bootstrap.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_border-color.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_border-color.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_border-image.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_border-image.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_border-radius.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_border-radius.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_border-radius.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_border-radius.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_border-style.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_border-style.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_border-width.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_border-width.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_bordered-pulled.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_bordered-pulled.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/070f7c21d274df7f99bcfb020a222fb2bad9f0c9/_bourbon-deprecated-upcoming.scssc" afterPath="$PROJECT_DIR$/.sass-cache/070f7c21d274df7f99bcfb020a222fb2bad9f0c9/_bourbon-deprecated-upcoming.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/070f7c21d274df7f99bcfb020a222fb2bad9f0c9/_bourbon.scssc" afterPath="$PROJECT_DIR$/.sass-cache/070f7c21d274df7f99bcfb020a222fb2bad9f0c9/_bourbon.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/C%058/xampp/htdocs/erp/src/sass/___vendor/bower_components/bourbon/app/assets/stylesheets/_bourbon.scssc" afterPath="$PROJECT_DIR$/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/C%058/xampp/htdocs/erp/src/sass/___vendor/bower_components/bourbon/app/assets/stylesheets/_bourbon.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_breadcrumbs.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_breadcrumbs.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_button-groups.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_button-groups.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_button.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_button.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_buttons.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_buttons.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_buttons.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_buttons.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_buttons.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_buttons.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_calc.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_calc.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_carousel.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_carousel.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_center-block.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_center-block.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_clearfix.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_clearfix.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_clearfix.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_clearfix.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_close.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_close.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_code.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_code.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_columns.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_columns.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_component-animations.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_component-animations.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_contains-falsy.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_contains-falsy.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_contains.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_contains.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_convert-units.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_convert-units.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_core.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_core.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_directional-values.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_directional-values.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_dropdowns.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_dropdowns.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_ellipsis.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_ellipsis.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_filter.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_filter.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_fixed-width.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_fixed-width.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_flex-box.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_flex-box.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_font-face.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_font-face.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_font-feature-settings.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_font-feature-settings.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_font-source-declaration.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_font-source-declaration.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_font-stacks.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_font-stacks.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_font.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_font.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_fonts.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_fonts.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_forms.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_forms.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_forms.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_forms.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_forms.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_forms.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_glyphicons.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_glyphicons.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_gradient-positions-parser.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_gradient-positions-parser.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_gradients.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_gradients.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_grid-framework.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_grid-framework.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_grid.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_grid.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_grid.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_grid.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_hide-text.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_hide-text.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_hide-text.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_hide-text.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_hidpi-media-query.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_hidpi-media-query.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_hyphens.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_hyphens.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_icon.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_icon.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_icons.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_icons.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_image-rendering.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_image-rendering.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_image.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_image.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_img.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_img.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_input-groups.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_input-groups.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_is-length.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_is-length.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_is-light.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_is-light.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_is-number.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_is-number.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_is-size.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_is-size.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_jumbotron.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_jumbotron.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_keyframes.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_keyframes.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_labels.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_labels.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_labels.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_labels.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_larger.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_larger.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_linear-angle-parser.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_linear-angle-parser.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_linear-gradient-parser.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_linear-gradient-parser.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_linear-gradient.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_linear-gradient.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_linear-positions-parser.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_linear-positions-parser.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_linear-side-corner-parser.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_linear-side-corner-parser.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_list-group.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_list-group.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_list-group.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_list-group.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_list.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_list.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_margin.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_margin.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_media.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_media.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_mixins.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_mixins.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_mixins.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_mixins.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_modals.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_modals.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_modular-scale.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_modular-scale.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_nav-divider.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_nav-divider.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_nav-vertical-align.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_nav-vertical-align.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_nav.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_nav.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_navbar.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_navbar.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_navs.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_navs.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_normalize.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_normalize.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_opacity.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_opacity.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_padding.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_padding.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_pager.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_pager.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_pagination.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_pagination.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_pagination.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_pagination.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_panels.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_panels.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_panels.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_panels.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_path.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_path.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_perspective.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_perspective.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_placeholder.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_placeholder.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_popovers.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_popovers.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_position.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_position.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_prefixer.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_prefixer.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f9b2a7a6637479c5e0110948b24f16b877898524/_prefixer.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f9b2a7a6637479c5e0110948b24f16b877898524/_prefixer.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_print.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_print.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_progress-bar.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_progress-bar.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_progress-bars.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_progress-bars.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_px-to-em.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_px-to-em.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f9b2a7a6637479c5e0110948b24f16b877898524/_px-to-em.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f9b2a7a6637479c5e0110948b24f16b877898524/_px-to-em.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_px-to-rem.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_px-to-rem.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_radial-arg-parser.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_radial-arg-parser.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_radial-gradient-parser.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_radial-gradient-parser.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_radial-gradient.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_radial-gradient.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_radial-positions-parser.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_radial-positions-parser.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_render-gradients.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_render-gradients.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_reset-filter.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_reset-filter.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_reset-text.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_reset-text.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_resize.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_resize.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_responsive-embed.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_responsive-embed.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_responsive-utilities.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_responsive-utilities.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_responsive-visibility.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_responsive-visibility.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_retina-image.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_retina-image.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_rotated-flipped.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_rotated-flipped.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_scaffolding.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_scaffolding.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_section.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_section.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_selection.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_selection.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_shade.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_shade.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_shape-size-stripper.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_shape-size-stripper.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_size.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_size.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_size.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_size.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_stacked.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_stacked.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_str-to-num.scssc" afterPath="$PROJECT_DIR$/.sass-cache/29d261e1553407ecc843030ec174d6c10779a1d1/_str-to-num.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_strip-units.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_strip-units.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_tab-focus.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_tab-focus.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_table-row.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_table-row.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_tables.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_tables.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_text-decoration.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_text-decoration.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_text-emphasis.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_text-emphasis.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_text-inputs.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_text-inputs.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_text-overflow.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_text-overflow.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_text.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/_text.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_thumbnails.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_thumbnails.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_timing-functions.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_timing-functions.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_tint.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_tint.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_tooltip.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_tooltip.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_transform.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_transform.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_transition-property-name.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_transition-property-name.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_transition.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_transition.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_triangle.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_triangle.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_type.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_type.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_unpack.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4aa83e28e2b0517dfa848be8322a73b503bc17fe/_unpack.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_user-select.scssc" afterPath="$PROJECT_DIR$/.sass-cache/91982ac587edb7687e269aa61e2f67aa39daaef3/_user-select.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_utilities.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_utilities.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_variables.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_variables.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_variables.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/_variables.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_vendor-prefixes.scssc" afterPath="$PROJECT_DIR$/.sass-cache/72a6d2ebd56e3f11a47cb3b06691adec77d37430/_vendor-prefixes.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_wells.scssc" afterPath="$PROJECT_DIR$/.sass-cache/45e00654494b00840b25d2ffefef903ecb0c2e69/_wells.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_word-wrap.scssc" afterPath="$PROJECT_DIR$/.sass-cache/57168a9d1940fc71973c42c776b51b4ad91330a5/_word-wrap.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/a0dde93c2a88ad6c8f98009d363ec44f33c3a443/base.sassc" afterPath="$PROJECT_DIR$/.sass-cache/a0dde93c2a88ad6c8f98009d363ec44f33c3a443/base.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/common.sassc" afterPath="$PROJECT_DIR$/.sass-cache/ecca64eb2d1a6a58cdd0a6fe267b4961c9b84cd6/common.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/a78b965176c3f4f15859913a69e80e83f4abfeda/cosmetic.sassc" afterPath="$PROJECT_DIR$/.sass-cache/a78b965176c3f4f15859913a69e80e83f4abfeda/cosmetic.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/font-awesome.scssc" afterPath="$PROJECT_DIR$/.sass-cache/ce6becb2c167ec7984bea3bb7cf61f7829087be3/font-awesome.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/header.sassc" afterPath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/header.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/41ea4537828cca87b33a06d15ff6376c695ab6d4/main.sassc" afterPath="$PROJECT_DIR$/.sass-cache/41ea4537828cca87b33a06d15ff6376c695ab6d4/main.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/470165059ec90a764ff13e1e7127755ff4abaef8/media.sassc" afterPath="$PROJECT_DIR$/.sass-cache/470165059ec90a764ff13e1e7127755ff4abaef8/media.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/470165059ec90a764ff13e1e7127755ff4abaef8/project.sassc" afterPath="$PROJECT_DIR$/.sass-cache/470165059ec90a764ff13e1e7127755ff4abaef8/project.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/section_1.sassc" afterPath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/section_1.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/section_2.sassc" afterPath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/section_2.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/section_3.sassc" afterPath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/section_3.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/section_4.sassc" afterPath="$PROJECT_DIR$/.sass-cache/e85a02fdcd3da292b94550bf4201fcc378409905/section_4.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/08eef472204feb79647f4f8f1659f804f0a824a4/vendor.sassc" afterPath="$PROJECT_DIR$/.sass-cache/08eef472204feb79647f4f8f1659f804f0a824a4/vendor.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Form/IssueType.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Form/IssueType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/edit.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/parts/head.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/parts/head.html.twig" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\erp\src\ErpBundle\Resources\views\Default\User.html.twig" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/_project/project.css" afterPath="$PROJECT_DIR$/web/css/_project/project.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/_project/section/section_2.css" afterPath="$PROJECT_DIR$/web/css/_project/section/section_2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/_project/section/section_2.sass" afterPath="$PROJECT_DIR$/src/sass/_project/section/section_2.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/show.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="01e7e3c1-816f-44ed-b8fc-902f87bed7a2" name="Failed commit: Default" comment="Поправил вход и теперь можно пользоваться задачами">
-      <change type="MOVED" beforePath="C:\xampp\htdocs\erp\src\ErpBundle\Resources\views\Default\User.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/user.html.twig" />
-    </list>
+    <list id="01e7e3c1-816f-44ed-b8fc-902f87bed7a2" name="Failed commit: Default" comment="Поправил вход и теперь можно пользоваться задачами" />
     <ignored path="erp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -230,29 +34,18 @@
       <file leaf-file-name="IssueController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6764708">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
               <folding>
-                <element signature="e#2890#2907#1#PHP" expanded="true" />
-                <element signature="e#3118#3151#0#PHP" expanded="true" />
                 <element signature="e#3324#3377#0#PHP" expanded="true" />
                 <element signature="e#4582#4747#0#PHP" expanded="true" />
                 <element signature="e#6130#6295#0#PHP" expanded="true" />
                 <element signature="e#8152#8223#0#PHP" expanded="true" />
-                <element signature="e#8376#8407#0#PHP" expanded="true" />
-                <element signature="e#8844#8875#0#PHP" expanded="true" />
                 <element signature="e#9085#9145#0#PHP" expanded="true" />
-                <element signature="e#9393#9410#1#PHP" expanded="true" />
-                <element signature="e#9624#9656#0#PHP" expanded="true" />
                 <element signature="e#9902#9977#0#PHP" expanded="true" />
-                <element signature="e#10108#10125#1#PHP" expanded="true" />
-                <element signature="e#10391#10423#0#PHP" expanded="true" />
                 <element signature="e#10604#10761#0#PHP" expanded="true" />
                 <element signature="e#12544#12601#0#PHP" expanded="true" />
-                <element signature="e#12752#12769#1#PHP" expanded="true" />
-                <element signature="e#13294#13326#0#PHP" expanded="true" />
                 <element signature="e#13505#13554#0#PHP" expanded="true" />
-                <element signature="e#13831#13848#1#PHP" expanded="true" />
                 <element signature="e#14229#14399#0#PHP" expanded="true" />
                 <marker date="1459610569794" expanded="true" signature="391:512" placeholder="SELECT u FRO..ErpBundle..." />
                 <marker date="1459610569794" expanded="true" signature="668:759" placeholder="SELECT u FRO..ErpBundle..." />
@@ -261,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProjectController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.735294">
+            <state vertical-scroll-proportion="0.0">
               <caret line="135" column="37" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="37" />
               <folding>
                 <marker date="1459610857178" expanded="true" signature="572:689" placeholder="SELECT u FRO..ErpBundle..." />
@@ -278,34 +71,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/user.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.059149724">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5588236">
-              <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+            <state vertical-scroll-proportion="-2.8235295">
+              <caret line="78" column="22" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig">
+      <file leaf-file-name="messages.ru.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6764708">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.235294">
+              <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -313,18 +104,8 @@
       <file leaf-file-name="IssueType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Form/IssueType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5882354">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="section_1.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/_project/section/section_1.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -333,7 +114,7 @@
       <file leaf-file-name="section_2.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_project/section/section_2.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.7058825">
+            <state vertical-scroll-proportion="0.0">
               <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
@@ -343,20 +124,8 @@
       <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.470589">
+            <state vertical-scroll-proportion="0.0">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/parts/head.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.117647">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -366,7 +135,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:generate:entities ErpBundle" />
       <command text="s doctrine:generate:crud --entity=ErpBundle:ProjectType --with-write " />
       <command text="s doctrine:generate:entities ErpBundle" />
       <command text="c doctrine:schema:update --force" />
@@ -391,6 +159,7 @@
       <command text="s doctrine:generate:entities ErpBundle" />
       <command text="s server:run " />
       <command text="compass watch" />
+      <command text="s server:run " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -407,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/ErpBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/User.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Controller/RoleController.php" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
@@ -440,7 +208,6 @@
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/web/js/jquery.dataTables.min.js" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/show.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.en.yml" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/settings.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/config/doctrine/Issue.orm.yml" />
@@ -451,16 +218,18 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/login.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/parts/head.html.twig" />
         <option value="$PROJECT_DIR$/src/sass/_project/section/section_2.sass" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Form/IssueType.php" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/user.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/show.html.twig" />
       </list>
     </option>
   </component>
@@ -555,6 +324,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -921,62 +692,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1067,12 +788,6 @@
       <created>1451837836182</created>
       <option name="number" value="Default" />
       <updated>1451837836182</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Сделал верхнюю навигацию">
-      <created>1452170634182</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1452170634182</updated>
     </task>
     <task id="LOCAL-00008" summary="Сделал хороший вывод проекта">
       <created>1452180744366</created>
@@ -1362,7 +1077,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459599111346</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Поправил вход и теперь можно пользоваться задачами">
+      <created>1459611937546</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1459611937546</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1370,20 +1091,19 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3264192" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RemoteSynchronizer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39626783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3951965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45519713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28169015" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2816594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22502685" sideWeight="0.27838427" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22502685" sideWeight="0.72161573" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22824919" sideWeight="0.72161573" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5287107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1395,6 +1115,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5287107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -1412,7 +1133,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Додал просмотр открытых проектов и всех проектов включая закрытые" />
     <MESSAGE value="Сделал чтобы в менюшке была ссылка на акаунт" />
     <MESSAGE value="делаю чтобы задачи садились в проект а не куда попало" />
     <MESSAGE value="реализовано добавление задач из проекта" />
@@ -1437,7 +1157,8 @@
     <MESSAGE value="приделал ссылку на википедию" />
     <MESSAGE value="Мног очего поправил" />
     <MESSAGE value="Поправил вход и теперь можно пользоваться задачами" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поправил вход и теперь можно пользоваться задачами" />
+    <MESSAGE value="Сделал авторизацию в том числе и по емейлу" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал авторизацию в том числе и по емейлу" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1446,11 +1167,102 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="e#3324#3377#0#PHP" expanded="true" />
+            <element signature="e#4582#4747#0#PHP" expanded="true" />
+            <element signature="e#6130#6295#0#PHP" expanded="true" />
+            <element signature="e#8152#8223#0#PHP" expanded="true" />
+            <element signature="e#9085#9145#0#PHP" expanded="true" />
+            <element signature="e#9902#9977#0#PHP" expanded="true" />
+            <element signature="e#10604#10761#0#PHP" expanded="true" />
+            <element signature="e#12544#12601#0#PHP" expanded="true" />
+            <element signature="e#13505#13554#0#PHP" expanded="true" />
+            <element signature="e#14229#14399#0#PHP" expanded="true" />
+            <marker date="1459610569794" expanded="true" signature="391:512" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1459610569794" expanded="true" signature="668:759" placeholder="SELECT u FRO..ErpBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="37" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="37" />
+          <folding>
+            <marker date="1459610857178" expanded="true" signature="572:689" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1459610857178" expanded="true" signature="818:961" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1459610857178" expanded="true" signature="1271:1406" placeholder="SELECT DISTI..ErpBundle..." />
+            <marker date="1459610857178" expanded="true" signature="1661:1736" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1459610857178" expanded="true" signature="2166:2266" placeholder="SELECT u FRO..ErpBundle..." />
+            <marker date="1459610857178" expanded="true" signature="2741:2817" placeholder="SELECT u FRO..ErpBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Form/IssueType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_project/section/section_1.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_project/section/section_2.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1458,7 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,7 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,7 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,7 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1490,11 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#1319#1326#0#Twig" expanded="true" />
-            <element signature="e#1562#1573#0#Twig" expanded="true" />
-            <element signature="e#1818#1831#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1502,7 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1706,7 +1508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1714,7 +1515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1722,9 +1522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33293697">
           <caret line="50" column="98" selection-start-line="50" selection-start-column="84" selection-end-line="50" selection-end-column="98" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1732,7 +1529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1740,7 +1536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1748,7 +1543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1756,18 +1550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3656805">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <element signature="e#2226#2238#0#Twig" expanded="true" />
-            <element signature="e#2372#2382#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1775,7 +1557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="7.529412">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1783,7 +1564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.411765">
           <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1791,11 +1571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.235294">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="44" selection-end-column="26" />
-          <folding>
-            <element signature="e#1319#1326#0#Twig" expanded="true" />
-            <element signature="e#1562#1573#0#Twig" expanded="true" />
-            <element signature="e#1818#1831#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1811,7 +1586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1819,7 +1593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33217993">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="16" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1827,10 +1600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53333336">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#37#0#Twig" expanded="false" />
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1848,7 +1617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.764706">
           <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1856,7 +1624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2214533">
           <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1864,15 +1631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.294118">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1890,7 +1648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.117647">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1898,7 +1655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1914,7 +1670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1922,7 +1677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1930,7 +1684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.969112">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1938,13 +1691,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_project/section/section_2.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.7058825">
+        <state vertical-scroll-proportion="0.0">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
@@ -1954,7 +1706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44050103">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1962,23 +1713,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.137787">
           <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.470589">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Form/IssueType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5882354">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding />
         </state>
@@ -1989,54 +1737,33 @@
         <state vertical-scroll-proportion="0.35699373">
           <caret line="302" column="20" selection-start-line="302" selection-start-column="20" selection-end-line="302" selection-end-column="20" />
           <folding>
-            <element signature="e#4944#5012#0#PHP" expanded="true" />
+            <element signature="e#4944#5012#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6764708">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5588236">
-          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6764708">
+        <state vertical-scroll-proportion="0.0">
           <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding>
-            <element signature="e#2890#2907#1#PHP" expanded="true" />
-            <element signature="e#3118#3151#0#PHP" expanded="true" />
             <element signature="e#3324#3377#0#PHP" expanded="true" />
             <element signature="e#4582#4747#0#PHP" expanded="true" />
             <element signature="e#6130#6295#0#PHP" expanded="true" />
             <element signature="e#8152#8223#0#PHP" expanded="true" />
-            <element signature="e#8376#8407#0#PHP" expanded="true" />
-            <element signature="e#8844#8875#0#PHP" expanded="true" />
             <element signature="e#9085#9145#0#PHP" expanded="true" />
-            <element signature="e#9393#9410#1#PHP" expanded="true" />
-            <element signature="e#9624#9656#0#PHP" expanded="true" />
             <element signature="e#9902#9977#0#PHP" expanded="true" />
-            <element signature="e#10108#10125#1#PHP" expanded="true" />
-            <element signature="e#10391#10423#0#PHP" expanded="true" />
             <element signature="e#10604#10761#0#PHP" expanded="true" />
             <element signature="e#12544#12601#0#PHP" expanded="true" />
-            <element signature="e#12752#12769#1#PHP" expanded="true" />
-            <element signature="e#13294#13326#0#PHP" expanded="true" />
             <element signature="e#13505#13554#0#PHP" expanded="true" />
-            <element signature="e#13831#13848#1#PHP" expanded="true" />
             <element signature="e#14229#14399#0#PHP" expanded="true" />
             <marker date="1459610569794" expanded="true" signature="391:512" placeholder="SELECT u FRO..ErpBundle..." />
             <marker date="1459610569794" expanded="true" signature="668:759" placeholder="SELECT u FRO..ErpBundle..." />
@@ -2044,9 +1771,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80464214">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8235295">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Issue/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.235294">
+          <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Controller/ProjectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.735294">
+        <state vertical-scroll-proportion="0.0">
           <caret line="135" column="37" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="37" />
           <folding>
             <marker date="1459610857178" expanded="true" signature="572:689" placeholder="SELECT u FRO..ErpBundle..." />
@@ -2056,14 +1815,6 @@
             <marker date="1459610857178" expanded="true" signature="2166:2266" placeholder="SELECT u FRO..ErpBundle..." />
             <marker date="1459610857178" expanded="true" signature="2741:2817" placeholder="SELECT u FRO..ErpBundle..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Default/user.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.059149724">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

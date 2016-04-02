@@ -10,3 +10,4 @@
 /bin/
 /composer.phar
 /node_modules
+/src/ErpBundle/Resources/views/Default/user.html.twig

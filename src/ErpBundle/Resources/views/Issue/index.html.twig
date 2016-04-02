@@ -1,7 +1,7 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>{{ 'Issue list'|trans }}</h1>
+    <h1>{{ 'Issue my list'|trans }}</h1>
 
     <ul class="pull-right">
         <li>
@@ -25,14 +25,14 @@
                 {#<th>Summa</th>#}
                 <th>Datestart</th>
                 <th>Project</th>
-                <th>Actions</th>
+                {#<th>Actions</th>#}
             </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
                 <td><a href="{{ path('issue_show', { 'id': entity.id }) }}">{{ entity.issuePrioritet }}</a></td>
-                <td><a href="{{ path('issue_show', { 'id': entity.id }) }}">{{ entity.issueName }}</a></td>
+                <td><a href="{{ path('issue_edit', { 'id': entity.id }) }}">{{ entity.issueName }}</a></td>
                 <td style="max-width: 300px">{{ entity.issueDescription | raw }}</td>
                 {#{% for key,user in users %}#}
 
@@ -76,16 +76,16 @@
 
                 {% endfor %}
 
-                <td>
-                <ul>
+                {#<td>#}
+                {#<ul>#}
+                    {#&#123;&#35;<li>&#35;&#125;#}
+                        {#&#123;&#35;<a href="{{ path('issue_show', { 'id': entity.id }) }}">show</a>&#35;&#125;#}
+                    {#&#123;&#35;</li>&#35;&#125;#}
                     {#<li>#}
-                        {#<a href="{{ path('issue_show', { 'id': entity.id }) }}">show</a>#}
+                        {#<a href="{{ path('issue_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>#}
                     {#</li>#}
-                    <li>
-                        <a href="{{ path('issue_edit', { 'id': entity.id }) }}">{{ 'edit'|trans }}</a>
-                    </li>
-                </ul>
-                </td>
+                {#</ul>#}
+                {#</td>#}
             </tr>
         {% endfor %}
         </tbody>
