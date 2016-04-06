@@ -1,5 +1,33 @@
 {% extends '::base.html.twig' %}
+
+{% form_theme form _self %}
+
+    {%- block form_row -%}
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="m-y-05">
+                    {{- form_label(form) -}}
+                </div>
+
+            </div>
+            <div class="col-xs-9">
+                {{- form_errors(form) -}}
+                <div class="m-y-1">
+                    {{- form_widget(form, { 'attr': {'class': 'form-control'} }) -}}
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    {%- endblock form_row -%}
+
+{%- block textarea_widget -%}
+    <textarea class="m-y-1 form-control m-l-1"  {{ block('widget_attributes') }}>{{ value }}</textarea>
+{%- endblock textarea_widget -%}
+
 {% block body %}
+
+
 
     <h1>{{ 'Users creation'|trans }}</h1>
 
@@ -124,11 +152,7 @@
         <div class="clearfix"></div>
 
 
-        <div class="row ">
-            {{ form_label(form.price) }}
-            {{ form_errors(form.price) }}
-            {{ form_widget(form.price,{'attr':{'class':'form-control'}}) }}
-        </div>
+
 
 
         <div class="row ">
@@ -137,9 +161,43 @@
             {{ form_widget(form.description) }}
         </div>
 
+        {#<div class="row ">#}
+            {#{{ form_label(form.price) }}#}
+            {#{{ form_errors(form.price) }}#}
+            {#{{ form_widget(form.price,{'attr':{'class':'form-control'}}) }}#}
+        {#</div>#}
 
     </div>
 
+    <div class="clearfix"></div>
+
+
+    {{ form_row(form.fio) }}
+    {{ form_row(form.ege) }}
+    {{ form_row(form.gender) }}
+
+    {{ form_row(form.price) }}
+    {{ form_row(form.pricevchas) }}
+
+    {{ form_row(form.watch) }}
+    {{ form_row(form.experience) }}
+    {{ form_row(form.anotheCommand) }}
+    {{ form_row(form.rekvisitOplat) }}
+    {#{{ form_row(form.reiting) }}#}
+    {{ form_row(form.adress) }}
+
+    {{ form_row(form.predoplata) }}
+    {{ form_row(form.platejsistem) }}
+
+    {{ form_row(form.informwhy) }}
+    {{ form_row(form.sekret) }}
+    {{ form_row(form.predpochteniyajob) }}
+    {{ form_row(form.instrument) }}
+    {{ form_row(form.paralelJob) }}
+    {{ form_row(form.samOrCommand) }}
+    {{ form_row(form.skolkochasovvnedelu) }}
+    {{ form_row(form.celiVrabote) }}
+    {{ form_row(form.hobbi) }}
 
 
 

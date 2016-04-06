@@ -153,6 +153,24 @@ class UsersController extends Controller
         ));
     }
 
+
+
+    /**
+     * Displays a form to create a new Users entity.
+     *
+     */
+    public function newAnketaAction()
+    {
+        $entity = new Users();
+        $form   = $this->createCreateForm($entity);
+
+        return $this->render('ErpBundle:Users:new.html.twig', array(
+            'entity' => $entity,
+            'form'   => $form->createView(),
+        ));
+    }
+
+
     /**
      * Finds and displays a Users entity.
      *
