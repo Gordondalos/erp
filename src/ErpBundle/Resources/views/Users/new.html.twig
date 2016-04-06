@@ -7,8 +7,8 @@
     {{ form_errors(form) }}
     {#{{ form(form) }}#}
 
-  <div class="clearfix"></div>
-        {{ form_widget(form.submit,{'attr':{'class':'btn btn-success m-y-1 btn-lg pull-right'}}) }}
+    <div class="clearfix"></div>
+    {{ form_widget(form.submit,{'attr':{'class':'btn btn-success m-y-1 btn-lg pull-right'}}) }}
 
     <div class="clearfix"></div>
 
@@ -102,56 +102,55 @@
             {{ form_widget(form.phone,{'attr':{'class':'form-control'}}) }}
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-3 text-xs-right p-y-1">
+
+    <div class="container">
+
+
+        <div class="row">
             {{ form_label(form.skill) }}
             {{ form_errors(form.skill) }}
-
+            {{ form_widget(form.skill,{'attr':{'class':'form-control'}}) }}
         </div>
-        <div class="col-xs-9 p-y-1 p-r-0">
-            <div class="m-l-1">
-                {{ form_widget(form.skill,{'attr':{'class':'form-control'}}) }}
-            </div>
 
-        </div>
-    </div>
+        <div class="clearfix"></div>
+        <div class="row">
 
-    <div class="row">
-        <div class="col-xs-3 text-xs-right p-y-1">
             {{ form_label(form.portfolio) }}
             {{ form_errors(form.portfolio) }}
+            {{ form_widget(form.portfolio,{'attr':{'class':'form-control'}}) }}
+
 
         </div>
-        <div class="col-xs-9 p-y-1 p-r-0">
-            <div class="m-l-1">
-                {{ form_widget(form.portfolio,{'attr':{'class':'form-control'}}) }}
-            </div>
+        <div class="clearfix"></div>
 
+
+        <div class="row ">
+            {{ form_label(form.price) }}
+            {{ form_errors(form.price) }}
+            {{ form_widget(form.price,{'attr':{'class':'form-control'}}) }}
         </div>
-    </div>
 
 
-
-    <div class="row ">
-        <div class="col-xs-12 p-x-0">
+        <div class="row ">
             {{ form_label(form.description) }}
             {{ form_errors(form.description) }}
             {{ form_widget(form.description) }}
         </div>
-    </div>
 
+
+    </div>
 
 
 
 
     {{ form_end(form) }}
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('users') }}">
-            {{ 'Back to the list'|trans }}
-        </a>
-    </li>
-</ul>
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('users') }}">
+                {{ 'Back to the list'|trans }}
+            </a>
+        </li>
+    </ul>
     {% block javascripts %}
         <script src="{{ asset('js/user.js') }}" type="text/javascript"></script>
     {% endblock %}

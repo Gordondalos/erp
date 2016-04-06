@@ -31,4 +31,113 @@ ErpBundle\Entity\Users:
         portfolio:
             type: text
             nullable: true
+        price:
+            type: text
+            nullable: true
+        pricevchas:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        watch:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        experience:
+             type: string
+             nullable: true
+             length: 255
+             fixed: false
+        anotheCommand:
+             type: string
+             nullable: true
+             length: 255
+             fixed: false
+        rekvisitOplat:
+              type: string
+              nullable: true
+              length: 255
+              fixed: false
+        reiting:
+            type: integer
+            nullable: true
+        adress:
+            type: text
+            nullable: true
+        dateRegistration:
+            type: datetime
+            nullable: true
+        predoplata:
+            type: text
+            nullable: true
+        platejsistem:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        ege:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        gender:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        fio:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        informwhy:
+            type: text
+            nullable: true
+            fixed: false
+        sekret:
+            type: text
+            nullable: true
+            fixed: false
+        predpochteniyajob:
+            type: text
+            nullable: true
+            fixed: false
+        instrument:
+            type: text
+            nullable: true
+            fixed: false
+        paralelJob:
+            type: text
+            nullable: true
+            fixed: false
+        samOrCommand:
+            type: text
+            nullable: true
+            fixed: false
+        skolkochasovvnedelu:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        celiVrabote:
+            type: text
+            nullable: true
+            fixed: false
+        hobbi:
+            type: text
+            nullable: true
+            fixed: false
+
+
+
+
+
+
+
+
+
+
+
+
     lifecycleCallbacks: {  }
