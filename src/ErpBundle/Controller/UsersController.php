@@ -65,10 +65,10 @@ class UsersController extends Controller
             $factory= $this->container->get('security.encoder_factory');
             $encoder = $factory->getEncoder($entity);
 
-            $entity->setRoles(array($request->request->get('erpbundle_users')['roless']));
+            $entity->setRoles(array($request->request->get('erpbundle_users')['roles']));
 
-            if(!empty( $form['passwort']->getData())){
-                $entity->setPassword($encoder->encodePassword( $form['passwort']->getData(),$entity->getSalt()));
+            if(!empty( $form['password']->getData())){
+                $entity->setPassword($encoder->encodePassword( $form['password']->getData(),$entity->getSalt()));
             }
             /**/
 
@@ -166,6 +166,8 @@ class UsersController extends Controller
             'mapped'=>false,
             'required'=>false
         ));
+        $form->add('enabled');
+        $form->add('locked');
 
         $form->add('description', 'textarea', array('label' => 'Описание'));
 
@@ -374,6 +376,8 @@ class UsersController extends Controller
             'mapped'=>false,
             'required'=>false
         ));
+        $form->add('enabled');
+        $form->add('locked');
 
 
         $form->add('submit', 'submit', array('label' => 'Обновить'));
