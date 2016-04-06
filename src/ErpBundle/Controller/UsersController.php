@@ -62,7 +62,6 @@ class UsersController extends Controller
 
         if ($form->isValid()) {
 
-/**/
             $factory= $this->container->get('security.encoder_factory');
             $encoder = $factory->getEncoder($entity);
 
@@ -86,6 +85,43 @@ class UsersController extends Controller
             'form'   => $form->createView(),
         ));
     }
+
+
+
+    /***************************************************************/
+
+    public function createAnketAction(Request $request)
+    {
+        $entity = new Users();
+        $form = $this->createCreateForm($entity);
+
+
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+
+            $factory= $this->container->get('security.encoder_factory');
+            $encoder = $factory->getEncoder($entity);
+
+
+
+            if(empty( $form['passwort'])){
+                $entity->setPassword($encoder->encodePassword( 'zaq1@WSXcde3$RFV123456789',$entity->getSalt()));
+            }
+
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($entity);
+            $em->flush();
+
+            var_dump($entity->getId());
+            return $this->redirect($this->generateUrl('spasibo', array('id' => $entity->getId())));
+        }
+
+
+    }
+
+    /***************************************************************/
 
     /**
      * Creates a form to create a Users entity.
@@ -138,6 +174,42 @@ class UsersController extends Controller
         return $form;
     }
 
+
+    /**************************************************/
+    private function createCreateAnketaForm(Users $entity)
+    {
+
+        $form = $this->createForm(new UsersType(), $entity, array(
+
+            'action' => $this->generateUrl('anketa_create'),
+            'method' => 'POST',
+            'attr'=>array('class'=>'form_user')
+        ));
+
+
+
+
+        $form->add('submit', 'submit', array('label' => 'Создать'));
+
+        return $form;
+    }
+
+    /**************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * Displays a form to create a new Users entity.
      *
@@ -162,9 +234,9 @@ class UsersController extends Controller
     public function newAnketaAction()
     {
         $entity = new Users();
-        $form   = $this->createCreateForm($entity);
+        $form   = $this->createCreateAnketaForm($entity);
 
-        return $this->render('ErpBundle:Users:new.html.twig', array(
+        return $this->render('ErpBundle:Users:anketa.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -208,6 +280,33 @@ class UsersController extends Controller
             'roless' => $roles,
         ));
     }
+
+
+    public function spasiboAction()
+    {
+        $id= $_GET['id'];
+
+        $em = $this->getDoctrine()->getManager();
+
+
+        $entity = $em->getRepository('ErpBundle:Users')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Users entity.');
+        }
+
+
+
+        return $this->render('ErpBundle:Users:showanket.html.twig', array(
+            'entity'      => $entity,
+
+        ));
+    }
+
+
+
+
+
 
     /**
      * Displays a form to edit an existing Users entity.

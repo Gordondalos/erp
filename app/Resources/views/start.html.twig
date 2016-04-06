@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{% include './parts/head.html.twig' %}
+    <body>
+
+    <div class="container">
+        <div class="row">
+
+            {% block body %}{% endblock %}
+
+
+        </div>
+    </div>
+
+
+        {% include './parts/js.html.twig' %}
+    </body>
+</html>

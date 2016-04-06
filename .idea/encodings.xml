@@ -19,6 +19,7 @@
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/index.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/show.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/showanket.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/layout.html.twig" charset="UTF-8" />
   </component>

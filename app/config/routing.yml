@@ -5,4 +5,19 @@ erp:
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
+users_new_anketa:
+    path:     /newanketa
+    defaults: { _controller: "ErpBundle:Users:newAnketa" }
+
+anketa_create:
+    path:     /anketac
+    defaults: { _controller: "ErpBundle:Users:createAnket" }
+    requirements: { _method: post }
+
+spasibo:
+    path:     /spasibo
+    defaults: { _controller: "ErpBundle:Users:spasibo" }
+    requirements: { _method: get }
+
+
 

@@ -6,6 +6,5 @@
 
 $('textarea').each(function(){
    var name = $(this).attr('name');
-    console.log(name);
     CKEDITOR.replace(name);
 });
