@@ -19,7 +19,7 @@
                 <th>{{ 'En'|trans }}</th>
                 <th>{{ 'Username'|trans }}</th>
                 <th>{{ 'description'|trans }}</th>
-                {#<th>Password</th>#}
+                <th>Skill</th>
 
                 <th>{{ 'Email'|trans }}</th>
                 {#<th>{{ 'description'|trans }}</th>#}
@@ -49,6 +49,7 @@
                 {% autoescape false %}
                 <td style="max-width: 300px"> {{ entity.description|raw }}</td>
                 {% endautoescape %}
+                <td>{{ entity.skill }}</td>
 
                 {#<td>#}
                     {#{% for key, rolers in roles %}#}

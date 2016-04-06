@@ -25,4 +25,10 @@ ErpBundle\Entity\Users:
             nullable: true
             length: 255
             fixed: false
+        skill:
+            type: text
+            nullable: true
+        portfolio:
+            type: text
+            nullable: true
     lifecycleCallbacks: {  }

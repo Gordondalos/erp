@@ -27,6 +27,8 @@ class UsersType extends AbstractType
             ->add('description')
             ->add('locked')
             ->add('avatar')
+            ->add('skill')
+            ->add('portfolio')
         ;
 
 

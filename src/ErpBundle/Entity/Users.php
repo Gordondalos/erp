@@ -159,4 +159,60 @@ class Users extends BaseUser
         return $this->phone;
     }
 
+    /**
+     * @var string
+     */
+    private $skill;
+
+
+    /**
+     * Set skill
+     *
+     * @param string $skill
+     * @return Users
+     */
+    public function setSkill($skill)
+    {
+        $this->skill = $skill;
+
+        return $this;
+    }
+
+    /**
+     * Get skill
+     *
+     * @return string 
+     */
+    public function getSkill()
+    {
+        return $this->skill;
+    }
+    /**
+     * @var string
+     */
+    private $portfolio;
+
+
+    /**
+     * Set portfolio
+     *
+     * @param string $portfolio
+     * @return Users
+     */
+    public function setPortfolio($portfolio)
+    {
+        $this->portfolio = $portfolio;
+
+        return $this;
+    }
+
+    /**
+     * Get portfolio
+     *
+     * @return string 
+     */
+    public function getPortfolio()
+    {
+        return $this->portfolio;
+    }
 }

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f165498-413a-4d1e-a758-f4098d7f3c68" name="Default" comment="Сделал Отображение включен выключен пользователь">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Controller/UsersController.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Controller/UsersController.php" />
+    <list default="true" id="8f165498-413a-4d1e-a758-f4098d7f3c68" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\xampp\htdocs\erp\src\ErpBundle\Entity\FosUser.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\erp\src\ErpBundle\Resources\config\doctrine\FosUser.orm.yml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/config/doctrine/Users.orm.yml" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/config/doctrine/Users.orm.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Entity/Users.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Entity/Users.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php" afterPath="$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/parts/head.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/parts/head.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/main.js" afterPath="$PROJECT_DIR$/web/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/edit.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/new.html.twig" afterPath="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/new.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,36 +33,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.529412">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/edit.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38313252">
+              <caret line="82" column="0" selection-start-line="70" selection-start-column="6" selection-end-line="82" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Users.orm.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/config/doctrine/Users.orm.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38554215">
-              <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+            <state vertical-scroll-proportion="-4.7058825">
+              <caret line="146" column="24" selection-start-line="5" selection-start-column="3" selection-end-line="146" selection-end-column="24" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.529412">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding>
-                <element signature="e#35#57#0#Twig" expanded="true" />
-                <element signature="e#114#147#0#Twig" expanded="true" />
-                <element signature="e#319#339#0#Twig" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +78,8 @@
       <file leaf-file-name="UsersType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.882353">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="31" />
+            <state vertical-scroll-proportion="-10.323529">
+              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -88,14 +99,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:generate:crud --entity=ErpBundle:ProjectType --with-write " />
-      <command text="s doctrine:generate:entities ErpBundle" />
-      <command text="c doctrine:schema:update --force" />
-      <command text="s doctrine:schema:update --force" />
-      <command text="s doctrine:mapping:import  ErpBundle yml" />
-      <command text="s doctrine:generate:entities ErpBundle" />
-      <command text="s doctrine:mapping:import  ErpBundle yml" />
-      <command text="s doctrine:generate:entities ErpBundle" />
       <command text="s doctrine:mapping:import  ErpBundle yml" />
       <command text="s doctrine:generate:entities ErpBundle" />
       <command text="s doctrine:mapping:import  ErpBundle yml" />
@@ -113,6 +116,14 @@
       <command text="s server:run " />
       <command text="compass watch" />
       <command text="s server:run " />
+      <command text="s doctrine:generate:entities " />
+      <command text="s doctrine:generate:entities ErpBundle" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update " />
+      <command text="s doctrine:generate:entities ErpBundle" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:generate:entities ErpBundle" />
+      <command text="s doctrine:schema:update --force" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -147,7 +158,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/parts/foooter.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/parts/js.html.twig" />
         <option value="$PROJECT_DIR$/web/js/user.js" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Client/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Contact/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Project/index.html.twig" />
@@ -179,11 +189,14 @@
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/config/routing/issue.yml" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Controller/IssueController.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/parts/head.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/config/doctrine/Skill.orm.yml" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/config/doctrine/Users.orm.yml" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php" />
         <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/edit.html.twig" />
       </list>
     </option>
   </component>
@@ -606,7 +619,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -719,11 +732,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\erp\src\ErpBundle\Resources\config\doctrine" />
       <recent name="C:\xampp\htdocs\erp\app\Resources\FOSUserBundle\views" />
       <recent name="C:\xampp\htdocs\erp\web\js" />
       <recent name="C:\xampp\htdocs\erp\src\ErpBundle\Resources\translations" />
       <recent name="C:\xampp\htdocs\erp\src\js" />
-      <recent name="C:\xampp\htdocs\erp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\erp\app\Resources\FOSUserBundle\views\Security" />
@@ -782,12 +795,6 @@
       <created>1451837836182</created>
       <option name="number" value="Default" />
       <updated>1451837836182</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Сделал возможность выбора типа контакта с командой или с клиентом">
-      <created>1452191502652</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1452191502652</updated>
     </task>
     <task id="LOCAL-00012" summary="чуть перевел юзеров">
       <created>1452192406855</created>
@@ -1077,14 +1084,21 @@
       <option name="project" value="LOCAL" />
       <updated>1459619022609</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Поправил форму отображения нового пользователя">
+      <created>1459922585649</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1459922585649</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264192" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RemoteSynchronizer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1107,7 +1121,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264192" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5287107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1127,7 +1140,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="реализовано добавление задач из проекта" />
     <MESSAGE value="Буквы" />
     <MESSAGE value="язык" />
     <MESSAGE value="Починил заведение проектов" />
@@ -1152,7 +1164,8 @@
     <MESSAGE value="Сделал авторизацию в том числе и по емейлу" />
     <MESSAGE value="Сделал возможность просмотривать задачи мои и задачи которые я поставил" />
     <MESSAGE value="Сделал Отображение включен выключен пользователь" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал Отображение включен выключен пользователь" />
+    <MESSAGE value="Поправил форму отображения нового пользователя" />
+    <option name="LAST_COMMIT_MESSAGE" value="Поправил форму отображения нового пользователя" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1418,13 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.25">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1754,34 +1760,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037869822">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/translations/messages.ru.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/config/doctrine/Users.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.882353">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1814,10 +1796,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/config/doctrine/Users.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Form/UsersType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.323529">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.529412">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38554215">
-          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+        <state vertical-scroll-proportion="-4.7058825">
+          <caret line="146" column="24" selection-start-line="5" selection-start-column="3" selection-end-line="146" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38313252">
+          <caret line="82" column="0" selection-start-line="70" selection-start-column="6" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
