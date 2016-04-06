@@ -1,3 +1,4 @@
-$('#myTable').DataTable({
-    "iDisplayLength": 100
-});
+(function() {
+  $('#myTable').DataTable();
+
+}).call(this);

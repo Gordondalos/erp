@@ -19,12 +19,14 @@ class UsersType extends AbstractType
         $builder
 
             ->add('username')
-           // ->add('password')
-           //->add('roles')
-           ->add('enabled')
+//            ->add('password')
+            ->add('roles')
+            ->add('enabled')
             ->add('email')
-            ->add('Phone')
+            ->add('phone')
             ->add('description')
+            ->add('locked')
+            ->add('avatar')
         ;
 
 

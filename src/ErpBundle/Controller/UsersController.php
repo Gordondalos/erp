@@ -118,14 +118,14 @@ class UsersController extends Controller
         ));
 
 
-        $form->add('roless', 'choice', array('label' => 'Выберите роль',
+        $form->add('roles', 'choice', array('label' => 'Выберите роль',
             'multiple' => false,
             'choices' => $roles,
             'mapped'=>false,
             'data'=> $entity->getDbRole()
         ));
 
-        $form->add('passwort','text',array(
+        $form->add('password','text',array(
             'label' => 'Новый пароль',
             'mapped'=>false,
             'required'=>false
