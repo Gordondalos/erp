@@ -1,3 +1,7 @@
+erp_homepage:
+    path:     /
+    defaults: { _controller: ErpBundle:Default:index }
+
 erp_projectstatus:
     resource: "@ErpBundle/Resources/config/routing/projectstatus.yml"
     prefix:   /projectstatus
@@ -50,9 +54,7 @@ erp_client:
     resource: "@ErpBundle/Resources/config/routing/client.yml"
     prefix:   /client
 
-erp_homepage:
-    path:     /
-    defaults: { _controller: ErpBundle:Default:index }
+
 
 erp_settings:
     path:     /settings

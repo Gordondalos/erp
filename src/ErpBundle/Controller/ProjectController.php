@@ -17,6 +17,23 @@ use ErpBundle\Form\ProjectType;
 class ProjectController extends Controller
 {
 
+    public function getCountProjectAction(){
+        $em = $this->getDoctrine()->getManager();
+        $AllProject = $em->getRepository('ErpBundle:Project')->findAll();
+
+        $AllOpenProject = $em->getRepository('ErpBundle:Project')->findBy(array(
+            'projectStatus'=>'1'
+        ));
+
+        $count = count($AllProject);
+        $open = count($AllOpenProject);
+        return $this->render('ErpBundle:Users:countProject.html.twig', array(
+            'count' => $count,
+            'open' => $open,
+        ));
+    }
+
+
     // Проекты текущего пользователя где id айдишник текущего пользователя в проектах
     public function getUserProject($em,$id,$all){
 

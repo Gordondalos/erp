@@ -16,12 +16,13 @@
         <thead>
             <tr>
 
+                <th>{{ 'R'|trans }}</th>
                 <th>{{ 'En'|trans }}</th>
                 <th>{{ 'Username'|trans }}</th>
                 <th>{{ 'description'|trans }}</th>
-                <th>Skill</th>
+                <th>{{ 'Skills'|trans }}</th>
 
-                <th>{{ 'Email'|trans }}</th>
+
                 {#<th>{{ 'description'|trans }}</th>#}
                 {#<th>{{ "Avatar"|trans }}</th>#}
                 <th>{{ 'Phone'|trans }}</th>
@@ -32,6 +33,7 @@
 
         {% for entity in entities %}
             <tr>
+                <td><a href="{{ path('users_show', { 'id': entity.id }) }}">{{ entity.reiting }}</a></td>
                 <td><a href="{{ path('users_show', { 'id': entity.id }) }}">
                         {% if entity.enabled == 1 %}
                             <span>{{ 'yes'|trans }}</span>
@@ -42,6 +44,8 @@
                         {% endif %}
 
                     </a></td>
+
+
                 <td><a href="{{ path('users_show', { 'id': entity.id }) }}">{{ entity.userName }}</a></td>
 
                 {#<td>{{ entity.username }}</td>#}
@@ -49,7 +53,7 @@
                 {% autoescape false %}
                 <td style="max-width: 300px"> {{ entity.description|raw }}</td>
                 {% endautoescape %}
-                <td>{{ entity.skill }}</td>
+                <td>{{ entity.skill|raw }}</td>
 
                 {#<td>#}
                     {#{% for key, rolers in roles %}#}
@@ -64,10 +68,14 @@
                     {#{% endfor %}#}
                 {#</td>#}
 
-                <td>{{ entity.email }}</td>
+
                 {#<td>{{ entity.description }}</td>#}
                 {#<td>{{ entity.avatar }}</td>#}
-                <td>{{ entity.phone }}</td>
+                <td>
+                    <a href="mailto:{{ entity.email }}"> {{ entity.email }}</a>
+                    {{ entity.email }}
+
+                    <br>{{ entity.phone }}</td>
                 <td>
                 <ul>
 

@@ -21,6 +21,19 @@ class UsersController extends Controller
         return $AllUser;
     }
 
+    public function getAllUsersAction(){
+        $em = $this->getDoctrine()->getManager();
+        $AllUser = $em->getRepository('ErpBundle:Users')->findAll();
+        $count = count($AllUser);
+        return $this->render('ErpBundle:Users:countUser.html.twig', array(
+            'count' => $count,
+        ));
+    }
+
+
+
+
+
     /**
      * Lists all Users entities.
      *
@@ -376,6 +389,7 @@ class UsersController extends Controller
             'mapped'=>false,
             'required'=>false
         ));
+        $form->add('reiting');
         $form->add('enabled');
         $form->add('locked');
 
