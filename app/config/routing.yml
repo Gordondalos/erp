@@ -8,6 +8,7 @@ fos_user:
 users_new_anketa:
     path:     /newanketa
     defaults: { _controller: "ErpBundle:Users:newAnketa" }
+    requirements: { _method: get }
 
 anketa_create:
     path:     /anketac
