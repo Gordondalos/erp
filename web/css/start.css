@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* ╨Я╤А╨╕╨▓╨╡╨┤╨╡╨╜╨╜╤Л╨╡ ╨╜╨╕╨╢╨╡ ╨║╨╗╨░╤Б╤Б╤Л ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╤О╤В╤Б╤П ╨┐╨╛ ╨▓╤Б╨╡╨╝╤Г ╨║╨╛╨┤╤Г.
+╨Я╤А╨╕ ╤А╨░╨╖╨╝╨╡╤Й╨╡╨╜╨╕╨╕ ╨╗╤О╨▒╨╛╨│╨╛ ╨╕╨╖ ╨║╨╛╨╝╨┐╨╛╨╜╨╡╨╜╤В╨╛╨▓, ╨▒╨╡╨╖ ╤Д╤А╨╡╨╣╨╝╨▓╨╛╨║╨░
+Superlative, ╤В╨╛╨╗╤М╨║╨╛ ╤Б ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╨╜╨╕╨╡╨╝ ╨С╤Г╤В╤Б╤В╤А╨░╨┐╨░, ╨╕╤Е ╨╜╤Г╨╢╨╜╨╛ ╨┤╨╛╨▒╨░╨▓╨╕╤В╤М
+╨▓ ╨▒╨╛╨╗╤М╤И╨╕╨╜╤Б╤В╨▓╨╛ ╨Ъ╤Б╤Б ╤Б╤В╨╕╨╗╨╡╨╣.
+*/
+/* ╨Ф╨░╨╜╨╜╤Л╨╣ ╨║╨╗╨░╤Б╤Б ╨┐╤А╨╕╨╝╨╡╨╜╤П╨╡╤В╤Б╤П ╤В╨╛╨╗╤М╨║╨╛ ╨┤╨╢╨░╨▓╨░╤Б╨║╤А╨╕╨┐╤В╨╛╨╝
+╨┤╨╗╤П ╨▓╨║╨╗╤О╤З╨╡╨╜╨╕╤П ╨╕ ╨╛╤В╨║╨╗╤О╤З╨╡╨╜╨╕╤П ╨▓╤Б╨┐╨╗╤Л╨▓╨░╤О╤Й╨╕╤Е ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓
+*/
+/* line 10, ../../src/sass/__base/_helper.scss */
+.displays {
+  display: block !important;
+}
+
+/*╨Ф╨░╨╜╨╜╤Л╨╣ ╨║╨╗╨░╤Б╤Б ╨┐╤А╨╕╨╝╨╡╨╜╤П╨╡╤В╤Б╤П ╨┤╨╗╤П ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╨╛╨▓╨╜╨╕╤П
+╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓ ╨╝╨╡╨╜╤О ╨╜╨░ ╨▓╤Б╤О ╤И╨╕╤А╨╕╨╜╤Г, ╨╖╨░╨┤╨░╨╡╤В╤Б╤П ╨┤╨╗╤П ╤А╨╛╨┤╨╕╤В╨╡╨╗╤М╤Б╨║╨╛╨│╨╛ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░
+╤В╨╡╨│╨░ ul
+*/
+/* line 18, ../../src/sass/__base/_helper.scss */
+.tables_li {
+  width: 100%;
+  display: table;
+}
+/* line 21, ../../src/sass/__base/_helper.scss */
+.tables_li ul {
+  display: table-row;
+}
+/* line 23, ../../src/sass/__base/_helper.scss */
+.tables_li ul li {
+  display: table-cell !important;
+}
+
+/*╨Ф╨░╨╜╨╜╤Л╨╣ ╨║╨╗╨░╤Б╤Б ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В ╨╝╨╕╨║╤Б╨╕╨╜ ╨▒╤Г╤В╤Б╤В╤А╨░╨┐╨░ ╨┤╨╗╤П ╤Б╨╛╨╖╨┤╨░╨╜╨╕╤П ╤В╨╡╨╜╨╡╨╣
+╨Ш╨╖╨╝╨╡╨╜╨╡╨╜╨╕╨╡ ╨╡╨│╨╛ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╣ ╨╕╨╖╨╝╨╡╨╜╨╕╤В ╨╛╤В╨╛╨▒╤А╨░╨╢╨╡╨╜╨╕╨╡ ╤В╨╡╨╜╨╡╨╣ ╨▓ 90% ╨║╨╛╨┤╨░
+*/
+/* line 41, ../../src/sass/__base/_helper.scss */
+.bk {
+  box-shadow: 0 2px 6px gray;
+}
+
+/*╨в╨░╨║ ╨║╨░╨║ ╨▓ ╨▒╤Г╤Б╤В╤А╨░╨┐╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О ╨╜╨╡╤В ╨▒╨╡╨╗╨╛╨│╨╛ ╤Ж╨▓╨╡╤В╨░, ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╤В╨╡╤Б╤П
+╨┤╨░╨╜╨╜╤Л╨╣ ╨║╨╗╨░╤Б╤Б ╤З╤В╨╛╨▒╤Л ╨╖╨░╨╗╨░╤В╤М ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░╨╝ ╨▒╨╡╨╗╤Л╨╣ ╤Ж╨▓╨╡╤В
+*/
+/* line 48, ../../src/sass/__base/_helper.scss */
+.white {
+  color: #fff;
+}
+
+/*╨Ф╨░╨╜╨╜╤Л╨╣ ╨║╨╗╨░╤Б ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В ╨╝╨╕╨║╤Б╨╕╨╜ ╨▒╤Г╤В╤Б╤В╤А╨░╨┐╨░ ╨┤╨╗╤П ╤Б╨╛╨╖╨┤╨░╨╜╨╕╤П ╨╖╨░╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╨╣ ╤А╨░╨╝╨╛╨║
+╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П ╨▓ 99% ╨║╨╛╨┤╨░
+*/
+/* line 55, ../../src/sass/__base/_helper.scss */
+.br {
+  border-radius: .25rem;
+}
+
+/*
+ * ╨г╨▒╤А╨░╤В╤М ╨╖╨░╨║╤А╤Г╨│╨╗╨╡╨╜╨╕╨╡ (border-radius)
+ */
+/* line 62, ../../src/sass/__base/_helper.scss */
+.br-0 {
+  border-radius: 0;
+}
+
+/* line 68, ../../src/sass/__base/_helper.scss */
+.bg-gray-dark {
+  background-color: #252525;
+}
+
+/* line 72, ../../src/sass/__base/_helper.scss */
+.bg-gray {
+  background-color: gray;
+}
+
+/* line 76, ../../src/sass/__base/_helper.scss */
+.bg-gray-light {
+  background-color: #828282;
+}
+
+/* line 80, ../../src/sass/__base/_helper.scss */
+.bg-gray-lighter {
+  background-color: #aaaaaa;
+}
+
+/* line 84, ../../src/sass/__base/_helper.scss */
+.bg-gray-lightest {
+  background-color: #e1e1e1;
+}
+
+/* line 89, ../../src/sass/__base/_helper.scss */
+.text-gray-dark {
+  color: #252525;
+}
+
+/* line 93, ../../src/sass/__base/_helper.scss */
+.text-gray {
+  color: gray;
+}
+
+/* line 97, ../../src/sass/__base/_helper.scss */
+.text-gray-light {
+  color: #828282;
+}
+
+/* line 101, ../../src/sass/__base/_helper.scss */
+.text-gray-lighter {
+  color: #aaaaaa;
+}
+
+/* line 105, ../../src/sass/__base/_helper.scss */
+.text-gray-lightest {
+  color: #e1e1e1;
+}
+
+/* line 112, ../../src/sass/__base/_helper.scss */
+.b-t {
+  border-top: 1px solid #aaaaaa;
+}
+
+/* line 116, ../../src/sass/__base/_helper.scss */
+.b-b {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+/* line 120, ../../src/sass/__base/_helper.scss */
+.b-l {
+  border-left: 1px solid #aaaaaa;
+}
+
+/* line 124, ../../src/sass/__base/_helper.scss */
+.b-r {
+  border-right: 1px solid #aaaaaa;
+}
+
+/* line 128, ../../src/sass/__base/_helper.scss */
+.b-a {
+  border: 1px solid #aaaaaa;
+}
+
+/* line 132, ../../src/sass/__base/_helper.scss */
+.b-none {
+  border: none !important;
+}
+
+/* line 136, ../../src/sass/__base/_helper.scss */
+.pos-relative {
+  position: relative;
+}
+
+/* line 141, ../../src/sass/__base/_helper.scss */
+.img-max {
+  width: 100%;
+  height: auto;
+}
+
+/* line 147, ../../src/sass/__base/_helper.scss */
+.display-block {
+  display: block;
+}
+
+/* line 152, ../../src/sass/__base/_helper.scss */
+.display-inline-block {
+  display: inline-block;
+}
+
+/* line 156, ../../src/sass/__base/_helper.scss */
+.bg-none {
+  background: none !important;
+}
+
+/* line 161, ../../src/sass/__base/_helper.scss */
+.display-inline {
+  display: inline;
+}
+
+/* line 166, ../../src/sass/__base/_helper.scss */
+.border-none {
+  border: none !important;
+}
+
+/* line 172, ../../src/sass/__base/_helper.scss */
+.hover-text-decoration-none:focus, .hover-text-decoration-none:active, .hover-text-decoration-none.active, .hover-text-decoration-none:hover {
+  text-decoration: none !important;
+}
+/* line 180, ../../src/sass/__base/_helper.scss */
+.hover-text-decoration-none:after:focus, .hover-text-decoration-none:after:active, .hover-text-decoration-none:after.active, .hover-text-decoration-none:after:hover, .hover-text-decoration-none:before:focus, .hover-text-decoration-none:before:active, .hover-text-decoration-none:before.active, .hover-text-decoration-none:before:hover {
+  text-decoration: none !important;
+}
+
+/* line 191, ../../src/sass/__base/_helper.scss */
+.p-t-05 {
+  padding-top: 0.5rem;
+}
+
+/* line 195, ../../src/sass/__base/_helper.scss */
+.p-b-05 {
+  padding-bottom: 0.5rem;
+}
+
+/* line 199, ../../src/sass/__base/_helper.scss */
+.p-l-05 {
+  padding-left: 0.5rem;
+}
+
+/* line 203, ../../src/sass/__base/_helper.scss */
+.p-r-05 {
+  padding-right: 0.5rem;
+}
+
+/* line 207, ../../src/sass/__base/_helper.scss */
+.p-a-05 {
+  padding: 0.5rem;
+}
+
+/* line 211, ../../src/sass/__base/_helper.scss */
+.p-x-05 {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+/* line 216, ../../src/sass/__base/_helper.scss */
+.p-y-05 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+/* line 223, ../../src/sass/__base/_helper.scss */
+.m-t-05 {
+  margin-top: 0.5rem;
+}
+
+/* line 227, ../../src/sass/__base/_helper.scss */
+.m-b-05 {
+  margin-bottom: 0.5rem;
+}
+
+/* line 231, ../../src/sass/__base/_helper.scss */
+.m-l-05 {
+  margin-left: 0.5rem;
+}
+
+/* line 235, ../../src/sass/__base/_helper.scss */
+.m-r-05 {
+  margin-right: 0.5rem;
+}
+
+/* line 239, ../../src/sass/__base/_helper.scss */
+.m-a-05 {
+  margin: 0.5rem;
+}
+
+/* line 243, ../../src/sass/__base/_helper.scss */
+.m-x-05 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* line 248, ../../src/sass/__base/_helper.scss */
+.m-y-05 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* line 5, ../../src/sass/_project/start/content.sass */
+.header {
+  background-color: #2a3246;
+}
+/* line 7, ../../src/sass/_project/start/content.sass */
+.header a {
+  color: #fff;
+}
+
+/* line 13, ../../src/sass/_project/start/content.sass */
+.footer {
+  background-color: #2a3246;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 250px;
+  bottom: 0;
+  left: 0;
+}
