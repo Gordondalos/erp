@@ -859,4 +859,32 @@ class Users extends BaseUser
     {
         return $this->hobbi;
     }
+    /**
+     * @var string
+     */
+    private $specializaciya;
+
+
+    /**
+     * Set specializaciya
+     *
+     * @param string $specializaciya
+     * @return Users
+     */
+    public function setSpecializaciya($specializaciya)
+    {
+        $this->specializaciya = $specializaciya;
+
+        return $this;
+    }
+
+    /**
+     * Get specializaciya
+     *
+     * @return string 
+     */
+    public function getSpecializaciya()
+    {
+        return $this->specializaciya;
+    }
 }

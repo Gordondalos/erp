@@ -267,17 +267,26 @@ body {
   line-height: 1.25rem;
   color: #5E7B8F;
 }
+/* line 7, ../../src/sass/_project/start/content.sass */
+body p {
+  text-indent: 1rem;
+}
 
-/* line 8, ../../src/sass/_project/start/content.sass */
+/* line 9, ../../src/sass/_project/start/content.sass */
+p.no-otstup {
+  text-indent: 0rem;
+}
+
+/* line 12, ../../src/sass/_project/start/content.sass */
 .header {
   background-color: #2a3246;
 }
-/* line 10, ../../src/sass/_project/start/content.sass */
+/* line 14, ../../src/sass/_project/start/content.sass */
 .header a {
   color: #fff;
 }
 
-/* line 15, ../../src/sass/_project/start/content.sass */
+/* line 19, ../../src/sass/_project/start/content.sass */
 .footer {
   background-color: #2a3246;
   position: fixed;
@@ -286,15 +295,15 @@ body {
   left: 0;
 }
 
-/* line 23, ../../src/sass/_project/start/content.sass */
+/* line 27, ../../src/sass/_project/start/content.sass */
 .main {
   margin-bottom: 300px;
 }
-/* line 25, ../../src/sass/_project/start/content.sass */
+/* line 29, ../../src/sass/_project/start/content.sass */
 .main li {
   margin-bottom: 0.5rem;
 }
-/* line 27, ../../src/sass/_project/start/content.sass */
+/* line 31, ../../src/sass/_project/start/content.sass */
 .main li a {
   color: #2a3246;
   border-bottom: 1px solid #2a3246;

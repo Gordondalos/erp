@@ -11,6 +11,21 @@ class DefaultController extends Controller
         return $this->render('SiteBundle:Default:index.html.twig');
     }
 
+    public function customersAction()
+    {
+        return $this->render('SiteBundle:Default:customers.html.twig');
+    }
+
+    public function partnersAction()
+    {
+        return $this->render('SiteBundle:Default:partners.html.twig');
+    }
+
+    public function colleagueAction()
+    {
+        return $this->render('SiteBundle:Default:colleague.html.twig');
+    }
+
     public function comandosAction()
     {
         $em = $this->getDoctrine()->getManager();

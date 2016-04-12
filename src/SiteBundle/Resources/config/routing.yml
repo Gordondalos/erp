@@ -6,17 +6,17 @@ comandos:
     defaults: { _controller: SiteBundle:Default:comandos }
 customers:
     path:     /customers
-    defaults: { _controller: SiteBundle:Default:index }
+    defaults: { _controller: SiteBundle:Default:customers }
 portfolio:
     path:     /portfolio
     defaults: { _controller: SiteBundle:Default:index }
 partner:
     path:     /partner
-    defaults: { _controller: SiteBundle:Default:index }
+    defaults: { _controller: SiteBundle:Default:partners }
 blog:
     path:     /blog
     defaults: { _controller: SiteBundle:Default:index }
 colleague:
     path:     /colleague
-    defaults: { _controller: SiteBundle:Default:index }
+    defaults: { _controller: SiteBundle:Default:colleague }
 

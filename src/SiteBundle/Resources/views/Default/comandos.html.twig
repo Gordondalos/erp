@@ -18,7 +18,13 @@
                         <img class="img-fluid img-max br" src="{{ asset('bundles/site/images/no-avatar.jpg') }}" alt=" {{ entity.username }}">
 
                     {% endif %}
-                    {{ entity.username }}
+                    <div class="text-xs-center">
+                       <small>{{ entity.username }}</small>
+                        <br>
+                        <small class="text-muted">{{ entity.specializaciya }}</small>
+                    </div>
+
+
                 </div>
 
                 {% if  loop.index%4 == 0%}
@@ -32,7 +38,11 @@
 
 
 
+
 {% endblock content %}
+  {% block info %}
+      {% include '@Site/Default/info.html.twig' %}
+  {% endblock %}
 
 
 

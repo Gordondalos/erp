@@ -120,6 +120,11 @@ ErpBundle\Entity\Users:
             nullable: true
             length: 255
             fixed: false
+        specializaciya:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
         celiVrabote:
             type: text
             nullable: true
