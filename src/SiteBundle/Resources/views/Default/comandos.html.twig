@@ -1,0 +1,40 @@
+{% extends '@Site/loyaut.html.twig' %}
+
+{% block content %}
+    <div class="container">
+
+            {% for entity in entities %}
+
+                    {% if  loop.index%4 == 0%}
+
+                    <div class="row">
+                {% endif %}
+
+                <div class="col-xs-6 col-md-3">
+                    {%  if entity.avatar != null %}
+                        <img class="img-fluid img-max br" src="{{ entity.avatar }}" alt=" {{ entity.username }}">
+
+                    {% else %}
+                        <img class="img-fluid img-max br" src="{{ asset('bundles/site/images/no-avatar.jpg') }}" alt=" {{ entity.username }}">
+
+                    {% endif %}
+                    {{ entity.username }}
+                </div>
+
+                {% if  loop.index%4 == 0%}
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+
+
+        </div>
+
+
+
+{% endblock content %}
+
+
+
+
+

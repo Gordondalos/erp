@@ -28,5 +28,6 @@
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/Users/showanket.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/_layout_parts/menu.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ErpBundle/Resources/views/layout.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/loyaut.html.twig" charset="UTF-8" />
   </component>
 </project>

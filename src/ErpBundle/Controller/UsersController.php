@@ -41,9 +41,7 @@ class UsersController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-
         $entities = $em->getRepository('ErpBundle:Users')->findAll();
-
         $ut = new RoleController();
         $role = $ut->allRoleAction($em);
         $roles = array();
