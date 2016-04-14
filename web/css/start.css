@@ -261,6 +261,16 @@ Superlative, ╤В╨╛╨╗╤М╨║╨╛ ╤Б ╨╕╤Б╨┐╨╛╨
   margin-bottom: 0.5rem;
 }
 
+/* line 1, ../../src/sass/_project/baltspecservice.scss */
+.bss {
+  height: 300px;
+  background: #131c51;
+  background: -webkit-gradient(linear, left top, right top, color-stop(6%, #131c51), color-stop(23%, #183eaf), color-stop(40%, #152e68));
+  background: -webkit-linear-gradient(left, #131c51 6%, #183eaf 23%, #152e68 40%);
+  background: linear-gradient(to right, #131c51 6%, #183eaf 23%, #152e68 40%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c51', endColorstr='#152e68', GradientType=1 );
+}
+
 /* line 3, ../../src/sass/_project/start/content.sass */
 body {
   font-size: 1rem;
@@ -295,15 +305,24 @@ p.no-otstup {
   left: 0;
 }
 
-/* line 27, ../../src/sass/_project/start/content.sass */
+/* line 26, ../../src/sass/_project/start/content.sass */
+.footer-fluid {
+  background-color: #2a3246;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 33, ../../src/sass/_project/start/content.sass */
 .main {
   margin-bottom: 300px;
 }
-/* line 29, ../../src/sass/_project/start/content.sass */
+/* line 35, ../../src/sass/_project/start/content.sass */
 .main li {
   margin-bottom: 0.5rem;
 }
-/* line 31, ../../src/sass/_project/start/content.sass */
+/* line 37, ../../src/sass/_project/start/content.sass */
 .main li a {
   color: #2a3246;
   border-bottom: 1px solid #2a3246;

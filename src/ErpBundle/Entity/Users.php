@@ -194,7 +194,7 @@ class Users extends BaseUser
 
 
     /**
-     * Set portfolio
+     * Set Portfolio
      *
      * @param string $portfolio
      * @return Users
@@ -207,7 +207,7 @@ class Users extends BaseUser
     }
 
     /**
-     * Get portfolio
+     * Get Portfolio
      *
      * @return string 
      */

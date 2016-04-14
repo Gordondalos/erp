@@ -21,6 +21,11 @@ class DefaultController extends Controller
         return $this->render('SiteBundle:Default:partners.html.twig');
     }
 
+    public function portfolioAction()
+    {
+        return $this->render('SiteBundle:Default:portfolio.html.twig');
+    }
+
     public function colleagueAction()
     {
         return $this->render('SiteBundle:Default:colleague.html.twig');
@@ -37,5 +42,10 @@ class DefaultController extends Controller
         ));
 
 
+    }
+
+    public function baltspecservisAction()
+    {
+        return $this->render('SiteBundle:Portfolio:baltspecservise.html.twig');
     }
 }

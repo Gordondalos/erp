@@ -9,7 +9,7 @@ customers:
     defaults: { _controller: SiteBundle:Default:customers }
 portfolio:
     path:     /portfolio
-    defaults: { _controller: SiteBundle:Default:index }
+    defaults: { _controller: SiteBundle:Default:Portfolio }
 partner:
     path:     /partner
     defaults: { _controller: SiteBundle:Default:partners }
@@ -19,4 +19,8 @@ blog:
 colleague:
     path:     /colleague
     defaults: { _controller: SiteBundle:Default:colleague }
+
+baltspecservis:
+    path:     /baltspecservis
+    defaults: { _controller: SiteBundle:Default:baltspecservis }
 
