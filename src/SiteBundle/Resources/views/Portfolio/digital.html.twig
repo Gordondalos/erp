@@ -1,0 +1,41 @@
+{% extends '@Site/loyautportfolio.html.twig' %}
+
+
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="cdi">
+                <div class="container">
+                    <div class="row p-t-3">
+                        <h1 class="white text-xs-center p-t-3">Ускорение загрузки сайта NL Digital</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row p-y-2">
+                    <b>Клиент</b><br>
+                    <p>Компания NL Digital</p><br>
+
+                    <b>Задача</b><br>
+                    <p>Ускорение загрузки сайта</p>
+
+                    <b>Работу выполнил</b>
+                    <p>Евгений Бондаренко</p>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <span class='m-y-3 display-block'>Было</span>
+                    <img class="img-fluid ma" src="{{ asset('bundles/site/images/do.png') }}" alt="Digital">
+                    <span class='m-y-3 display-block'>Стало</span>
+                    <img class="img-fluid ma" src="{{ asset('bundles/site/images/after.png') }}" alt="Digital">
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+

@@ -276,62 +276,101 @@ Superlative, ╤В╨╛╨╗╤М╨║╨╛ ╤Б ╨╕╤Б╨┐╨╛╨
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c51', endColorstr='#152e68', GradientType=1 );
 }
 
-/* line 3, ../../src/sass/_project/start/content.sass */
+/* line 10, ../../src/sass/_project/baltspecservice.scss */
+.cdi {
+  height: 300px;
+  background: #444346;
+  background: -webkit-gradient(linear, left top, right top, color-stop(6%, #282a2a), color-stop(23%, #605d6e), color-stop(40%, #262626));
+  background: -webkit-linear-gradient(left, #0c0c0c 6%, #444346 23%, #282a2a 40%);
+  background: linear-gradient(to right, #0c0c0c 6%, #444346 23%, #282a2a 40%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c51', endColorstr='#152e68', GradientType=1 );
+}
+
+/* line 19, ../../src/sass/_project/baltspecservice.scss */
+.ereport {
+  height: 300px;
+  background-image: linear-gradient(green 0px, yellow);
+}
+
+/* line 24, ../../src/sass/_project/baltspecservice.scss */
+.tandem {
+  height: 300px;
+  background-image: linear-gradient(#800905 0px, #ff5766);
+}
+
+/* line 29, ../../src/sass/_project/baltspecservice.scss */
+.pvd {
+  height: 300px;
+  background-image: url("/bundles/site/images/pvd.jpg");
+  background-size: cover;
+}
+
+/* line 35, ../../src/sass/_project/baltspecservice.scss */
+.se {
+  height: 300px;
+  background-image: url("/bundles/site/images/sebg.jpg");
+  background-size: cover;
+}
+
+/* line 4, ../../src/sass/_project/start/content.sass */
 body {
   font-size: 1rem;
   line-height: 1.25rem;
   color: #5E7B8F;
 }
-/* line 7, ../../src/sass/_project/start/content.sass */
+/* line 8, ../../src/sass/_project/start/content.sass */
 body p {
   text-indent: 1rem;
 }
 
-/* line 9, ../../src/sass/_project/start/content.sass */
+/* line 10, ../../src/sass/_project/start/content.sass */
 p.no-otstup {
   text-indent: 0rem;
 }
 
-/* line 12, ../../src/sass/_project/start/content.sass */
+/* line 13, ../../src/sass/_project/start/content.sass */
 .header {
-  background-color: #2a3246;
+  background-color: #000;
 }
-/* line 14, ../../src/sass/_project/start/content.sass */
+/* line 15, ../../src/sass/_project/start/content.sass */
 .header a {
   color: #fff;
 }
 
-/* line 19, ../../src/sass/_project/start/content.sass */
+/* line 20, ../../src/sass/_project/start/content.sass */
 .footer {
-  background-color: #2a3246;
+  background-color: #000;
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
 }
 
-/* line 26, ../../src/sass/_project/start/content.sass */
+/* line 27, ../../src/sass/_project/start/content.sass */
 .footer-fluid {
-  background-color: #2a3246;
+  background-color: #000;
   position: relative;
   width: 100%;
   bottom: 0;
   left: 0;
 }
-/* line 32, ../../src/sass/_project/start/content.sass */
+/* line 33, ../../src/sass/_project/start/content.sass */
 .footer-fluid a {
   color: #fff;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
-/* line 35, ../../src/sass/_project/start/content.sass */
+/* line 39, ../../src/sass/_project/start/content.sass */
 .main {
   margin-bottom: 300px;
 }
-/* line 37, ../../src/sass/_project/start/content.sass */
+/* line 41, ../../src/sass/_project/start/content.sass */
 .main li {
   margin-bottom: 0.5rem;
 }
-/* line 39, ../../src/sass/_project/start/content.sass */
+/* line 43, ../../src/sass/_project/start/content.sass */
 .main li a {
   color: #2a3246;
   border-bottom: 1px solid #2a3246;

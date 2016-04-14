@@ -6,3 +6,35 @@
 	background: linear-gradient(to right,#131c51 6%,#183eaf 23%,#152e68 40%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c51', endColorstr='#152e68', GradientType=1 );
 }
+
+.cdi {
+	height: 300px;
+	background: #444346;
+	background: -webkit-gradient(linear, left top, right top, color-stop(6%, #282a2a), color-stop(23%, #605d6e), color-stop(40%, #262626));
+	background: -webkit-linear-gradient(left, #0c0c0c 6%, #444346 23%, #282a2a 40%);
+	background: linear-gradient(to right, #0c0c0c 6%, #444346 23%, #282a2a 40%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131c51', endColorstr='#152e68', GradientType=1 );
+}
+
+.ereport{
+	height: 300px;
+	background-image: linear-gradient(green 0px, yellow);
+}
+
+.tandem{
+	height: 300px;
+	background-image: linear-gradient(#800905 0px, #ff5766);
+}
+
+.pvd{
+	height: 300px;
+	background-image: url('/bundles/site/images/pvd.jpg');
+	background-size: cover;
+}
+
+.se{
+	height: 300px;
+	background-image: url('/bundles/site/images/sebg.jpg');
+	background-size: cover;
+
+}

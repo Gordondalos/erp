@@ -35,8 +35,14 @@
     <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Default/partners.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Default/portfolio.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Portfolio/baltspecservise.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Portfolio/cdi.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Portfolio/digital.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Portfolio/ereport.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Portfolio/perila.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Portfolio/se.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Portfolio/superlative.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/Portfolio/tandem.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/loyaut.html.twig" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/loyautportfolio.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/SiteBundle/Resources/views/loyautportfolio.html.twig" charset="UTF-8" />
   </component>
 </project>

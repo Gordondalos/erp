@@ -24,3 +24,30 @@ baltspecservis:
     path:     /baltspecservis
     defaults: { _controller: SiteBundle:Default:baltspecservis }
 
+cdi:
+    path:     /cdi
+    defaults: { _controller: SiteBundle:Default:cdi }
+
+superlative:
+    path:     /superlative
+    defaults: { _controller: SiteBundle:Default:superlative }
+
+digital:
+    path:     /digital
+    defaults: { _controller: SiteBundle:Default:digital }
+
+ereport:
+    path:     /ereport
+    defaults: { _controller: SiteBundle:Default:ereport }
+
+tandem:
+    path:     /tandem
+    defaults: { _controller: SiteBundle:Default:tandem }
+
+perila:
+    path:     /perila
+    defaults: { _controller: SiteBundle:Default:perila }
+
+se:
+    path:     /se
+    defaults: { _controller: SiteBundle:Default:se }
