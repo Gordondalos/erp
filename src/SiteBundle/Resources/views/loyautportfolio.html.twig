@@ -13,11 +13,18 @@
       {% endblock %}
 
       {% block footer %}
-       <div class="footer-fluid p-b-2 white">
-            {% include '@FOSUser/nav.html.twig' %}
-       </div>
+
 
       {% endblock %}
+
+           <div class="footer-fluid m-t-2">
+                <div class="container">
+                    <div class="row p-y-2">
+                        {% include '@FOSUser/nav.html.twig' %}
+                    </div>
+                 </div>
+            </div>
+
 
 
       {% include '@FOSUser/js.html.twig' %}

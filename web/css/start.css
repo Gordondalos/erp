@@ -261,6 +261,11 @@ Superlative, ╤В╨╛╨╗╤М╨║╨╛ ╤Б ╨╕╤Б╨┐╨╛╨
   margin-bottom: 0.5rem;
 }
 
+/* line 253, ../../src/sass/__base/_helper.scss */
+.ma {
+  margin: auto;
+}
+
 /* line 1, ../../src/sass/_project/baltspecservice.scss */
 .bss {
   height: 300px;
@@ -313,16 +318,20 @@ p.no-otstup {
   bottom: 0;
   left: 0;
 }
+/* line 32, ../../src/sass/_project/start/content.sass */
+.footer-fluid a {
+  color: #fff;
+}
 
-/* line 33, ../../src/sass/_project/start/content.sass */
+/* line 35, ../../src/sass/_project/start/content.sass */
 .main {
   margin-bottom: 300px;
 }
-/* line 35, ../../src/sass/_project/start/content.sass */
+/* line 37, ../../src/sass/_project/start/content.sass */
 .main li {
   margin-bottom: 0.5rem;
 }
-/* line 37, ../../src/sass/_project/start/content.sass */
+/* line 39, ../../src/sass/_project/start/content.sass */
 .main li a {
   color: #2a3246;
   border-bottom: 1px solid #2a3246;
