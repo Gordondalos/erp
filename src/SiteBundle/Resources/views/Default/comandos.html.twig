@@ -2,24 +2,23 @@
 
 {% block content %}
     <div class="container">
+        <div class="row">
 
             {% for entity in entities %}
 
-                    {% if  loop.index%4 == 0%}
 
-                    <div class="row">
-                {% endif %}
 
                 <div class="col-xs-6 col-md-3">
-                    {%  if entity.avatar != null %}
+                    {% if entity.avatar != null %}
                         <img class="img-fluid img-max br" src="{{ entity.avatar }}" alt=" {{ entity.username }}">
 
                     {% else %}
-                        <img class="img-fluid img-max br" src="{{ asset('bundles/site/images/no-avatar.jpg') }}" alt=" {{ entity.username }}">
+                        <img class="img-fluid img-max br" src="{{ asset('bundles/site/images/no-avatar.jpg') }}"
+                             alt=" {{ entity.username }}">
 
                     {% endif %}
                     <div class="text-xs-center">
-                       <small>{{ entity.username }}</small>
+                        <small>{{ entity.username }}</small>
                         <br>
                         <small class="text-muted">{{ entity.specializaciya }}</small>
                     </div>
@@ -27,14 +26,15 @@
 
                 </div>
 
-                {% if  loop.index%4 == 0%}
-                    </div>
+                {% if  loop.index%4 == 0 %}
+                    <div class="clearfix"></div>
                 {% endif %}
+
             {% endfor %}
 
 
-
         </div>
+    </div>
 
 
 
