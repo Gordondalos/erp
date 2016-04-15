@@ -494,7 +494,6 @@ class FosUser
     }
 
 
-
     /**
      * Set description
      *

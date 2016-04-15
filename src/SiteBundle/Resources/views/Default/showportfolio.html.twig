@@ -1,0 +1,27 @@
+{% extends '@Site/loyautportfolio.html.twig' %}
+
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="showportfolio" style="background-image: url({{ entity.headerImage }});">
+                <div class="container">
+                    <div class="row p-t-3">
+                        <h1 style="color: {{ entity.colorHeaderText }}" class="text-xs-center p-t-3">{{ entity.name|raw }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row p-y-2">
+
+                    {{ entity.description|raw }}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock %}
+

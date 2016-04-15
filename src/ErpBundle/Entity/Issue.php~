@@ -276,4 +276,60 @@ class Issue
     {
         return $this->dateStart;
     }
+    /**
+     * @var integer
+     */
+    private $project;
+
+
+    /**
+     * Set project
+     *
+     * @param integer $project
+     * @return Issue
+     */
+    public function setProject($project)
+    {
+        $this->project = $project;
+
+        return $this;
+    }
+
+    /**
+     * Get project
+     *
+     * @return integer 
+     */
+    public function getProject()
+    {
+        return $this->project;
+    }
+    /**
+     * @var integer
+     */
+    private $issuePrioritet;
+
+
+    /**
+     * Set issuePrioritet
+     *
+     * @param integer $issuePrioritet
+     * @return Issue
+     */
+    public function setIssuePrioritet($issuePrioritet)
+    {
+        $this->issuePrioritet = $issuePrioritet;
+
+        return $this;
+    }
+
+    /**
+     * Get issuePrioritet
+     *
+     * @return integer 
+     */
+    public function getIssuePrioritet()
+    {
+        return $this->issuePrioritet;
+    }
 }

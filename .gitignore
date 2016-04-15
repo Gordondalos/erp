@@ -11,3 +11,6 @@
 /composer.phar
 /node_modules
 /src/ErpBundle/Resources/views/Default/user.html.twig
+/.sass-cache
+/.idea
+/app/cache

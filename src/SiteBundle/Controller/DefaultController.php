@@ -16,45 +16,42 @@ class DefaultController extends Controller
         return $this->render('SiteBundle:Default:customers.html.twig');
     }
 
-    public function digitalAction()
-    {
-        return $this->render('SiteBundle:Portfolio:digital.html.twig');
-    }
-
-    public function ereportAction()
-    {
-        return $this->render('SiteBundle:Portfolio:ereport.html.twig');
-    }
-
     public function partnersAction()
     {
         return $this->render('SiteBundle:Default:partners.html.twig');
     }
 
-    public function perilaAction()
+     public function portfoliosAction()
     {
-        return $this->render('SiteBundle:Portfolio:perila.html.twig');
+
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('SiteBundle:Portfolio')->findAll();
+
+        return $this->render('SiteBundle:Default:portfolio.html.twig', array(
+            'entities' => $entities,
+        ));
     }
 
-    public function portfolioAction()
+     public function showPortfolioAction($id)
     {
-        return $this->render('SiteBundle:Default:portfolio.html.twig');
+
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('SiteBundle:Portfolio')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Portfolio entity.');
+        }
+
+
+        return $this->render('SiteBundle:Default:showportfolio.html.twig', array(
+            'entity'      => $entity,
+
+        ));
     }
 
-    public function seAction()
-    {
-        return $this->render('SiteBundle:Portfolio:se.html.twig');
-    }
 
-    public function superlativeAction()
-    {
-        return $this->render('SiteBundle:Portfolio:superlative.html.twig');
-    }
-
-    public function tandemAction()
-    {
-        return $this->render('SiteBundle:Portfolio:tandem.html.twig');
-    }
 
     public function colleagueAction()
     {
@@ -70,17 +67,6 @@ class DefaultController extends Controller
             'entities' => $entities,
 
         ));
-
-
     }
 
-    public function baltspecservisAction()
-    {
-        return $this->render('SiteBundle:Portfolio:baltspecservise.html.twig');
-    }
-
-    public function cdiAction()
-    {
-        return $this->render('SiteBundle:Portfolio:cdi.html.twig');
-    }
 }

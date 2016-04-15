@@ -312,6 +312,14 @@ Superlative, ╤В╨╛╨╗╤М╨║╨╛ ╤Б ╨╕╤Б╨┐╨╛╨
   background-size: cover;
 }
 
+/* line 42, ../../src/sass/_project/baltspecservice.scss */
+.showportfolio {
+  height: 300px;
+  background-color: #252525;
+  background-size: cover;
+  color: white;
+}
+
 /* line 4, ../../src/sass/_project/start/content.sass */
 body {
   font-size: 1rem;

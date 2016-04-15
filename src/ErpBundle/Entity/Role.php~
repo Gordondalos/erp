@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Role
 {
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
@@ -23,12 +23,28 @@ class Role
     /**
      * Get id
      *
-     * @return integer 
+     * @return string
      */
     public function getId()
     {
         return $this->id;
     }
+
+
+    /**
+     * Set id
+     *
+     * @param string $id
+     * @return Role
+     */
+
+    public function SetId($id)
+    {
+        $this->id =$id;
+
+        return $this;
+    }
+
 
     /**
      * Set roleName

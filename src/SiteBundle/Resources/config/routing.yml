@@ -1,15 +1,26 @@
+site_portfolio:
+    resource: "@SiteBundle/Resources/config/routing/portfolio.yml"
+    prefix:   /portfolio
+
+site_blog:
+    resource: "@SiteBundle/Resources/config/routing/blog.yml"
+    prefix:   /blog
+
 site_homepage:
     path:     /
     defaults: { _controller: SiteBundle:Default:index }
+
 comandos:
     path:     /comandos
     defaults: { _controller: SiteBundle:Default:comandos }
 customers:
     path:     /customers
     defaults: { _controller: SiteBundle:Default:customers }
-portfolio:
-    path:     /portfolio
-    defaults: { _controller: SiteBundle:Default:Portfolio }
+
+portfolios:
+    path:     /portfolios
+    defaults: { _controller: SiteBundle:Default:Portfolios }
+
 partner:
     path:     /partner
     defaults: { _controller: SiteBundle:Default:partners }
@@ -20,34 +31,6 @@ colleague:
     path:     /colleague
     defaults: { _controller: SiteBundle:Default:colleague }
 
-baltspecservis:
-    path:     /baltspecservis
-    defaults: { _controller: SiteBundle:Default:baltspecservis }
-
-cdi:
-    path:     /cdi
-    defaults: { _controller: SiteBundle:Default:cdi }
-
-superlative:
-    path:     /superlative
-    defaults: { _controller: SiteBundle:Default:superlative }
-
-digital:
-    path:     /digital
-    defaults: { _controller: SiteBundle:Default:digital }
-
-ereport:
-    path:     /ereport
-    defaults: { _controller: SiteBundle:Default:ereport }
-
-tandem:
-    path:     /tandem
-    defaults: { _controller: SiteBundle:Default:tandem }
-
-perila:
-    path:     /perila
-    defaults: { _controller: SiteBundle:Default:perila }
-
-se:
-    path:     /se
-    defaults: { _controller: SiteBundle:Default:se }
+showPortfolio:
+    path:     /{id}/showPortfolio
+    defaults: { _controller: SiteBundle:Default:showPortfolio }
